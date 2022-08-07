@@ -1,0 +1,985 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+/*! - ESTILOS GENERALES - */
+/** CSS Valores por defecto */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	overflow-x: hidden;
+    background-color: black;
+}
+/** Boton del menu desplegable */
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    line-height: 80px;
+    margin-left: 2rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/** Estilos de letras, tamaños, color */
+h1 {
+    color: #FCD201;
+    font-family: 'Graduate', 'cursive';
+    font-size: 9rem;
+}
+h2 {
+    color: white;
+    font-family: 'Graduate', 'cursive';
+    font-size: 6rem;
+}
+p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+li {
+    color: white;
+    font-size: 2rem;
+    list-style: none;
+}
+li a {
+    font-family: 'Graduate', 'cursive';
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+h3 {
+    color: white;
+    font-family: 'Graduate', 'cursive';
+    font-size: 2rem;
+}
+/** CLASES - Colores de letras. Interlineados. Tamaños */
+.color {
+    color: white;
+}
+.interlineado {
+    line-height: 2;
+}
+.tamaño {
+    font-size: 2rem;
+}
+/*TODO --- HEADER --- */
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+nav ul li a:hover {
+    color: black;
+    background-color: #FCD201;
+    border-radius: 1rem;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.margenLogoPrincipal {
+    margin-left: 4rem;
+}
+/*TODO --- MAIN --- INICIO --- */
+/*? CLASES FLEX */
+.flexColumna {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.flexFila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/*? Seccion 1 */
+/** Es lo primero que ve el usuario cuando ingresa al sitio */
+.bannerInicioUno {
+    width: 100%;
+    height: 95vh;
+    background-image: url(/img/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+.flexColumna .bannerInicioUno {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.bannerInicioUno video {
+    width: 50%;
+    height: 40%;
+}
+/*? Seccion 2 */
+/** GRIDS "INICIO" */
+.grids {
+    display: grid;
+    grid-template-areas:
+    "abono promo"
+    "localizacion promo"
+    "redes redes";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50rem 50rem auto;
+    align-items: center;
+    align-content: space-around;
+    grid-gap: 5rem;
+}
+/** GRIDS Areas */
+.abono {
+    grid-area: abono;
+}
+.promo {
+    grid-area: promo;
+}
+.localizacion {
+    grid-area: localizacion;
+}
+.redes {
+    grid-area: redes;
+}
+/** Segunda seccion que vera el usuario en la pagina Inicio */
+.bannerInicioDos {
+    width: 100%;
+    background-image: url(/img/banner5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5rem 0rem;
+}
+.bannerInicioTres {
+    width: 90%;
+    height: 45rem;
+    background-image: url(/img/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 3rem;
+}
+.flexAbono {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.flexLocalizacionRedes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+}
+.mapa {
+    width: 90%;
+    height: 29rem;
+}
+.flexLocalizacionRedes div {
+    justify-content: center;
+    margin-top: 5rem;
+}
+.logos {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 3rem;
+    margin-right: 2rem;
+}
+.bannerPromo {
+    width: 100%;
+    height: 95%;
+    background-image: url(/img/promo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bannerPromo h2 {
+    color: #FCD201;
+    font-size: 6rem;
+    text-align: right;
+    padding: 2rem 2rem 0 0;
+}
+.bannerPromo p {
+    font-family: 'Graduate', 'cursive';
+    color: white;
+    font-size: 3rem;
+    text-align: left;
+    padding: 0 0 2rem 2rem;
+}
+.flexPromo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+/*TODO --- MAIN --- ACTIVIDADES --- */
+/*? FLEX ACTIVIADES */
+.flexColumnaAct{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8rem;
+}
+.flexFilaAct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+/** Banner que tendra la pagina */
+.bannerActividades {
+    width: 100%;
+    background-image: url(/img/banner5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5rem 0rem;
+}
+/** Especificaciones de cada actividad */
+.bannerActividadInternos {
+    width: 85%;
+    height: 14%;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.bannerActividadInternos img {
+    width: 96%;
+    height: 35rem;
+    border-radius: 1rem;
+}
+.bannerActividadInternos p {
+    color: white;
+}
+/** GRIDS "ACTIVIDADES" */
+.gridsAct {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "imagen informacion";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+/** GRIDS Areas*/
+.titulo {
+    grid-area: titulo;
+}
+.imagen {
+    grid-area: imagen;
+}
+.informacion {
+    grid-area: informacion;
+}
+/** Especificaciones de los LI que estan en cada actividad como caracteristicas de la misma */
+.liInternosAct {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3rem;
+    line-height: 2.3rem; 
+}
+.liInternosAct li {
+    font-size: 1.6rem;
+    list-style:circle;
+}
+/** Fondos internos dentro de cada actividad */
+.bannerActividadInternos article {
+    width: 92%;
+    height: 47rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 2rem;
+}
+.bannerActividadInternos h2 {
+    width: 96%;
+    height: 7rem;
+    color: #FCD201;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 2rem;
+    text-align: left;
+}
+/** Flex interno dentro de cada actividad (Informacion sobre la misma) */
+.flexInformacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/*TODO --- MAIN --- GALERIA --- */
+/** Banner que tendra la pagina, tambien se aplica un flex para ordernar el contenido */
+.bannerGaleria {
+    width: 100%;
+    background-image: url(/img/banner5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12rem;
+    padding: 9rem 0rem;
+}
+.bannerGaleria h2 {
+    color: #FCD201;
+    text-align: center;
+}
+/** GRIDS "GALERIA" */
+.gridGaleria{ /* Este GRID esta aplicado solo en las imagenes */
+    display: grid;
+    grid-template-areas: 
+    "img9 img9 img8 img2 img2"
+    "img9 img9 img6 img6 img6"
+    "img3 img4 img6 img6 img6"
+    "img3 img4 img6 img6 img6"
+    "img3 img5 img1 img1 img1"
+    "img7 img7 img1 img1 img1";
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 15rem;
+    padding: 4rem 10rem;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+/** GRIDS Areas*/
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.gridGaleria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+/*TODO --- MAIN --- STAFF --- */
+/** Banner que tendra la pagina, tambien se aplica un flex para ordernar el contenido */
+.bannerStaff {
+    width: 100%;
+    background-image: url(/img/banner5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    gap: 12rem;
+    padding: 9rem 0rem; 
+}
+.bannerStaff> h2 {
+    color: #FCD201;
+    text-align: center;
+}
+/** Banner que se le aplica como contenedor de cada profesor */
+.retrato {
+    width: 41rem;
+    height: 62rem;
+    background-image: url(/img/banner9.jpg);
+    border-radius: 2rem;
+}
+.retrato img {
+    width: 75%;
+}
+.retrato h2,p {
+    color: white;
+}
+.retrato p{
+    text-align: left;
+    padding: 0rem 5rem;
+}
+.flexListaStaff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 100%;
+    justify-content: center;
+}
+.flexListaStaff article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*TODO --- MAIN --- CONTACTO --- */
+/** Banner que tendra la pagina, tambien se aplica un flex para la disposicion de los elementos dentro del Main */
+.bannerContacto {
+    width: 100%;
+    background-image: url(/img/banner5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5rem;
+    padding: 10rem 0rem 15rem 0rem;
+}
+.bannerContacto h2{
+    color: #FCD201;
+    text-align: center;
+}
+/** Estilos de letras, tamaños y color que tendras los rectangulos de cada form */
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+/** Background que tendra la seccion "form" donde tambien se aplica una iluminacion para darle un estilo */
+.backgroundForm {
+    background: rgb(0, 0, 0, 0.3);
+    width: 62rem;
+}
+.iluminacionBackground {
+    box-shadow: 0 0 10rem 0 rgba(255, 255, 255, .6);
+}
+.iluminacionBackground > * {
+    padding: 4rem;
+}
+/** GRIDS "CONTACOT" */ 
+.gridContacto { /* Este GRID esta aplicado a los elementos que contienen al FORM */
+    display: grid;
+    grid-template-areas: 
+    "nombre apellido"
+    "telefono email"
+    "mensaje mensaje"
+    "btn btn";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+}
+/** GRIDS Areas */
+.nombre{
+    grid-area: nombre;
+}
+.apellido{
+    grid-area: apellido;
+}
+.telefono{
+    grid-area: telefono;
+}
+.email{
+    grid-area: email;
+}
+.mensaje{
+    grid-area: mensaje;
+}
+.btn{
+    grid-area: btn;
+}
+.gridContacto div {
+    margin: 0;
+    padding: 1em;
+}
+/** Especificaciones que tendra "button", "input" y "textarea" */
+.gridContacto button,
+.gridContacto input,
+.gridContacto textarea {
+    width: 100%;
+    padding-top: 0.6rem;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 0.1rem solid #FCD201;
+}
+/** Se le aplica un background a "button". Tambien se le aplica un cambio cuando se situan sobre el mismo. */
+.gridContacto button {
+    background:rgb(252, 210, 1, 0.5);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1rem;
+    width: 10rem;
+    color: white;
+}
+.gridContacto button:hover,
+.gridContacto button:focus {
+    background: #FCD201;
+    color: black;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+/*TODO --- FOOTER --- */
+.bannerFooter {
+    width: 100%;
+    height: 30rem;
+    background-image: url(/img/banner4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.flexFooter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;   
+}
+.flexFooter section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.flexFooter img {
+    width: 10%;
+}
+footer > p {
+    text-align: center;
+}
+
+/*TODO --- RESPONSIVE DESIGN --- */
+/*? Responsive -- Desktop -- */
+@media (min-width: 1024px) {
+}
+/*? Responsive -- Tablet -- */
+@media (min-width: 600px) and (max-width: 1023px) {
+    /*! - ESTILOS GENERALES - */
+    /** Tamaños de letras para Tablet */
+    h1 {
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    li {
+      font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    /*TODO --- HEADER --- */
+    /** Se reducen ciertos elementos para tener una mejor disposicion de los mismos en el formato Tablet. */
+    header {
+        height: 6rem;
+    }
+    header img {
+        width: 18rem;
+    }
+    .margenLogoPrincipal {
+        margin-left: 0.5rem;
+    }
+    .flexFila li a {
+        padding: 0px 4px;
+    }
+    /*TODO --- MAIN --- INICIO --- */
+    /*? Seccion 1 */
+    /** En esta seccion solo se modifica el tamaño del video */
+    .bannerInicioUno video {
+        width: 90%;
+        height: 30%;
+    }
+    /*? Seccion 2 */ 
+    /** GRIDS "INICIO" */ 
+    .grids { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
+        display: grid;
+        grid-template-areas:
+        "abono"
+        "localizacion"
+        "promo"
+        "redes";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        align-content: space-around;
+        grid-gap: 4rem;
+    }
+    /** Modificacion del tamaño del banner que contiene a ABONO */
+    .bannerInicioTres {
+        width: 90%;
+        height: 50%;
+        border-radius: 1rem;
+    }
+    /** Se le aplica un aumento al tamaño del banner que contiene a PROMO, asi como cambios en el tamaño de la letra. */
+    .bannerPromo {
+        height: 100%;
+    }
+    .bannerPromo h2 {
+        font-size: 5.5rem;
+    }
+    .bannerPromo p {
+        font-size: 2.5rem;
+    }
+    .flexPromo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    /** Se modifican los LOGOS */
+    .logos {
+        width: 8rem;
+        height: 8rem;
+        margin-right: 1.5rem;
+    }
+    /*TODO --- MAIN --- ACTIVIDADES --- */
+    /** GRIDS "ACTIVIDADES" */ 
+    .gridsAct { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
+        display: grid;
+        grid-template-areas:
+        "titulo"
+        "imagen" 
+        "informacion";
+        grid-template-columns: auto;
+        grid-template-rows: 8rem 32rem 40rem;
+        justify-items: center;
+        align-items: center;
+    }
+    /** Se aplican modificaciones en varios elementos dentro de ACTIVIDADES */
+    .bannerActividadInternos h2 {
+        width: 99%;
+        height: 4rem;
+        border-radius: 0rem;
+        text-align: center;
+    }
+    .liInternosAct {
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 3rem;
+        line-height: 2rem; 
+    }
+    .liInternosAct li {
+        font-size: 1.4rem;
+        list-style:circle;
+    }
+    .bannerActividadInternos img {
+        width: 95%;
+        height: 28rem;
+    }
+    .bannerActividadInternos article {
+        width: 99%;
+        height: 36rem;
+        border-radius: 0;
+    }
+    /*TODO --- MAIN --- GALERIA --- */
+    /** GRIDS "GALERIA" */ 
+    .gridGaleria{ /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
+        display: grid;
+        grid-template-areas: 
+        "img1 img2 img7 img7"
+        "img6 img6 img3 img3"
+        "img5 img4 img3 img3"
+        "img9 img9 img9 img8";
+        grid-template-columns: repeat(4,1fr);
+    }
+    /** Se modifica la separacion entre elementos para tener una mejor visualizacion. */
+    .bannerGaleria {
+        gap: 4rem;
+        padding: 6rem 0rem;
+    }
+    /*TODO --- MAIN --- STAFF --- */
+    /** Modificacion de la separacion entre los elementos. */
+    .bannerStaff {
+        gap: 8rem;
+        padding: 6rem 0rem;
+    }
+    /*TODO --- MAIN --- CONTACTO --- */
+    /** Reduccion del padding y del background que contiene a Form*/
+    .bannerContacto {
+        gap: 5rem;
+        padding: 6rem 0rem 11rem 0rem;
+    }
+    .backgroundForm {
+        width: 44rem;
+    }
+    /*TODO --- FOOTER --- */
+    /** Responsive del FOOTER para Smartphones, se aplican cambos en letras y se modifica el tamaño del bannerFooter */
+    .bannerFooter {
+        height: 20rem;
+    }
+    .tamaño {
+        font-size: 1rem;
+    }
+    footer section p {
+        font-size: 1rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+}
+/*? Responsive -- Smartphone -- */
+@media (max-width: 599px) {
+    /*! - ESTILOS GENERALES - */
+    /** Tamaños de letras para Smartphone */
+    h1 {
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    li {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    /*TODO --- HEADER --- */
+    /** Responsive del HEADER para Smartphones. Aca se modifica por completo la navegacion, en este caso se aplica una navegacion desplazable. */
+    .checkbtn{
+        display: block;
+    }
+    nav{
+        position: fixed;
+        width: 55%;
+        height: 100vh;
+        background: rgb(0, 0, 0, 0.9);
+        top: 7rem;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+        display: block;
+    }
+    #check:checked ~ nav{
+        left:0;
+    }
+    nav ul li {
+        display: block;
+        padding: 3rem 0.5rem;
+        font-size: 2rem;
+    }
+    header {
+        background-color: rgb(0, 0, 0, 0.9);
+        display: block;
+    }
+    .flexFila {
+        display: block;
+    }
+    .flexFila li a {
+        padding: 0px 5px;
+    }
+    .margenLogoPrincipal {
+        position: relative;
+        top: 20%;
+        left: 1.5rem;
+        width: 20rem;
+        margin-left: 1rem;
+    }
+    /*TODO --- MAIN --- INICIO --- */
+    /*? Seccion 1 */
+    /** En esta seccion solo se modifica el tamaño del video */
+    .bannerInicioUno video {
+        width: 70%;
+        height: 20%;
+        border-radius: 3rem;
+    }
+    /*? Seccion 2 */
+    /** GRIDS "INICIO" */ 
+    .grids { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
+        display: grid;
+        grid-template-areas:
+        "abono"
+        "localizacion"
+        "promo"
+        "redes";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        align-content: space-around; 
+        grid-gap: 4rem;
+    }
+    /** Aca se modifica el tamaño del banner que contiene a ABONO */
+    .bannerInicioTres {
+        width: 90%;
+        height: 50%;
+        border-radius: 1rem;
+    }
+    /** Se le aplica un aumento al tamaño del banner que contiene a PROMO, asi como cambios en el tamaño de la letra. */
+    .bannerPromo {
+        width: 100%;
+        height: 100%;
+    }
+    .bannerPromo h2 {
+        font-size: 5.5rem;
+    }
+    .bannerPromo p {
+        font-size: 2.5rem;
+    }
+    /** Se modifican los LOGOS */
+    .logos {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    /*TODO --- MAIN --- ACTIVIDADES --- */
+    /** GRIDS "ACTIVIDADES" */ 
+    .gridsAct { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
+        display: grid;
+        grid-template-areas:
+        "titulo"
+        "imagen" 
+        "informacion";
+        grid-template-columns: auto;
+        grid-template-rows: 7rem 32rem 37rem;
+        justify-items: center;
+        align-items: center;
+    }
+    /** Se aplican modificaciones en varios elementos y se declara un ID para un elemento especifico */
+    .bannerActividadInternos h2 {
+        width: 98%;
+        height: 3rem;
+        border-radius: 0rem;
+        text-align: center;
+    }
+    .liInternosAct {
+        line-height: 1.5rem; 
+    }
+    .liInternosAct li {
+        font-size: 1.2rem;
+    }
+    .bannerActividadInternos img {
+        width: 95%;
+        height: 28rem;
+    }
+    .bannerActividadInternos article {
+        width: 98%;
+        height: 33rem;
+        border-radius: 0;
+    }
+    #cambioTamaño{
+        font-size: 2.1rem;
+    }
+    /*TODO --- MAIN --- GALERIA --- */
+    /** GRIDS "GALERIA" */ 
+    .gridGaleria{ /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
+        display: grid;
+        grid-template-areas: 
+        "img1 img2 img5"
+        "img6 img6 img3"
+        "img8 img7 img3"
+        "img4 img9 img9";
+        padding: 4rem 1rem;
+        grid-auto-rows: 10rem;
+        grid-gap: 0.5rem;
+        grid-template-columns: repeat(3,1fr);
+    }
+    /** Se modifica la separacion entre elementos para tener una mejor visualizacion. */
+    .bannerGaleria {
+        gap: 0rem;
+        padding: 4rem 0rem;
+    }
+
+    /* RESPONSIVE PARA SMARTPHONE - PAGINA STAFF */
+    /* Modificacion de la separacion entre los elementos y reduccion del contenedor RETRATO. */
+    .bannerStaff {
+        gap: 6rem;
+        padding: 4rem 0rem;
+    }
+    .retrato {
+        width: 30rem;
+        height: 51rem;
+    }
+    /*TODO --- MAIN --- CONTACTO --- */
+    /** GRIDS "CONTACTO" */ 
+    .gridContacto { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
+        display: grid;
+        grid-template-areas:
+            "nombre"
+            "apellido"
+            "telefono"
+            "email"
+            "mensaje"
+            "btn";
+        grid-template-columns: 1fr;
+        grid-gap: 4rem;
+    }
+    /** Reduccion del padding y del background que contiene a Form */
+    .bannerContacto {
+        padding: 7rem 0rem;
+    }
+    .bannerContacto p {
+        text-align: center;
+    }
+    .backgroundForm {
+        width: 22rem;
+    }
+    /*TODO --- FOOTER --- */
+    /** Responsive del FOOTER para Smartphones, se aplican cambos en letras y se modifica el "Flex Row" por el "Flex Column"  */
+    .tamaño {
+        font-size: 1rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+    .flexFooter section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .flexFooter img {
+        margin-bottom: 1rem;
+    }
+    footer section article {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
