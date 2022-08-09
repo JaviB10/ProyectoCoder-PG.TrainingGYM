@@ -688,6 +688,7 @@ textarea{
 .gridContacto button:hover,
 .gridContacto button:focus {
     background: #FCD201;
+    box-shadow: 0 0 0.1rem #FCD201, 0 0 0.4rem #FCD201, 0 0 0.8rem #FCD201;
     color: black;
     transition: background-color 1s ease-out;
     outline: 0;
@@ -723,6 +724,31 @@ footer > p {
 /*TODO --- RESPONSIVE DESIGN --- */
 /*? Responsive -- Desktop -- */
 @media (min-width: 1024px) {
+    /** Sub-Menu que tendra solo la pagina Actividades*/
+.submenu{
+	position: absolute;
+	background: black;
+	width: 25rem;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+.submenu li a{
+	display: block;
+    border: 0.1rem solid #FCD201;
+	padding: 1rem;
+	color: white;
+	text-decoration: none;
+}
+.flexFila li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+.submenu li:hover a{
+    background: #FCD201;
+    box-shadow: 0 0 0.1rem #FCD201, 0 0 0.4rem #FCD201, 0 0 0.8rem #FCD201;
+    color: black;
+}
 }
 /*? Responsive -- Tablet -- */
 @media (min-width: 600px) and (max-width: 1023px) {
@@ -812,6 +838,10 @@ footer > p {
         margin-right: 1.5rem;
     }
     /*TODO --- MAIN --- ACTIVIDADES --- */
+    /** Se quita el Sub-Menu (Por el momento) */
+    .flexFila li .submenu {
+    display: none;
+    }
     /** GRIDS "ACTIVIDADES" */ 
     .gridsAct { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
         display: grid;
@@ -1009,6 +1039,10 @@ footer > p {
         font-size: 6rem;
     }
     /*TODO --- MAIN --- ACTIVIDADES --- */
+    /** Se quita el Sub-Menu (Por el momento) */
+    .flexFila li .submenu {
+        display: none;
+    }
     /** GRIDS "ACTIVIDADES" */ 
     .gridsAct { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
         display: grid;
@@ -1117,3 +1151,4 @@ footer > p {
         margin-bottom: 3rem;
     } 
 }
+
