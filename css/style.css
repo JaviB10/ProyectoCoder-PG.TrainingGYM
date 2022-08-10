@@ -813,7 +813,7 @@ footer > p {
     }
 }
 /*? Responsive -- Tablet -- */
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-device-width: 600px) and (max-device-width: 1023px) {
     /*! - ESTILOS GENERALES - */
     /** Tamaños de letras para Tablet */
     h1 {
@@ -973,7 +973,7 @@ footer > p {
     }
 }
 /*? Responsive -- Smartphone -- */
-@media (max-width: 599px) {
+@media (max-device-width: 599px) {
     /*! - ESTILOS GENERALES - */
     /** Tamaños de letras para Smartphone */
     h1 {
@@ -1031,6 +1031,10 @@ footer > p {
     }
     /*TODO --- MAIN --- INICIO --- */
     /*? Seccion 1 */
+    /** Se modifica el height del banner */
+    .bannerInicioUno {
+        height: 70vh;
+    } 
     /** En esta seccion solo se modifica el tamaño del video */
     .bannerInicioUno video {
         width: 70%;
