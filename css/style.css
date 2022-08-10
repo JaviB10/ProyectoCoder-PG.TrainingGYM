@@ -942,6 +942,11 @@ footer > p {
     .bannerGaleria {
         padding: 6rem 0rem;
     }
+    .gridGaleria img:hover{
+        transform: translateY(-0.3rem) scale(1.2);
+        filter: none;
+        z-index: 1;
+    }
     /*TODO --- MAIN --- STAFF --- */
     /** Modificacion de la separacion entre los elementos. */
     .bannerStaff {
@@ -1147,6 +1152,11 @@ footer > p {
     .bannerGaleria {
         gap: 0rem;
         padding: 4rem 0rem;
+    }
+    .gridGaleria img:hover{
+        transform: translateY(-0.3rem) scale(1.05);
+        filter: none;
+        z-index: 1;
     }
     /*TODO --- MAIN --- STAFF --- */
     /* Modificacion de la separacion entre los elementos y reduccion del contenedor RETRATO. */
