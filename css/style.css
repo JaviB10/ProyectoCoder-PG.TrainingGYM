@@ -144,6 +144,7 @@ header {
 .localizacion {
     grid-area: localizacion;
 }
+/* El Grid Areas de .Promo esta mas abajo */
 .redes {
     grid-area: redes;
 }
@@ -542,7 +543,6 @@ header {
     align-items: center;
     justify-content: space-evenly;
 }
-
 /*TODO --- MAIN --- CONTACTO --- */
 /** Banner que tendra la pagina, tambien se aplica un flex para la disposicion de los elementos dentro del Main */
 .bannerContacto {
@@ -691,7 +691,6 @@ header {
 footer > p {
     text-align: center;
 }
-
 /*TODO --- RESPONSIVE DESIGN --- */
 /*? Responsive -- Desktop -- */
 @media (min-width: 1024px) {
@@ -810,10 +809,9 @@ footer > p {
     .gridGaleria img:hover{
         transform:  translateY(-0.3rem) scale(1.2);
         filter: none;
-        z-index: 2;
+        z-index: 1;
     }
 }
-
 /*? Responsive -- Tablet -- */
 @media (min-width: 600px) and (max-width: 1023px) {
     /*! - ESTILOS GENERALES - */
@@ -846,10 +844,6 @@ footer > p {
     }
     .margenNav {
         margin-right: 0.5rem;
-    }
-    .btn-neon{
-        font-size: 1.2rem;
-        padding: 0.5rem;
     }
     /*TODO --- MAIN --- INICIO --- */
     /*? Seccion 1 */
@@ -1028,11 +1022,6 @@ footer > p {
     .flexFila {
         display: block;
     }
-    .btn-neon{
-        font-size: 1.2rem;
-        margin-left: 1rem;
-        padding: 1rem;
-    }
     .margenLogoPrincipal {
         position: relative;
         top: 20%;
@@ -1170,12 +1159,12 @@ footer > p {
     .gridContacto { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
         display: grid;
         grid-template-areas:
-            "nombre"
-            "apellido"
-            "telefono"
-            "email"
-            "mensaje"
-            "btn";
+        "nombre"
+        "apellido"
+        "telefono"
+        "email"
+        "mensaje"
+        "btn";
         grid-template-columns: 1fr;
         grid-gap: 4rem;
     }
