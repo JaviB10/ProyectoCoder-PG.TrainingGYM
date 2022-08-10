@@ -76,34 +76,34 @@
 
                     <form action="" class="gridContacto">
 
-                        <div class="nombre">
+                        <div class="nombre inputBox">
 
-                            <label>Nombre</label>
-                            <input type="text" name="nombre">
-
-                        </div>
-                        <div class="apellido">
-
-                            <label>Apellido</label>
-                            <input type="text" name="apellido">
+                            <input type="text" required="required">
+                            <span>Nombre</span>
 
                         </div>
-                        <div class="telefono">
+                        <div class="apellido inputBox">
 
-                            <label>Telefono</label>
-                            <input type="tel" name="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
-
-                        </div>
-                        <div class="email">
-
-                            <label>Email</label>
-                            <input type="email" name="email">
+                            <input type="text" required="required">
+                            <span>Apellido</span>
 
                         </div>
-                        <div class="mensaje">
+                        <div class="telefono inputBox">
 
-                            <label>Mensaje</label> 
-                            <textarea name="message" rows="3"></textarea>
+                            <input type="tel" required="required">
+                            <span>Telefono</span>
+
+                        </div>
+                        <div class="email inputBox">
+
+                            <input type="email" required="required">
+                            <span>Email</span>
+
+                        </div>
+                        <div class="mensaje inputBox">
+
+                            <textarea required="required" rows="1"></textarea>
+                            <span>Mensaje</span> 
 
                         </div>
                         <div class="btn">

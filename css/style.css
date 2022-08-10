@@ -90,73 +90,6 @@ header {
 .margenNav {
     margin-right: 2rem;
 }
-.btn-neon{
-    position: relative;
-    display: inline-block;
-    padding: 1rem;
-    color: #fff;
-    letter-spacing: 0.2rem;
-    text-decoration: none;
-    font-size: 2rem;
-    overflow: hidden;
-    transition: 0.2s;
-}
-.btn-neon:hover{
-    background: #FCD201;
-    box-shadow: 0 0 0.1rem #FCD201, 0 0 0.4rem #FCD201, 0 0 0.8rem #FCD201;
-    transition-delay: 0.5s;
-    color: black;
-}
-.btn-neon span{
-    position: absolute;
-    display: block;
-}
-#span1{
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 0.2rem;
-    background: linear-gradient(90deg, transparent,#FCD201);
-}
-.btn-neon:hover #span1{
-    left: 100%;
-    transition: 0.5s;
-}
-#span3{
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 0.2rem;
-    background: linear-gradient(270deg, transparent,#FCD201);
-}
-.btn-neon:hover #span3{
-    right: 100%;
-    transition: 0.5s;
-}
-#span2{
-    top: -100%;
-    right: 0;
-    width: 0.2rem;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#FCD201);
-}
-.btn-neon:hover #span2{
-    top: 100%;
-    transition: 0.5s;
-    transition-delay: 0.25s;
-}
-#span4{
-    bottom: -100%;
-    left: 0;
-    width: 0.2rem;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#FCD201);
-}
-.btn-neon:hover #span4{
-    bottom: 100%;
-    transition: 0.5s;
-    transition-delay: 0.25s;
-}
 /*TODO --- MAIN --- INICIO --- */
 /*? CLASES FLEX */
 .flexColumna {
@@ -208,9 +141,6 @@ header {
 .abono {
     grid-area: abono;
 }
-.promo {
-    grid-area: promo;
-}
 .localizacion {
     grid-area: localizacion;
 }
@@ -248,10 +178,11 @@ header {
     flex-wrap: nowrap;
     text-align: center;
     align-items: center;
+    gap: 2rem;
 }
 .mapa {
     width: 90%;
-    height: 29rem;
+    height: 25rem;
 }
 .flexLocalizacionRedes div {
     justify-content: center;
@@ -263,13 +194,13 @@ header {
     margin-right: 2rem;
 }
 /** Efectos para los iconos de las redes sociales */
-.redes {
+.redes2 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4rem;
 }
-.redes a{
+.redes2 a{
     display: flex;
     width: 11rem;
     height: 11rem;
@@ -283,45 +214,79 @@ header {
     box-shadow: 1rem 1rem 0.5rem 0rem rgba(255, 255, 255, 0.1);
     transition: 0.2s;
 }
-.redes:hover a{
-    filter: blur(0.2rem);
-}
-.redes a:hover{
-    transform:  translateY(-0.3rem) scale(1.05);
-    box-shadow: 1rem 1.3rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
-    filter: none;
-    color: black;
-    background-color: #FCD201;
-}
-.redes a:hover i{
-	transition: all 0.7s;
-	transform: rotateY(360deg);
-}
-.bannerPromo {
+/** Publicidades de la pagina, carrusel incluido */
+.promo {
+    grid-area: promo; /* Grid Area de la seccion 2*/
     width: 100%;
     height: 95%;
-    background-image: url(../img/promo.jpg);
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
 }
-.bannerPromo h2 {
-    color: #FCD201;
-    font-size: 6rem;
-    text-align: right;
-    padding: 2rem 2rem 0 0;
+.promo ul{
+    display: flex;
+    width: 200%;
+    height: 100%;
+    align-items: center;
+    animation: cambio2 15s infinite alternate;
 }
-.bannerPromo p {
-    font-family: 'Graduate', 'cursive';
-    color: white;
-    font-size: 3rem;
-    text-align: left;
-    padding: 0 0 2rem 2rem;
+.promo ul li{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: relative;
 }
-.flexPromo {
+.promo ul li img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.promo h2,p {
+    z-index: 1;
+}
+@keyframes cambio2{
+    0%{margin-left: 0;}
+    40%{margin-left: 0;}
+
+    50%{margin-left: -100%;}
+    100%{margin-left: -100%;}
+}
+/** Especificaciones de la primera promocion */
+.promo1{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+.promo1 h2 {
+    font-size: 6rem;
+    color: #FCD201;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    text-align: right;
+}
+.promo1 p {
+    font-family: 'Graduate', 'cursive';
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    text-align: left;
+}
+/** Especificaciones de la segunda promocion */
+.promo2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.promo2 h2 {
+    font-size: 4rem;
+    color: #FCD201;
+    text-align: center;
+}
+.promo2 p {
+    font-size: 2rem;
+    text-align: center;
 }
 /*TODO --- MAIN --- ACTIVIDADES --- */
 /*? FLEX ACTIVIADES */
@@ -353,8 +318,8 @@ header {
 .bannerActividadInternos {
     width: 85%;
     height: 14%;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
     border-radius: 1rem;
     padding: 1.5rem;
 }
@@ -525,14 +490,6 @@ header {
     object-position: center;
     border-radius: 1rem;
 }
-.gridGaleria:hover img{
-    filter: blur(0.2rem);
-}
-.gridGaleria img:hover{
-    transform:  translateY(-0.3rem) scale(1.2);
-    filter: none;
-    z-index: 2;
-}
 /*TODO --- MAIN --- STAFF --- */
 /** Banner que tendra la pagina, tambien se aplica un flex para ordernar el contenido */
 .bannerStaff {
@@ -599,29 +556,15 @@ header {
     flex-wrap: nowrap;
     align-items: center;
     gap: 5rem;
-    padding: 10rem 0rem 15rem 0rem;
+    padding: 10rem 0rem 17rem 0rem;
 }
 .bannerContacto h2{
     color: #FCD201;
     text-align: center;
 }
-/** Estilos de letras, tamaños y color que tendras los rectangulos de cada form */
-label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    color: white;
-}
-input {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-}
-textarea{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-}
 /** Background que tendra la seccion "form" donde tambien se aplica una iluminacion para darle un estilo */
 .backgroundForm {
-    background: rgb(0, 0, 0, 0.3);
+    background: rgb(0, 0, 0, 0.5);
     width: 62rem;
 }
 .iluminacionBackground {
@@ -662,31 +605,59 @@ textarea{
 }
 .gridContacto div {
     margin: 0;
-    padding: 1em;
+    padding: 1rem;
 }
-/** Especificaciones que tendra "button", "input" y "textarea" */
-.gridContacto button,
-.gridContacto input,
-.gridContacto textarea {
+.inputBox{
+    display: flex;
     width: 100%;
-    padding-top: 0.6rem;
-    border: none;
-    background: none;
-    outline: 0;
+    position: relative;
+}
+/** Estilos de letras, tamaños y color que tendras los rectangulos de cada form */
+.inputBox span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
     color: white;
+    position: absolute;
+    left: 0;
+    padding: 1rem;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+}
+.inputBox input,textarea{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    border: none;
     border-bottom: 0.1rem solid #FCD201;
+    background-color:rgba(0, 0, 0, 0);
+    padding: 1rem;
+    outline: none;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,textarea:valid ~ span, .inputBox input:focus ~ span,textarea:focus ~ span{
+    color: #FCC703;
+    transform: translateX(1rem) translateY(-0.7rem);
+    font-size: 1.3rem;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 0);
+    letter-spacing: 0.2rem;
 }
 /** Se le aplica un background a "button". Tambien se le aplica un cambio cuando se situan sobre el mismo. */
 .gridContacto button {
-    background:rgb(252, 210, 1, 0.5);
-    border: 0;
+    background:rgba(0, 0, 0, 0.5);
+    border: 0.1rem solid white;
     text-transform: uppercase;
     padding: 1rem;
     width: 10rem;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
 }
 .gridContacto button:hover,
 .gridContacto button:focus {
+    border: 0.1rem solid #FCD201;
     background: #FCD201;
     box-shadow: 0 0 0.1rem #FCD201, 0 0 0.4rem #FCD201, 0 0 0.8rem #FCD201;
     color: black;
@@ -724,32 +695,125 @@ footer > p {
 /*TODO --- RESPONSIVE DESIGN --- */
 /*? Responsive -- Desktop -- */
 @media (min-width: 1024px) {
+    /** Estilos en el navegador que tendra solo Desktop*/
+    .btn-neon{
+        position: relative;
+        display: inline-block;
+        padding: 1rem;
+        color: #fff;
+        letter-spacing: 0.2rem;
+        text-decoration: none;
+        font-size: 2rem;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .btn-neon:hover{
+        background: #FCD201;
+        box-shadow: 0 0 0.1rem #FCD201, 0 0 0.4rem #FCD201, 0 0 0.8rem #FCD201;
+        transition-delay: 0.5s;
+        color: black;
+    }
+    .btn-neon span{
+        position: absolute;
+        display: block;
+    }
+    #span1{
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 0.2rem;
+        background: linear-gradient(90deg, transparent,#FCD201);
+    }
+    .btn-neon:hover #span1{
+        left: 100%;
+        transition: 0.5s;
+    }
+    #span3{
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 0.2rem;
+        background: linear-gradient(270deg, transparent,#FCD201);
+    }
+    .btn-neon:hover #span3{
+        right: 100%;
+        transition: 0.5s;
+    }
+    #span2{
+        top: -100%;
+        right: 0;
+        width: 0.2rem;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,#FCD201);
+    }
+    .btn-neon:hover #span2{
+        top: 100%;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+    }
+    #span4{
+        bottom: -100%;
+        left: 0;
+        width: 0.2rem;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,#FCD201);
+    }
+    .btn-neon:hover #span4{
+        bottom: 100%;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+    }
     /** Sub-Menu que tendra solo la pagina Actividades*/
-.submenu{
-	position: absolute;
-	background: black;
-	width: 25rem;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.1s;
+    .submenu{
+        position: absolute;
+        background: black;
+        width: 25rem;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.1s;
+    }
+    .submenu li a{
+        display: block;
+        border: 0.1rem solid #FCD201;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+    .flexFila li:hover .submenu{
+        visibility: visible;
+        opacity: 1;
+    }
+    .submenu li:hover a{
+        background: #FCD201;
+        box-shadow: 0 0 0.1rem #FCD201, 0 0 0.4rem #FCD201, 0 0 0.8rem #FCD201;
+        color: black;
+    }
+    /** Estilos en los logos de las redes que tendra solo Desktop*/
+    .redes2:hover a{
+        filter: blur(0.2rem);
+    }
+    .redes2 a:hover{
+        transform:  translateY(-0.3rem) scale(1.05);
+        box-shadow: 1rem 1.3rem 0.5rem 0rem rgba(0, 0, 0, 0.5);
+        filter: none;
+        color: black;
+        background-color: #FCD201;
+    }
+    .redes2 a:hover i{
+        transition: all 0.7s;
+        transform: rotateY(360deg);
+    }
+    /** Efectos que tendra la galeria solo en Desktop*/
+    .gridGaleria:hover img{
+        filter: blur(0.2rem);
+    }
+    .gridGaleria img:hover{
+        transform:  translateY(-0.3rem) scale(1.2);
+        filter: none;
+        z-index: 2;
+    }
 }
-.submenu li a{
-	display: block;
-    border: 0.1rem solid #FCD201;
-	padding: 1rem;
-	color: white;
-	text-decoration: none;
-}
-.flexFila li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
-}
-.submenu li:hover a{
-    background: #FCD201;
-    box-shadow: 0 0 0.1rem #FCD201, 0 0 0.4rem #FCD201, 0 0 0.8rem #FCD201;
-    color: black;
-}
-}
+
 /*? Responsive -- Tablet -- */
 @media (min-width: 600px) and (max-width: 1023px) {
     /*! - ESTILOS GENERALES - */
@@ -815,21 +879,15 @@ footer > p {
         height: 50%;
         border-radius: 1rem;
     }
-    /** Se le aplica un aumento al tamaño del banner que contiene a PROMO, asi como cambios en el tamaño de la letra. */
-    .bannerPromo {
-        height: 100%;
+    /** Se modifican el tamaño de las letras en las promociones y a una de estas se le aumenta el padding-bottom */
+    .promo .promo1 p {
+        padding-bottom: 4rem;
     }
-    .bannerPromo h2 {
-        font-size: 5.5rem;
+    .promo .promo2 h2 {
+        font-size: 3rem;
     }
-    .bannerPromo p {
-        font-size: 2.5rem;
-    }
-    .flexPromo {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
+    .promo .promo2 p {
+        font-size: 1.5rem;
     }
     /** Se modifican los LOGOS */
     .logos {
@@ -1011,16 +1069,18 @@ footer > p {
         height: 50%;
         border-radius: 1rem;
     }
-    /** Se le aplica un aumento al tamaño del banner que contiene a PROMO, asi como cambios en el tamaño de la letra. */
-    .bannerPromo {
-        width: 100%;
-        height: 100%;
+    /** Se modifican el tamaño de las letras en las promociones */
+    .promo .promo1 h2 {
+        font-size: 3rem;
     }
-    .bannerPromo h2 {
-        font-size: 5.5rem;
+    .promo .promo1 p {
+        font-size: 1.5rem;
     }
-    .bannerPromo p {
-        font-size: 2.5rem;
+    .promo .promo2 h2 {
+        font-size: 2rem;
+    }
+    .promo .promo2 p {
+        font-size: 1rem;
     }
     /** Se modifican los LOGOS */
     .logos {
@@ -1030,10 +1090,10 @@ footer > p {
         margin-right: 1.5rem;
     }
     /** Se modifican la direccion de los iconos, se le reduce su tamaño */
-    .redes {
+    .redes2 {
         flex-direction: column;
     }
-    .redes a {
+    .redes2 a {
         width: 9rem;
         height: 9rem;
         font-size: 6rem;
@@ -1095,7 +1155,6 @@ footer > p {
         gap: 0rem;
         padding: 4rem 0rem;
     }
-
     /*TODO --- MAIN --- STAFF --- */
     /* Modificacion de la separacion entre los elementos y reduccion del contenedor RETRATO. */
     .bannerStaff {
