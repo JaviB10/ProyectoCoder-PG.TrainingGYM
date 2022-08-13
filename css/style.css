@@ -16,11 +16,11 @@ body {
 }
 /** Boton del menu desplegable */
 .checkbtn{
-    font-size: 30px;
+    font-size: 3rem;
     color: #fff;
-    float: left;
-    line-height: 80px;
-    margin-left: 2rem;
+    float: right;
+    line-height: 7.5rem;
+    margin-right: 2rem;
     cursor: pointer;
     display: none;
 }
@@ -52,7 +52,7 @@ li a {
     font-family: 'Graduate', 'cursive';
     color: white;
     text-decoration: none;
-    padding: 5px 15px;
+    padding: 0.5rem 1.5rem;
 }
 h3 {
     color: white;
@@ -72,7 +72,6 @@ h3 {
 /*TODO --- HEADER --- */
 header {
     width: 100%;
-    height: 7rem;
     background-color: rgb(0, 0, 0, 0.5);
     backdrop-filter: blur(12px);
     position: sticky;
@@ -155,7 +154,7 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 5rem 0rem;
+    padding-top: 5rem;
 }
 .bannerInicioTres {
     width: 90%;
@@ -164,6 +163,9 @@ header {
     background-size: cover;
     background-position: center;
     border-radius: 3rem;
+}
+.bannerInicioTres p {
+    padding: 0rem 4rem;
 }
 .flexAbono {
     display: flex;
@@ -179,7 +181,9 @@ header {
     flex-wrap: nowrap;
     text-align: center;
     align-items: center;
-    gap: 2rem;
+}
+.flexLocalizacionRedes p {
+    padding: 2rem 0rem;
 }
 .mapa {
     width: 90%;
@@ -199,7 +203,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    padding: 4rem 0rem;
 }
 .redes2 a{
     display: flex;
@@ -214,6 +218,7 @@ header {
     justify-content: center;
     box-shadow: 1rem 1rem 0.5rem 0rem rgba(255, 255, 255, 0.1);
     transition: 0.2s;
+    margin: 0rem 2rem;
 }
 /** Publicidades de la pagina, carrusel incluido */
 .promo {
@@ -297,7 +302,6 @@ header {
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    gap: 8rem;
 }
 .flexFilaAct{
     display: flex;
@@ -313,7 +317,7 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 5rem 0rem;
+    padding-top: 5rem;
 }
 /** Especificaciones de cada actividad */
 .bannerActividadInternos {
@@ -323,6 +327,7 @@ header {
     backdrop-filter: blur(5px);
     border-radius: 1rem;
     padding: 1.5rem;
+    margin-bottom: 5rem;
 }
 .bannerActividadInternos p {
     color: white;
@@ -504,12 +509,12 @@ header {
     flex-wrap: nowrap;
     align-items: center;
     align-content: center;
-    gap: 12rem;
-    padding: 9rem 0rem; 
+    padding: 5rem 0rem;
 }
 .bannerStaff> h2 {
     color: #FCD201;
     text-align: center;
+    padding: 0rem 1rem;
 }
 /** Banner que se le aplica como contenedor de cada profesor */
 .retrato {
@@ -517,6 +522,8 @@ header {
     height: 62rem;
     background-image: url(../img/banner9.jpg);
     border-radius: 2rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
 }
 .retrato img {
     width: 75%;
@@ -555,12 +562,15 @@ header {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 5rem;
-    padding: 10rem 0rem 17rem 0rem;
+    padding: 17rem 0rem
 }
 .bannerContacto h2{
     color: #FCD201;
     text-align: center;
+}
+.bannerContacto p {
+    text-align: center;
+    padding: 5rem 0rem;
 }
 /** Background que tendra la seccion "form" donde tambien se aplica una iluminacion para darle un estilo */
 .backgroundForm {
@@ -693,7 +703,7 @@ footer > p {
 }
 /*TODO --- RESPONSIVE DESIGN --- */
 /*? Responsive -- Desktop -- */
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     /** Estilos en el navegador que tendra solo Desktop*/
     .btn-neon{
         position: relative;
@@ -813,23 +823,24 @@ footer > p {
     }
 }
 /*? Responsive -- Tablet -- */
-@media (min-device-width: 600px) and (max-device-width: 1023px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
     /*! - ESTILOS GENERALES - */
     /** Tamaños de letras para Tablet */
     h1 {
-        font-size: 6rem;
+        font-size: 8rem;
     }
     h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     li {
         font-size: 1.2rem;
     }
-    h3 {
-        font-size: 2rem;
+    li a {
+        padding: 0.5rem 0.5rem;
+        font-size: 1.6rem;
     }
     /*TODO --- HEADER --- */
     /** Se reducen ciertos elementos para tener una mejor disposicion de los mismos en el formato Tablet. */
@@ -847,6 +858,10 @@ footer > p {
     }
     /*TODO --- MAIN --- INICIO --- */
     /*? Seccion 1 */
+    /** Se modifica el padding para este dispositivo */
+    .bannerInicioUno p {
+        padding: 0rem 1rem;
+    }
     /** En esta seccion solo se modifica el tamaño del video */
     .bannerInicioUno video {
         width: 90%;
@@ -867,11 +882,9 @@ footer > p {
         align-content: space-around;
         grid-gap: 4rem;
     }
-    /** Modificacion del tamaño del banner que contiene a ABONO */
-    .bannerInicioTres {
-        width: 90%;
-        height: 50%;
-        border-radius: 1rem;
+    /** Reduccion del padding en Abono */
+    .bannerInicioTres p {
+        padding: 0rem 2rem;
     }
     /** Se modifican el tamaño de las letras en las promociones y a una de estas se le aumenta el padding-bottom */
     .promo .promo1 p {
@@ -882,12 +895,6 @@ footer > p {
     }
     .promo .promo2 p {
         font-size: 1.5rem;
-    }
-    /** Se modifican los LOGOS */
-    .logos {
-        width: 8rem;
-        height: 8rem;
-        margin-right: 1.5rem;
     }
     /*TODO --- MAIN --- ACTIVIDADES --- */
     /** Se quita el Sub-Menu (Por el momento) */
@@ -947,18 +954,11 @@ footer > p {
         filter: none;
         z-index: 1;
     }
-    /*TODO --- MAIN --- STAFF --- */
-    /** Modificacion de la separacion entre los elementos. */
-    .bannerStaff {
-        gap: 8rem;
-        padding: 6rem 0rem;
-    }
     /*TODO --- MAIN --- CONTACTO --- */
-    /** Reduccion del padding y del background que contiene a Form*/
     .bannerContacto {
-        gap: 5rem;
-        padding: 6rem 0rem 11rem 0rem;
+        padding: 10rem 0rem
     }
+    /** Reduccion del background que contiene a Form*/
     .backgroundForm {
         width: 44rem;
     }
@@ -978,7 +978,7 @@ footer > p {
     }
 }
 /*? Responsive -- Smartphone -- */
-@media (max-device-width: 599px) {
+@media only screen and (max-width: 599px) {
     /*! - ESTILOS GENERALES - */
     /** Tamaños de letras para Smartphone */
     h1 {
@@ -1023,9 +1023,13 @@ footer > p {
     header {
         background-color: rgb(0, 0, 0, 0.9);
         display: block;
+        height: 8rem;
     }
     .flexFila {
         display: block;
+    }
+    .flexFila li a {
+        padding: 0px 5px;
     }
     .margenLogoPrincipal {
         position: relative;
@@ -1036,15 +1040,17 @@ footer > p {
     }
     /*TODO --- MAIN --- INICIO --- */
     /*? Seccion 1 */
-    /** Se modifica el height del banner */
+    /** Se modifica el height del banner y se agrega padding entre la informacion */
     .bannerInicioUno {
-        height: 70vh;
+        height: 60rem;
     } 
+    .bannerInicioUno h2 {
+        padding: 2rem 0rem;
+    }
     /** En esta seccion solo se modifica el tamaño del video */
     .bannerInicioUno video {
         width: 70%;
         height: 20%;
-        border-radius: 3rem;
     }
     /*? Seccion 2 */
     /** GRIDS "INICIO" */ 
@@ -1064,8 +1070,10 @@ footer > p {
     /** Aca se modifica el tamaño del banner que contiene a ABONO */
     .bannerInicioTres {
         width: 90%;
-        height: 50%;
-        border-radius: 1rem;
+        border-radius: 2rem;
+    }
+    .bannerInicioTres p {
+        padding: 0rem 1rem;
     }
     /** Se modifican el tamaño de las letras en las promociones */
     .promo .promo1 h2 {
@@ -1095,6 +1103,7 @@ footer > p {
         width: 9rem;
         height: 9rem;
         font-size: 6rem;
+        margin-bottom: 2rem;
     }
     /*TODO --- MAIN --- ACTIVIDADES --- */
     /** Se quita el Sub-Menu (Por el momento) */
@@ -1150,7 +1159,6 @@ footer > p {
     }
     /** Se modifica la separacion entre elementos para tener una mejor visualizacion. */
     .bannerGaleria {
-        gap: 0rem;
         padding: 4rem 0rem;
     }
     .gridGaleria img:hover{
@@ -1160,14 +1168,12 @@ footer > p {
     }
     /*TODO --- MAIN --- STAFF --- */
     /* Modificacion de la separacion entre los elementos y reduccion del contenedor RETRATO. */
-    .bannerStaff {
-        gap: 6rem;
-        padding: 4rem 0rem;
-    }
     .retrato {
         width: 30rem;
         height: 51rem;
+        margin-left: 2rem;
     }
+    
     /*TODO --- MAIN --- CONTACTO --- */
     /** GRIDS "CONTACTO" */ 
     .gridContacto { /* Se modifia el Grid principal, en este caso se deja una disposicion en columnas. */
