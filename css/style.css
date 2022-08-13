@@ -69,6 +69,9 @@ h3 {
 .tamaño {
     font-size: 2rem;
 }
+.padding {
+    padding-bottom: 5rem;
+}
 /*TODO --- HEADER --- */
 header {
     width: 100%;
@@ -880,7 +883,7 @@ footer > p {
         grid-template-rows: auto;
         align-items: center;
         align-content: space-around;
-        grid-gap: 4rem;
+        grid-gap: 0rem;
     }
     /** Reduccion del padding en Abono */
     .bannerInicioTres p {
@@ -1065,7 +1068,7 @@ footer > p {
         grid-template-rows: auto;
         align-items: center;
         align-content: space-around; 
-        grid-gap: 4rem;
+        grid-gap: 0rem;
     }
     /** Aca se modifica el tamaño del banner que contiene a ABONO */
     .bannerInicioTres {
