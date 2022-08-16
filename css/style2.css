@@ -40,7 +40,7 @@ header {
     color: white;
 }
 .logoPrincipal {
-    width: 270px;
+    width: 70px;
 }
 /** Banner que se usa en todas las paginas */
 .bannerTotal {
@@ -52,35 +52,23 @@ header {
     margin-top: 5rem;
 }
 /*TODO --- MAIN --- INICIO --- */
-/** Carrusel de imagenes de la pagina Index - Seccion 1*/
-.bannerInicioCarrusel1 {
+/** Carrusel principal - Seccion 1 */
+.imgCarrusel{
     width: 100%;
-    height: 92vh;
-    background-image: url(../img/banner1.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-top: 5rem;
-} 
-.bannerInicioCarrusel2 {
-    width: 100%;
-    height: 92vh;
-    background-image: url(../img/foto-galeria5.png);
-    background-size: cover;
-    background-position: center;
-    margin-top: 5rem;
-} 
-.bannerInicioCarrusel3 {
-    width: 100%;
-    height: 92vh;
-    background-image: url(../img/foto-galeria1.png);
-    background-size: cover;
-    background-position: center;
-    margin-top: 5rem;
-} 
-/** Tamaño de los logos en Abono -Seccion 2 */
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+.logoCarrusel{
+    height: 12rem;
+    position: relative;
+    top: 15rem;
+    animation: zoomInDown 2s; /* Animacion para el logo en el carrusel */
+}
+/** Tamaño de los logos en Abono - Seccion 2 */
 .logos {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
 }
 /** Carrusel de promos - Seccion 2 */
 .bannerPromoCarrusel1 {
@@ -123,6 +111,8 @@ header {
 /** Se le declara una altura a las imagenes */
 .bannerActividades img {
     height: 30rem;
+    object-fit: cover;
+    object-position: center;
 }
 /** Background que tiene cada actividad */
 .backgroundExterno {
@@ -184,6 +174,7 @@ header {
 }
 .gridGaleria img:hover{
     transform: translateY(-0.3rem) scale(1.05);
+    transition: 0.2s;
     z-index: 2;
 }
 /*TODO --- MAIN --- STAFF --- */
