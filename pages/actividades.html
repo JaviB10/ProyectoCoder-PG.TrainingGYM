@@ -3,414 +3,534 @@
 <html>
 
     <head>
-
         <title> PG Training | Actividades </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../img/logo-redondo.png" type="image/x-icon">
         <link rel="icon" href="../img/logo-redondo.png" type="image/x-icon">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style2.css">
     </head>
 
-    <body class="flexColumna">
-
+    <body>
         <header>
-            
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-
-                <i class="fas fa-bars"></i>
-
-            </label>
-            <a href="../index.html"><img class="margenLogoPrincipal" src="../img/logo-pgtraining.png" alt="Logo PG Training"></a>
-            <nav class="margenNav">
-
-                <ul class="flexFila">
-                    
-                    <li><a href="../index.html" class="btn-neon">
-                        <span id="span1"></span>
-                        <span id="span2"></span>
-                        <span id="span3"></span>
-                        <span id="span4"></span>
-                        INICIO</a>
-                    </li>
-                    <li><a href="../pages/actividades.html" class="btn-neon">
-                        <span id="span1"></span>
-                        <span id="span2"></span>
-                        <span id="span3"></span>
-                        <span id="span4"></span>ACTIVIDADES</a>
-                        <ul class="submenu">
-                            <li><a href="#act1">FUNCIONAL MUJERES</a></li>
-                            <li><a href="#act2" >FUNCIONAL MIXTO</a></li>
-                            <li><a href="#act3">CROSSFIT</a></li>
-                            <li><a href="#act4">MUSCULACION</a></li>
-                            <li><a href="#act5">PREP. FISICA DEP.</a></li>
-                            <li><a href="#act6">SPINNING</a></li>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="logoPrincipal" src="../img/logo-pgtraining.png" alt="Logo PG Training"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link btn-neon" href="../index.html">
+                                    <span id="span1"></span>
+                                    <span id="span2"></span>
+                                    <span id="span3"></span>
+                                    <span id="span4"></span>
+                                    INICIO
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle btn-neon" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                    <span id="span1"></span>
+                                    <span id="span2"></span>
+                                    <span id="span3"></span>
+                                    <span id="span4"></span>
+                                    ACTIVIDADES
+                                </a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li><a class="dropdown-item" href="#act1">FUNCIONAL MUJERES</a></li>
+                                    <li><a class="dropdown-item" href="#act2">FUNCIONAL MIXTO</a></li>
+                                    <li><a class="dropdown-item" href="#act3">CROSSFIT</a></li>
+                                    <li><a class="dropdown-item" href="#act4">MUSCULACION</a></li>
+                                    <li><a class="dropdown-item" href="#act5">PREP. FISICA DEPORTIVA</a></li>
+                                    <li><a class="dropdown-item" href="#act6">SPINNING</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-neon" href="../pages/galeria.html">
+                                    <span id="span1"></span>
+                                    <span id="span2"></span>
+                                    <span id="span3"></span>
+                                    <span id="span4"></span>
+                                    GALERIA
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-neon" href="../pages/staff.html">
+                                    <span id="span1"></span>
+                                    <span id="span2"></span>
+                                    <span id="span3"></span>
+                                    <span id="span4"></span>
+                                    STAFF
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-neon" href="../pages/contacto.html">
+                                    <span id="span1"></span>
+                                    <span id="span2"></span>
+                                    <span id="span3"></span>
+                                    <span id="span4"></span>
+                                    CONTACTO
+                                </a>
+                            </li>
                         </ul>
-                    </li>
-                    <li><a href="../pages/galeria.html" class="btn-neon">
-                        <span id="span1"></span>
-                        <span id="span2"></span>
-                        <span id="span3"></span>
-                        <span id="span4"></span>GALERIA</a>
-                    </li>
-                    <li><a href="../pages/staff.html" class="btn-neon">
-                        <span id="span1"></span>
-                        <span id="span2"></span>
-                        <span id="span3"></span>
-                        <span id="span4"></span>STAFF</a>
-                    </li>
-                    <li><a href="../pages/contacto.html" class="btn-neon">
-                        <span id="span1"></span>
-                        <span id="span2"></span>
-                        <span id="span3"></span>
-                        <span id="span4"></span>CONTACTO</a>
-                    </li>
-
-                </ul>
-                
+                    </div>
+                </div>
             </nav>
-
         </header>
 
-        <main class="flexColumnaAct bannerActividades">
+        <main class="bannerTotal bannerActividades">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-center">
+                    <section class="col-9 my-5 backgroundExterno rounded-4" id="act1">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <article class="col-12 backgroundInterno mt-3 py-3 text-white">
+                                    <h2 class="colorAmarrillo text-center text-lg-start"> FUNCIONAL MUJERES </h2>
+                                </article>
+                                <section class="col-12 col-lg-7 my-3">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/funcional-mujeres.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/funcional-mujeres2.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/funcional-mujeres3.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/funcional-mujeres4.jpeg" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <section class="col-12 col-lg-5 m-0 p-0">
+                                    <div class="container-fluid text-white">
+                                        <div class="row backgroundInterno mb-3">
+                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                                <p> Óptimiza el rendimiento muscular a través de la creación y reproducción de ejercicios basados en gestos de la vida cotidiana y la práctica deportiva. </p>
+                                            </article>
+                                            <article class="col-12 py-lg-5 text-left">
+                                                <ul class="fontA">
 
-            <section class="bannerActividadInternos gridsAct" id="act1">
+                                                    <li> Fortalecimiento de la musculatura de forma global. </li>
+                                                    <li> Aumenta la flexibilidad y la agilidad. </li>
+                                                    <li> Mejora la postura corporal. </li>
+                                                    <li> Mitigan el dolor de espalda. </li>
+                                                    <li> Elimina grasa corporal. </li>
+                                                    <li> Aumenta la autoestima. </li>
+                                                    <li> Optimiza el rendimiento deportivo. </li>
+                                                    <li> Más salud y bienestar general. </li>
+                        
+                                                </ul>
+                                            </article>
+                                            <article class="col-12">
+                                                <h3> HORARIOS </h3>
+                                                <p> Lunes a Viernes: 09:00hs | 15:30hs | 16:30hs </p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-9 backgroundExterno rounded-4 my-5" id="act2">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <article class="col-12 backgroundInterno mt-3 py-3 text-white">
+                                    <h2 class="colorAmarrillo text-center text-lg-start"> FUNCIONAL MIXTO </h2>
+                                </article>
+                                <section class="col-12 col-lg-7 my-3">
+                                    <div id="carouselExampleIndicators-2" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/funcional-mixto.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/funcional-mixto2.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/funcional-mixto3.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/funcional-mixto4.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <section class="col-12 col-lg-5 m-0 p-0">
+                                    <div class="container-fluid text-white">
+                                        <div class="row backgroundInterno mb-3">
+                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                                <p> Óptimiza el rendimiento muscular a través de la creación y reproducción de ejercicios basados en gestos de la vida cotidiana y la práctica deportiva. </p>
+                                            </article>
+                                            <article class="col-12 py-lg-5 text-left">
+                                                <ul class="fontA">
 
-                <h2 class="titulo" id="cambioTamaño"> FUNCIONAL MUJERES </h2>
-                
-                <div class="contenedor">
+                                                    <li> Fortalecimiento de la musculatura de forma global. </li>
+                                                    <li> Aumenta la flexibilidad y la agilidad. </li>
+                                                    <li> Mejora la postura corporal. </li>
+                                                    <li> Mitigan el dolor de espalda. </li>
+                                                    <li> Elimina grasa corporal. </li>
+                                                    <li> Aumenta la autoestima. </li>
+                                                    <li> Optimiza el rendimiento deportivo. </li>
+                                                    <li> Más salud y bienestar general. </li>
+                        
+                                                </ul>
+                                            </article>
+                                            <article class="col-12">
+                                                <h3> HORARIOS </h3>
+                                                <p> Lunes a Viernes: 08:00hs | 09:00hs | 10:00hs | 18:30hs | 19:30hs </p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-9 backgroundExterno rounded-4 my-5" id="act3">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <article class="col-12 backgroundInterno mt-3 py-3 text-white">
+                                    <h2 class="colorAmarrillo text-center text-lg-start"> CROSSFIT </h2>
+                                </article>
+                                <section class="col-12 col-lg-7 my-3">
+                                    <div id="carouselExampleIndicators-3" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/crossfit.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/crossfit2.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/crossfit3.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/crossfit4.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-3" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-3" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <section class="col-12 col-lg-5 m-0 p-0">
+                                    <div class="container-fluid text-white">
+                                        <div class="row backgroundInterno mb-3">
+                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                                <p> Consigue una mayor fuerza y resistencia mediante un entrenamiento intenso el cual  haga que mejores varios aspectos de tu cuerpo. </p>
+                                            </article>
+                                            <article class="col-12 text-left">
+                                                <h3> PARA LA SALUD FÍSICA </h3>
+                                                <ul class="fontA">
 
-                    <ul>
+                                                    <li> Ayuda a bajar peso. </li>
+                                                    <li> Aumenta tu resistencia. </li>
+                                                    <li> Mejora la Psicomotricidad. </li>
+                                                    <li> Fortalece la musculatura. </li>
+                                                    <li> Un cuerpo más estilizado. </li>
 
-                        <li><img src="../img/funcional-mujeres.png" alt="Mujeres entrenando"></li>
-                        <li><img src="../img/funcional-mujeres2.jpg" alt="Mujeres entrenando"></li>
-                        <li><img src="../img/funcional-mujeres3.jpg" alt="Mujeres entrenando"></li>
-                        <li><img src="../img/funcional-mujeres4.jpeg" alt="Mujeres entrenando"></li>
+                                                </ul>
+                                                <h3> PARA LA MENTE </h3>
+                                                <ul class="fontA">
 
-                    </ul>
+                                                    <li> Aporta concentración y motivación extra. </li>
+                                                    <li> Reduce el nivel de estrés. </li>
+                                                    <li> Aumenta las relaciones sociales. </li>
+                                                    <li> Trabajo en equipo. </li>
+                                                    <li> Mayor Autoconfianza. </li>
 
+                                                </ul>
+                                            </article>
+                                            <article class="col-12">
+                                                <h3> HORARIOS </h3>
+                                                <p> Lunes a Viernes: 17:30hs | 20:30hs </p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-9 backgroundExterno rounded-4 my-5" id="act4">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <article class="col-12 backgroundInterno mt-3 py-3 text-white">
+                                    <h2 class="colorAmarrillo text-center text-lg-start"> MUSCULACION </h2>
+                                </article>
+                                <section class="col-12 col-lg-7 my-3">
+                                    <div id="carouselExampleIndicators-4" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/musculacion.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/musculacion2.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/musculacion3.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/musculacion4.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-4" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-4" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <section class="col-12 col-lg-5 m-0 p-0">
+                                    <div class="container-fluid text-white">
+                                        <div class="row backgroundInterno mb-3">
+                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                                <p> Entrena y pone en forma todos los grupos musculares. Sentite mejor con tu aspecto fisico. Gana mucha fuerza y condición. </p>
+                                            </article>
+                                            <article class="col-12 py-lg-5 my-lg-5 text-left">
+                                                <ul class="fontA">
+
+                                                    <li> Mayor masa muscular. </li>
+                                                    <li> Huesos más fuertes. </li>
+                                                    <li> Flexibilidad de las articulaciones. </li>
+                                                    <li> Control del peso corporal. </li>
+                                                    <li> Mejora el equilibrio. </li>
+                        
+                                                </ul>
+                                            </article>
+                                            <article class="col-12">
+                                                <h3> HORARIOS </h3>
+                                                <p> Lunes a Viernes: 08:00hs | 09:00hs | 10:00hs | 18:30hs | 19:30hs | 20:30hs </p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-9 backgroundExterno rounded-4 my-5" id="act5">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <article class="col-12 backgroundInterno mt-3 py-3 text-white">
+                                    <h2 class="colorAmarrillo text-center text-lg-start"> PREP. FISICA DEPORTIVA </h2>
+                                </article>
+                                <section class="col-12 col-lg-7 my-3">
+                                    <div id="carouselExampleIndicators-5" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/futbol.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/futbol2.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/futbol3.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/futbol4.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-5" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-5" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <section class="col-12 col-lg-5 m-0 p-0">
+                                    <div class="container-fluid text-white">
+                                        <div class="row backgroundInterno mb-3">
+                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                                <p> Mejora tu coordinacion mediante entrenamientos basados en el futbol, gana una mayor resistencia y fuerza muscular. </p>
+                                            </article>
+                                            <article class="col-12 py-lg-5 text-left">
+                                                <ul class="fontA">
+
+                                                    <li> Mejora la capacidad aeróbica. </li>
+                                                    <li> Mejora la salud cardiovascular. </li>
+                                                    <li> Reduce la grasa corporal y mejora el tono muscular. </li>
+                                                    <li> Construye la fuerza muscular. </li>
+                                                    <li> Aumenta la fuerza de los huesos. </li>
+                                                    <li> Enseña coordinación. </li>
+                                                    <li> Promueve el trabajo en equipo y el compartir. </li>
+                                                    <li> Aumenta la función cognitiva del cerebro. </li>
+                                                    <li> Aumenta la confianza y la autoestima, y ayuda a reducir la ansiedad. </li>
+                        
+                                                </ul>
+                                            </article>
+                                            <article class="col-12">
+                                                <h3> HORARIOS </h3>
+                                                <p> Lunes, Miercoles y Viernes: 15:15hs | 19:30hs </p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-9 backgroundExterno rounded-4 my-5" id="act6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <article class="col-12 backgroundInterno mt-3 py-3 text-white">
+                                    <h2 class="colorAmarrillo text-center text-lg-start"> SPINNING </h2>
+                                </article>
+                                <section class="col-12 col-lg-7 my-3">
+                                    <div id="carouselExampleIndicators-6" class="carousel slide" data-bs-ride="true">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/spinning.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/spinning2.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/spinning3.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/spinning4.jpg" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators-6" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators-6" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </section>
+                                <section class="col-12 col-lg-5 m-0 p-0">
+                                    <div class="container-fluid text-white">
+                                        <div class="row backgroundInterno mb-3">
+                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                                <p> Mejora el sistema cardiovascular y pulmonar, disminuye la grasa corporal, quemando muchas calorías.  </p>
+                                            </article>
+                                            <article class="col-12 py-lg-5 text-left">
+                                                <ul class="fontA">
+
+                                                    <li> Favorecer la pérdida de peso o el mantenimiento del mismo. </li>
+                                                    <li> Mejorar el metabolismo. </li>
+                                                    <li> Fomentar la tonificación muscular en general.</li>
+                                                    <li> Ayudar a mantener sanas las articulaciones. </li>
+                                                    <li> Mejorar la salud cardiovascular. </li>
+                                                    <li> Impulsar la resistencia cardiorrespiratoria. </li>
+                                                    <li> Fortalecer el sistema inmunitario. </li>
+                                                    <li> Ayudar a cuidar el suelo pélvico, al no haber impacto. </li>
+                        
+                                                </ul>
+                                            </article>
+                                            <article class="col-12">
+                                                <h3> HORARIOS </h3>
+                                                <p> Martes y Jueves: 16:30hs </p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <article class="informacion flexInformacion">
-
-                    <div>
-
-                        <p class="tamañoAct"> Óptimiza el rendimiento muscular a través de la creación y reproducción de ejercicios basados en gestos de la vida cotidiana y la práctica deportiva. </p>
-
-                    </div>
-                    <div>
-
-                        <ul class="liInternosAct">
-
-                            <li> Fortalecimiento de la musculatura de forma global. </li>
-                            <li> Aumenta la flexibilidad y la agilidad. </li>
-                            <li> Mejora la postura corporal. </li>
-                            <li> Mitigan el dolor de espalda. </li>
-                            <li> Elimina grasa corporal. </li>
-                            <li> Aumenta la autoestima. </li>
-                            <li> Optimiza el rendimiento deportivo. </li>
-                            <li> Más salud y bienestar general. </li>
-
-                        </ul>
-
-                    </div>
-                    <div>
-
-                        <h3> HORARIOS </h3>
-                        <p> Lunes a Viernes: 09:00hs | 15:30hs | 16:30hs </p>
-
-                    </div>
-
-                </article>
-
-            </section>
-            
-            <section class="bannerActividadInternos gridsAct" id="act2">
-
-                <h2 class="titulo"> FUNCIONAL MIXTO </h2>
-                <div class="contenedor">
-
-                    <ul>
-
-                        <li><img src="../img/funcional-mixto.png" alt="Grupo de personas entrenando"></li>
-                        <li><img src="../img/funcional-mixto2.jpg" alt="Grupo de personas entrenando"></li>
-                        <li><img src="../img/funcional-mixto3.jpg" alt="Grupo de personas entrenando"></li>
-                        <li><img src="../img/funcional-mixto4.jpg" alt="Grupo de personas entrenando"></li>
-
-                    </ul>
-
-                </div>
-                <article class="informacion flexInformacion">
-
-                    <div>
-
-                        <p> Óptimiza el rendimiento muscular a través de la creación y reproducción de ejercicios basados en gestos de la vida cotidiana y la práctica deportiva. </p>
-
-                    </div>
-                    <div>
-
-                        <ul class="liInternosAct">
-
-                            <li> Fortalecimiento de la musculatura de forma global. </li>
-                            <li> Aumenta la flexibilidad y la agilidad. </li>
-                            <li> Mejora la postura corporal. </li>
-                            <li> Mitigan el dolor de espalda. </li>
-                            <li> Elimina grasa corporal. </li>
-                            <li> Aumenta la autoestima. </li>
-                            <li> Optimiza el rendimiento deportivo. </li>
-                            <li> Más salud y bienestar general. </li>
-
-                        </ul>
-
-                    </div>
-                    <div>
-
-                        <h3> HORARIOS </h3>
-                        <p> Lunes a Viernes: 08:00hs | 09:00hs | 10:00hs | 18:30hs | 19:30hs </p>
-
-                    </div>
-
-                </article>
-
-            </section>
-            
-            <section class="bannerActividadInternos gridsAct"  id="act3"> 
-
-                <h2 class="titulo"> CROSSFIT </h2>
-                <div class="contenedor">
-
-                    <ul>
-
-                        <li><img src="../img/crossfit.png" alt="Grupo de personas entrenando crossfit"></li>
-                        <li><img src="../img/crossfit2.jpg" alt="Grupo de personas entrenando crossfit"></li>
-                        <li><img src="../img/crossfit3.jpg" alt="Grupo de personas entrenando crossfit"></li>
-                        <li><img src="../img/crossfit4.jpg" alt="Grupo de personas entrenando crossfit"></li>
-
-                    </ul>
-
-                </div>
-                <article class="informacion flexInformacion">
-
-                    <div>
-
-                        <p> Consigue una mayor fuerza y resistencia mediante un entrenamiento intenso el cual  haga que mejores varios aspectos de tu cuerpo. </p>
-
-                    </div>
-                    <div>
-
-                        <h3> PARA LA SALUD FÍSICA </h3>
-                        <ul class="liInternosAct">
-
-                            <li> Ayuda a bajar peso. </li>
-                            <li> Aumenta tu resistencia. </li>
-                            <li> Mejora la Psicomotricidad. </li>
-                            <li> Fortalece la musculatura. </li>
-                            <li> Un cuerpo más estilizado. </li>
-
-                        </ul>
-
-                    </div>
-                    <div>
-
-                        <h3> PARA LA MENTE </h3>
-                        <ul class="liInternosAct">
-
-                            <li> Aporta concentración y motivación extra. </li>
-                            <li> Reduce el nivel de estrés. </li>
-                            <li> Aumenta las relaciones sociales. </li>
-                            <li> Trabajo en equipo. </li>
-                            <li> Mayor Autoconfianza. </li>
-
-                        </ul>
-
-                    </div>
-                    <div>
-
-                        <h3> HORARIOS </h3>
-                        <p> Lunes a Viernes: 17:30hs | 20:30hs </p>
-
-                    </div>   
-
-                </article>
-
-            </section>
-            
-            <section class="bannerActividadInternos gridsAct" id="act4">
-
-                <h2 class="titulo"> MUSCULACION </h2>
-                <div class="contenedor">
-
-                    <ul>
-
-                        <li><img src="../img/musculacion.png" alt="Grupo de personas entrenando musculacion"></li>
-                        <li><img src="../img/musculacion2.jpg" alt="Grupo de personas entrenando musculacion"></li>
-                        <li><img src="../img/musculacion3.jpg" alt="Grupo de personas entrenando musculacion"></li>
-                        <li><img src="../img/musculacion4.jpg" alt="Grupo de personas entrenando musculacion"></li>
-
-                    </ul>
-
-                </div>
-                <article class="informacion flexInformacion">
-
-                    <div>
-
-                        <p> Entrena y pone en forma todos los grupos musculares. Sentite mejor con tu aspecto fisico. Gana mucha fuerza y condición. </p>
-
-                    </div>
-                    <div>
-
-                        <ul class="liInternosAct">
-
-                            <li> Mayor masa muscular. </li>
-                            <li> Huesos más fuertes. </li>
-                            <li> Flexibilidad de las articulaciones. </li>
-                            <li> Control del peso corporal. </li>
-                            <li> Mejora el equilibrio. </li>
-
-                        </ul>
-
-                    </div>
-                    <div>
-
-                        <h3> HORARIOS </h3>
-                        <p> Lunes a Viernes: 08:00hs | 09:00hs | 10:00hs | 18:30hs | 19:30hs | 20:30hs </p>
-
-                    </div>
-                </article>
-
-            </section>
-            
-            <section class="bannerActividadInternos gridsAct" id="act5">
-
-                <h2 class="titulo" id="cambioTamaño"> PREP. FISICA DEPORTIVA </h2>
-                <div class="contenedor">
-
-                    <ul>
-
-                        <li><img src="../img/futbol.png" alt="Equipo entrenando futbol"></li>
-                        <li><img src="../img/futbol2.jpg" alt="Equipo entrenando futbol"></li>
-                        <li><img src="../img/futbol3.jpg" alt="Equipo entrenando futbol"></li>
-                        <li><img src="../img/futbol4.jpg" alt="Equipo entrenando futbol"></li>
-
-                    </ul>
-
-                </div>
-                <article class="informacion flexInformacion">
-
-                    <div>
-
-                        <p> Mejora tu coordinacion mediante entrenamientos basados en el futbol, gana una mayor resistencia y fuerza muscular. </p>
-
-                    </div>
-                    <div>
-
-                        <ul class="liInternosAct">
-
-                            <li> Mejora la capacidad aeróbica. </li>
-                            <li> Mejora la salud cardiovascular. </li>
-                            <li> Reduce la grasa corporal y mejora el tono muscular. </li>
-                            <li> Construye la fuerza muscular. </li>
-                            <li> Aumenta la fuerza de los huesos. </li>
-                            <li> Enseña coordinación. </li>
-                            <li> Promueve el trabajo en equipo y el compartir. </li>
-                            <li> Aumenta la función cognitiva del cerebro. </li>
-                            <li> Aumenta la confianza y la autoestima, y ayuda a reducir la ansiedad. </li>
-
-                        </ul>
-
-                    </div>
-                    <div>
-
-                        <h3> HORARIOS </h3>
-                        <p> Lunes, Miercoles y Viernes: 15:15hs | 19:30hs </p>
-
-                    </div>
-
-                </article>
-
-            </section>
-    
-            <section class="bannerActividadInternos gridsAct" id="act6">
-
-                <h2 class="titulo"> SPINNING </h2>
-                <div class="contenedor">
-                    
-                    <ul>
-
-                        <li><img src="../img/spinning.png" alt="Mujeres realizando spinning"></li>
-                        <li><img src="../img/spinning2.jpg" alt="Mujeres realizando spinning"></li>
-                        <li><img src="../img/spinning3.jpg" alt="Mujeres realizando spinning"></li>
-                        <li><img src="../img/spinning4.jpg" alt="Mujeres realizando spinning"></li>
-
-                    </ul>
-
-                </div>
-                <article class="informacion flexInformacion">
-
-                    <div>
-
-                        <p> Mejora el sistema cardiovascular y pulmonar, disminuye la grasa corporal, quemando muchas calorías.  </p>
-
-                    </div>
-                    <div>
-
-                        <ul class="liInternosAct">
-
-                            <li> Favorecer la pérdida de peso o el mantenimiento del mismo. </li>
-                            <li> Mejorar el metabolismo. </li>
-                            <li> Fomentar la tonificación muscular en general.</li>
-                            <li> Ayudar a mantener sanas las articulaciones. </li>
-                            <li> Mejorar la salud cardiovascular. </li>
-                            <li> Impulsar la resistencia cardiorrespiratoria. </li>
-                            <li> Fortalecer el sistema inmunitario. </li>
-                            <li> Ayudar a cuidar el suelo pélvico, al no haber impacto. </li>
-
-                        </ul>
-
-                    </div>
-                    <div>
-
-                        <h3> HORARIOS </h3>
-                        <p> Martes y Jueves: 16:30hs </p>
-
-                    </div>
-
-                </article>
-
-            </section>
-            
+            </div> 
         </main>
 
-        <footer class="bannerFooter flexFooter">
-
-            <section class="flexFooter">
-
-                <img src="../img/logo2-pgtraining.png"  alt="Logo PG Training 2">
-                <article>
-                    
-                    <h2 class="tamaño color"> DIRECCION </h2>
-                    <p class="color"> Av. Provincias Unidas 2379 <br> Rosario (S2000) Santa Fe, Argentina. </p>
-
-                </article>
-                <article>
-
-                    <h2 class="tamaño color"> CONTACTO </h2>
-                    <p class="color"> Email: info@pgtraining.com.ar <br> Teléfono: +54 (341) 000 0000 </p>
-
-                </article>
-                <article>
-
-                    <h2 class="tamaño color"> HORARIOS </h2>
-                    <p class="color"> Lunes a Viernes: 08:00 a 21:00 hs. <br> Sábados: 10:00 a 12:00 hs.</p>
-
-                </article>
-                
-            </section>
-            <p class="color"> PG Training (c) 2022 | Todos los derechos reservado <br> Desarrollado por Ballón Javier </p>
-            
+        <footer class="container-fluid">
+            <div class="row d-flex flex-wrap text-white">
+                <div class="col-12 col-md-3">
+                    <a href="/" class="d-flex align-items-center justify-content-center mb-3 link-dark text-decoration-none">
+                        <img src="../img/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG Training 2">
+                    </a>
+                    <p class="text-white fontDerechos text-center">&copy; 2022 PG Training <br> Todos los derechos reservado <br> Desarrollado por Ballón Javier</p>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>DIRECCION</h3>
+                    <div class="nav flex-column">
+                        <p class="color"> Av. Provincias Unidas 2379 <br> Rosario (S2000) Santa Fe, Argentina. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>CONTACTO</h3>
+                    <div class="nav flex-column">
+                        <p  class="color"> Email: info@pgtraining.com.ar <br> Teléfono: +54 (341) 000 0000 </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>HORARIOS</h3>
+                    <div class="nav flex-column">
+                        <p class="color"> Lunes a Viernes: 08:00 a 21:00 hs. <br> Sábados: 10:00 a 12:00 hs.</p>
+                    </div>
+                </div>
+            </div>
         </footer>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
 </html>
