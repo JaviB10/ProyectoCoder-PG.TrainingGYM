@@ -102,9 +102,7 @@ header {
     height: 130px;
     color: white;
     background-color: black;
-    font-size: 80px;
-    text-decoration: none;
-    box-shadow: 1rem 1rem 0.5rem 0rem rgba(255, 255, 255, 0.1);
+    font-size: 85px;
     transition: 0.2s;
 }
 /*TODO --- MAIN --- ACTIVIDADES --- */
@@ -180,13 +178,7 @@ header {
 /*TODO --- MAIN --- STAFF --- */
 /** Banner que tiene cada miembro del staff */
 .retrato {
-    height: 45rem;
     background-image: url(../img/banner9.jpg);
-    border-radius: 2rem;
-}
-/** Se le declara una ancho a las imagenes */
-.retrato img {
-    width: 75%;
 }
 /*TODO --- MAIN --- CONTACTO --- */
 /** Banner que contiene al form */
@@ -328,4 +320,5 @@ footer {
         grid-gap: 5px;
         grid-template-columns: repeat(3,1fr);
     }
+    
 }
