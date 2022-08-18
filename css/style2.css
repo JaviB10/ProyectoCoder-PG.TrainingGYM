@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-around;
 }
-/** Estilos de letras, tamaños, color */
+/** Estilos de letras */
 h1,h2,h3,a {
     font-family: 'Graduate', 'cursive';
 }
@@ -22,22 +22,15 @@ p {
 .colorAmarrillo{
     color: #FCD201;
 }
-.color{
-    color: white;
-}
 .fontA {
     font-family: 'Montserrat', sans-serif;
 }
 /*TODO --- HEADER --- */
-/** Se aplica una poscion al header */
+/** Se aplica una posicion al header */
 header {
     position: sticky;
     top: 0px;
     z-index: 3;
-}
-/** Modificacion del color de las letras del submenu */
-.dropdown-menu li a {
-    color: white;
 }
 .logoPrincipal {
     width: 70px;
@@ -52,6 +45,7 @@ header {
     margin-top: 5rem;
 }
 /*TODO --- MAIN --- INICIO --- */
+/*? Seccion 1 /
 /** Carrusel principal - Seccion 1 */
 .imgCarrusel{
     width: 100%;
@@ -65,12 +59,13 @@ header {
     top: 15rem;
     animation: zoomInDown 2s; /* Animacion para el logo en el carrusel */
 }
-/** Tamaño de los logos en Abono - Seccion 2 */
+/*? Seccion 2 /
+/** Tamaño de los logos en Abono */
 .logos {
     width: 130px;
     height: 130px;
 }
-/** Carrusel de promos - Seccion 2 */
+/** Carrusel de promociones */
 .bannerPromoCarrusel1 {
     width: 100%;
     height: 50vh;
@@ -85,7 +80,7 @@ header {
     background-size: cover;
     background-position: center;
 } 
-/** Banner que tendra la seccion localizacion - Seccion 2 */
+/** Banner que tendra la seccion localizacion */
 .bannerLocalizacion {
     width: 100%;
     background-image: url(../img/banner2.jpg);
@@ -106,6 +101,10 @@ header {
     transition: 0.2s;
 }
 /*TODO --- MAIN --- ACTIVIDADES --- */
+/** Modificacion del color de las letras del submenu */
+.dropdown-menu li a {
+    color: white;
+}
 /** Se le declara una altura a las imagenes */
 .bannerActividades img {
     height: 30rem;
@@ -181,7 +180,7 @@ header {
     background-image: url(../img/banner9.jpg);
 }
 /*TODO --- MAIN --- CONTACTO --- */
-/** Banner que contiene al form */
+/** Background que contiene al form */
 .backgroundForm {
     background: rgb(0, 0, 0, 0.5);
     box-shadow: 0 0 50px 0 rgba(255, 255, 255, .6);
@@ -195,7 +194,11 @@ footer {
 .fontDerechos {
     font-size: 12px;
 }
+/*TODO --- RESPONSIVE DESIGN --- */
+/*? Responsive -- Desktop -- */
 @media only screen and (min-width: 1024px) {
+    /*TODO --- HEADER --- */
+    /** Efecto neon al posicionarse sobre el menu */
     .btn-neon{
         position: relative;
         display: inline-block;
@@ -262,7 +265,7 @@ footer {
         transition: 0.5s;
         transition-delay: 0.25s;
     }
-    /** Efectos en el submenu de la pagina Actividades */
+    /** Efectos neo al posicionarse sobre el submenu de Actividades */
     .dropdown ul li:hover .dropdown-menu{
         visibility: visible;
         opacity: 1;
@@ -272,6 +275,7 @@ footer {
         box-shadow: 0 0 0.1rem #FCD201, 0 0 0.4rem #FCD201, 0 0 0.8rem #FCD201;
         color: black;
     }
+    /*TODO --- MAIN --- INICIO --- */
     /** Estilos en los logos de las redes que tendra solo Desktop*/
     .redes2:hover a{
         filter: blur(0.2rem);
@@ -288,6 +292,7 @@ footer {
         transform: rotateY(360deg);
     }
 }
+/*? Responsive -- Tablet -- */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
     /*TODO --- MAIN --- GALERIA --- */
     /** GRIDS "GALERIA" */ 
@@ -301,8 +306,10 @@ footer {
         grid-template-columns: repeat(4,1fr);
     }
 }
+/*? Responsive -- Smartphone -- */
 @media only screen and (max-width: 599px) {
-    /** Se le declara una altura a las imagenes */
+    /*TODO --- MAIN --- ACTIVIDADES --- */
+    /** Se le declara una altura a las imagenes del carrusel */
     .bannerActividades img {
         height: 20rem;
     }
@@ -320,5 +327,4 @@ footer {
         grid-gap: 5px;
         grid-template-columns: repeat(3,1fr);
     }
-    
 }
