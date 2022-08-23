@@ -1,0 +1,262 @@
+@import "fuentes";
+@import "mixins";
+@import "colores";
+/*? Varible que contiene 1rem, se podra utilizar para darle tamaño a lo que sea */
+$spacer: 1rem;
+/*! - ESTILOS GENERALES - */
+/** CSS Valores por defecto */
+* {
+    margin: 0;
+    padding: 0;
+}
+.row {
+    align-items: center;
+    justify-content: space-around;
+}
+/** Fuentes para las letras */
+@for $var from 1 through 3 {
+    h#{$var} {
+        font-family: $titulos;
+    }
+}
+p {
+    font-family: $parrafos;
+}
+/*TODO --- HEADER --- */
+/** Se aplica una posicion estatica al header, se le declara un tamaño fijo al logo y se le define tanto colo como fuente a las letras dentro del nav */
+header {
+    @include posicion (sticky, inline-block);
+    top: 0px;
+    z-index: 3;
+    img {
+        @include anchura(70px, none);
+        margin-left: calc($spacer * 0.5);
+    }
+    a {
+        color: $blanco;
+        font-family: $titulos;
+    }
+}
+/** Se le modifica el color al sub-menu y se le aplica un color a las letras dentro del mismo */
+.dropdown-menu {
+    background-color: $negro;
+    li a {
+        color: $blanco;
+    }    
+}
+/*TODO --- MAIN --- INICIO --- */
+/*? Seccion 1 /
+/** Carrusel principal */
+.imgCarrusel {
+    @include anchura(100%, 100vh);
+    @include object(cover, center);
+}
+.logoCarrusel {
+    @include anchura(none, 12rem);
+    @include posicion(relative, inline-block);
+    @include spanes(15rem, 0, 0, 0); 
+    animation: zoomInDown 2s; /* Animacion para el logo en el carrusel */
+}
+.carousel-caption h1 {
+    color: $amarillo;
+} 
+/*? Seccion 2 /
+/** Banner que se le aplicara a todas las paginas, se incluye un color blanco para todas las letras (color estandar) */
+.bannerPrincipal {
+    @include anchura(100%, none);
+    background-image: url(../img/banner5.jpg);
+    @include background(cover, center, fixed);
+    color: $blanco;
+}
+/** Mismo banner anterior pero con un margen superior */
+.bannerPrincipal2 {
+    @extend .bannerPrincipal;
+    margin-top: calc($spacer * 4);
+}
+/** Declaracion de tamaño para los logos, bordes y margenes */
+.logos {
+    @include anchura(130px, 130px);
+    border-radius: calc($spacer * 1.5);
+    margin: calc($spacer * 1);
+}
+/** Se aplica un pequeño banner a la seccion de localizacion asi como tambien un tamaño fijo al mapa */
+.bannerLocalizacion {
+    @include anchura(100%, none);
+    background-image: url(../img/banner2.jpg);
+    @include background(cover, center, fixed);
+    h2 {
+        padding-top: calc($spacer * 1.5);
+    }
+    iframe {
+        @include anchura(100%, 350px);
+    }
+}
+/** Banner que se aplicara para las promociones las cuales estaran dentro de un carrusel */
+.bannerPromoCarrusel {
+    @include anchura(100%, 50vh);
+    background-image: url(../img/promo.jpg);
+    @include background(cover, center, none);
+}
+/** Mismas especificaciones que antes pero con la modificacion del banner para la segunda promocion */
+.bannerPromoCarrusel2 {
+    @extend .bannerPromoCarrusel;
+    background-image: url(../img/promo2.jpg);
+}
+/** Se aplica un color a los titulos de las promociones */
+.promo{
+    h2 {
+        color: $amarillo;
+    }
+}
+/** Especificaciones para la seccion que contendra a las redes sociales, en la misma se aplica una posicion mediante FLEX, asi como tambien a los respectivos logos */
+.redesSociales {
+    h2 {
+        padding-top: calc($spacer * 3);
+    }
+    div {
+        @include flex(flex, nowrap);
+        @include alineacion (center, none, center, none);
+        padding-top: $spacer;
+        padding-bottom: calc($spacer * 3);
+        div {
+            @include flex(flex, wrap);
+            @include alineacion (center, none, center, none);
+            padding-bottom: calc($spacer * 3);
+        }
+    } 
+    a {
+        @include anchura(130px, 130px);
+        font-size: 80px;
+        color: $blanco;
+        background-color: $negro;
+        border-radius: calc($spacer * 2);
+        margin: calc($spacer * 1.5);
+        transition: 0.2s;
+    }
+} 
+/*TODO --- MAIN --- ACTIVIDADES --- */
+/** Se aplica una alineacion a los elementos y se le declara un tamaño a las imagenes */
+.actividades {
+    div div {
+        @include alineacion (center, none, center, none);
+    }
+    img {
+        @include anchura(100%, 30rem);
+        @include object(cover, center);
+    }
+}
+/** Se crea una clase para los backgrounds que contendran a cada actividad */
+.bgExterno {
+    background-color: $negro;
+    border-radius: calc($spacer * 1);
+    .bgInterno {
+        background-color: $amarillo;
+        color: $negro;
+        ul {
+            font-family: $parrafos;
+        }
+    }
+}
+/*TODO --- MAIN --- GALERIA --- */
+.galeria {
+    h2 {
+        color: $amarillo;
+    }
+}
+/** GRIDS "GALERIA" - Tamaño de las imangenes con su transformacion y transicion mediante :HOVER */
+.gridGaleria {
+    display: grid;
+    grid-template-areas: 
+    "img9 img9 img8 img2 img2"
+    "img9 img9 img6 img6 img6"
+    "img3 img4 img6 img6 img6"
+    "img3 img4 img6 img6 img6"
+    "img3 img5 img1 img1 img1"
+    "img7 img7 img1 img1 img1";
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 150px;
+    padding: 40px 100px;
+    justify-content: center;
+    grid-gap: 10px;
+    img {
+        @include object(cover, center);
+        @include anchura(100%, 100%);
+        border-radius: calc($spacer * 2);
+        &:hover {
+            transform: translateY(-0.3rem) scale(1.05);
+            transition: 0.2s;
+            z-index: 2;
+        }
+    }
+}
+/** GRIDS Areas*/
+@for $var from 1 through 9 {
+    .img#{$var} {
+        grid-area: img#{$var};
+    }
+}
+/*TODO --- MAIN --- STAFF --- */
+/** Se declara una posicion wrap para los retratos de los disntintos profesores */
+.staff {
+    div div {
+        @include flex (flex, wrap);
+        article h2 {
+            color: $amarillo;
+        }
+    }
+} 
+/** Especificaciones del retrato que contendra a cada profesor, incluyendo alineaciones y posiciones */
+.retrato {
+    background-image: url(../img/banner9.jpg);
+    border-radius: calc($spacer * 1.5);
+    @include flex (flex, nowrap);
+    flex-direction: column;
+    @include alineacion (none, none, center, none);
+    h2 {
+        color: $blanco;
+    }
+    p {
+        color: $blanco;
+    }
+}
+/*TODO --- MAIN --- CONTACTO --- */
+/** Se le aplica colores a las diferentes tipografias, se especifica una posicion y alineacion dentro de la seccion que contendra al FORM asi como tambien un background que lo contendra para darle estilo */
+.contacto {
+    h2{
+        color: $amarillo;
+    }
+    p {
+        color: $blanco;
+    }
+    label {
+        color: $negro
+    }
+    section {
+        @include flex (flex, nowrap);
+        @include alineacion (center, none, none ,none);
+    }
+    .backgroundForm {
+        background: rgb(0, 0, 0, 0.5);
+        box-shadow: 0 0 50px 0 rgba(255, 255, 255, .6);
+        border-radius: calc($spacer * 1);
+        @include anchura(75%, none);
+    }
+}
+/*TODO --- FOOTER --- */
+/** Se aplica un banner - Se declaran posiciones mediante FLEX y alineaciones - Se modifica el tamaño del ultimo parrafo */
+footer {
+    background-image: url(../img/banner4.jpg);
+    > div {
+        @include flex (flex, wrap);
+        color: $blanco;
+        div a {
+            @include flex (flex, wrap);
+            @include alineacion (center, none, center, none);
+            margin-bottom: $spacer;
+        }
+        > p {
+            font-size: 12px;
+        }
+    }
+}
+@import "responsive";

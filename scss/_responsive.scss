@@ -1,0 +1,122 @@
+/*TODO --- RESPONSIVE DESIGN --- */
+/*? Responsive -- Desktop -- */
+@media only screen and (min-width: 1024px){
+    /*TODO --- HEADER --- */
+    /** Efecto neon al posicionarse sobre el menu */
+    .btn-neon{
+        @include posicion (relative, inline-block);
+        padding: 10px;
+        color: $blanco;
+        letter-spacing: 2px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.2s;
+        &:hover{
+            background: $amarillo;
+            box-shadow: 0 0 1px $amarillo, 0 0 4px $amarillo, 0 0 8px $amarillo;
+            transition-delay: 0.5s;
+            color: $negro;
+        }
+        span{
+            @include posicion (absolute, block);
+        }
+        #span1{
+            @include spanes(0px, -100%, none, none);
+            @include anchura(100%, 2px);
+            background: linear-gradient(90deg, transparent, $amarillo);
+        }
+        &:hover #span1{
+            left: 100%;
+            transition: 0.5s;
+        }
+        #span3{
+            @include spanes(none, none, -100%, 0px);
+            @include anchura(100%, 2px);
+            background: linear-gradient(270deg, transparent, $amarillo);
+        }
+        &:hover #span3{
+            right: 100%;
+            transition: 0.5s;
+        } 
+        #span2{
+            @include spanes(-100%, none, 0px, none);
+            @include anchura(2px, 100%);
+            background: linear-gradient(180deg, transparent, $amarillo);
+        }  
+        &:hover #span2{
+            top: 100%;
+            transition: 0.5s;
+            transition-delay: 0.25s;
+        } 
+        #span4{
+            @include spanes(none, 0px, none, -100%);
+            @include anchura(2px, 100%);
+            background: linear-gradient(360deg, transparent, $amarillo);
+        } 
+        &:hover #span4{
+            bottom: 100%;
+            transition: 0.5s;
+            transition-delay: 0.25s;
+        } 
+    } 
+    /** Efectos neo al posicionarse sobre el submenu de Actividades */
+    .dropdown-menu li:hover a{
+        background: $amarillo;
+        box-shadow: 0 0 0.1rem $amarillo, 0 0 0.4rem $amarillo, 0 0 0.8rem $amarillo;
+        color: $negro;
+    }
+    /*TODO --- MAIN --- INICIO --- */
+    /** Estilos en los logos de las redes que tendra solo Desktop*/
+    .redesSociales div div {
+        &:hover a {
+            filter: blur(0.2rem);
+            &:hover {
+                transform:  translateY(-0.3rem) scale(1.05);
+                box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+                filter: none;
+                color: $negro;
+                background-color: $amarillo;
+            }
+            &:hover i {
+                transition: all 0.7s;
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}
+/*? Responsive -- Tablet -- */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    /*TODO --- MAIN --- GALERIA --- */
+    /** GRIDS "GALERIA" */ 
+    .gridGaleria{ /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
+        display: grid;
+        grid-template-areas: 
+        "img1 img2 img7 img7"
+        "img6 img6 img3 img3"
+        "img5 img4 img3 img3"
+        "img9 img9 img9 img8";
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+/*? Responsive -- Smartphone -- */
+@media only screen and (max-width: 599px) {
+    /*TODO --- MAIN --- ACTIVIDADES --- */
+    /** Se le declara una altura a las imagenes del carrusel */
+    .actividades img {
+        @include anchura(none, 20rem);
+    }
+    /*TODO --- MAIN --- GALERIA --- */
+    /** GRIDS "GALERIA" */ 
+    .gridGaleria{ /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
+        display: grid;
+        grid-template-areas: 
+        "img1 img2 img5"
+        "img6 img6 img3"
+        "img8 img7 img3"
+        "img4 img9 img9";
+        padding: 40px 10px;
+        grid-auto-rows: 100px;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

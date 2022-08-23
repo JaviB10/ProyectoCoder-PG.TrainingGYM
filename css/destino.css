@@ -1,0 +1,496 @@
+@charset "UTF-8";
+/*? Variables con las fuentes principales para el sitio */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+/*! MIXINS */
+/** Mixin para declarar "widht" y "height" */
+/** Mixin para posicionar elementos */
+/** Mixin para estilos dentro del background */
+/** Mixin para objetar imagenes */
+/** Mixin para declarar una posicion mediante FLEX */
+/** Mixin para declarar una posicion */
+/** Mixin para declarar una alineacion */
+/*? Variables con los colores principales dentro del sitio */
+/*? Varible que contiene 1rem, se podra utilizar para darle tamaño a lo que sea */
+/*! - ESTILOS GENERALES - */
+/** CSS Valores por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  align-items: center;
+  justify-content: space-around;
+}
+
+/** Fuentes para las letras */
+h1 {
+  font-family: "Graduate", "cursive";
+}
+
+h2 {
+  font-family: "Graduate", "cursive";
+}
+
+h3 {
+  font-family: "Graduate", "cursive";
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*TODO --- HEADER --- */
+/** Se aplica una posicion estatica al header, se le declara un tamaño fijo al logo y se le define tanto colo como fuente a las letras dentro del nav */
+header {
+  position: sticky;
+  display: inline-block;
+  top: 0px;
+  z-index: 3;
+}
+header img {
+  width: 70px;
+  height: none;
+  margin-left: 0.5rem;
+}
+header a {
+  color: #fff;
+  font-family: "Graduate", "cursive";
+}
+
+/** Se le modifica el color al sub-menu y se le aplica un color a las letras dentro del mismo */
+.dropdown-menu {
+  background-color: #000;
+}
+.dropdown-menu li a {
+  color: #fff;
+}
+
+/*TODO --- MAIN --- INICIO --- */
+/*? Seccion 1 /
+/** Carrusel principal */
+.imgCarrusel {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logoCarrusel {
+  width: none;
+  height: 12rem;
+  position: relative;
+  display: inline-block;
+  top: 15rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: zoomInDown 2s; /* Animacion para el logo en el carrusel */
+}
+
+.carousel-caption h1 {
+  color: #fcd201;
+}
+
+/*? Seccion 2 /
+/** Banner que se le aplicara a todas las paginas, se incluye un color blanco para todas las letras (color estandar) */
+.bannerPrincipal, .bannerPrincipal2 {
+  width: 100%;
+  height: none;
+  background-image: url(../img/banner5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/** Mismo banner anterior pero con un margen superior */
+.bannerPrincipal2 {
+  margin-top: 4rem;
+}
+
+/** Declaracion de tamaño para los logos, bordes y margenes */
+.logos {
+  width: 130px;
+  height: 130px;
+  border-radius: 1.5rem;
+  margin: 1rem;
+}
+
+/** Se aplica un pequeño banner a la seccion de localizacion asi como tambien un tamaño fijo al mapa */
+.bannerLocalizacion {
+  width: 100%;
+  height: none;
+  background-image: url(../img/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.bannerLocalizacion h2 {
+  padding-top: 1.5rem;
+}
+.bannerLocalizacion iframe {
+  width: 100%;
+  height: 350px;
+}
+
+/** Banner que se aplicara para las promociones las cuales estaran dentro de un carrusel */
+.bannerPromoCarrusel, .bannerPromoCarrusel2 {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/promo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: none;
+}
+
+/** Mismas especificaciones que antes pero con la modificacion del banner para la segunda promocion */
+.bannerPromoCarrusel2 {
+  background-image: url(../img/promo2.jpg);
+}
+
+/** Se aplica un color a los titulos de las promociones */
+.promo h2 {
+  color: #fcd201;
+}
+
+/** Especificaciones para la seccion que contendra a las redes sociales, en la misma se aplica una posicion mediante FLEX, asi como tambien a los respectivos logos */
+.redesSociales h2 {
+  padding-top: 3rem;
+}
+.redesSociales div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-items: none;
+  align-items: center;
+  align-content: none;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.redesSociales div div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: none;
+  align-items: center;
+  align-content: none;
+  padding-bottom: 3rem;
+}
+.redesSociales a {
+  width: 130px;
+  height: 130px;
+  font-size: 80px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 2rem;
+  margin: 1.5rem;
+  transition: 0.2s;
+}
+
+/*TODO --- MAIN --- ACTIVIDADES --- */
+/** Se aplica una alineacion a los elementos y se le declara un tamaño a las imagenes */
+.actividades div div {
+  justify-content: center;
+  justify-items: none;
+  align-items: center;
+  align-content: none;
+}
+.actividades img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+/** Se crea una clase para los backgrounds que contendran a cada actividad */
+.bgExterno {
+  background-color: #000;
+  border-radius: 1rem;
+}
+.bgExterno .bgInterno {
+  background-color: #fcd201;
+  color: #000;
+}
+.bgExterno .bgInterno ul {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*TODO --- MAIN --- GALERIA --- */
+.galeria h2 {
+  color: #fcd201;
+}
+
+/** GRIDS "GALERIA" - Tamaño de las imangenes con su transformacion y transicion mediante :HOVER */
+.gridGaleria {
+  display: grid;
+  grid-template-areas: "img9 img9 img8 img2 img2" "img9 img9 img6 img6 img6" "img3 img4 img6 img6 img6" "img3 img4 img6 img6 img6" "img3 img5 img1 img1 img1" "img7 img7 img1 img1 img1";
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 150px;
+  padding: 40px 100px;
+  justify-content: center;
+  grid-gap: 10px;
+}
+.gridGaleria img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+.gridGaleria img:hover {
+  transform: translateY(-0.3rem) scale(1.05);
+  transition: 0.2s;
+  z-index: 2;
+}
+
+/** GRIDS Areas*/
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.img5 {
+  grid-area: img5;
+}
+
+.img6 {
+  grid-area: img6;
+}
+
+.img7 {
+  grid-area: img7;
+}
+
+.img8 {
+  grid-area: img8;
+}
+
+.img9 {
+  grid-area: img9;
+}
+
+/*TODO --- MAIN --- STAFF --- */
+/** Se declara una posicion wrap para los retratos de los disntintos profesores */
+.staff div div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.staff div div article h2 {
+  color: #fcd201;
+}
+
+/** Especificaciones del retrato que contendra a cada profesor, incluyendo alineaciones y posiciones */
+.retrato {
+  background-image: url(../img/banner9.jpg);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: none;
+  justify-items: none;
+  align-items: center;
+  align-content: none;
+}
+.retrato h2 {
+  color: #fff;
+}
+.retrato p {
+  color: #fff;
+}
+
+/*TODO --- MAIN --- CONTACTO --- */
+/** Se le aplica colores a las diferentes tipografias, se especifica una posicion y alineacion dentro de la seccion que contendra al FORM asi como tambien un background que lo contendra para darle estilo */
+.contacto h2 {
+  color: #fcd201;
+}
+.contacto p {
+  color: #fff;
+}
+.contacto label {
+  color: #000;
+}
+.contacto section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  justify-items: none;
+  align-items: none;
+  align-content: none;
+}
+.contacto .backgroundForm {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  width: 75%;
+  height: none;
+}
+
+/*TODO --- FOOTER --- */
+/** Se aplica un banner - Se declaran posiciones mediante FLEX y alineaciones - Se modifica el tamaño del ultimo parrafo */
+footer {
+  background-image: url(../img/banner4.jpg);
+}
+footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+footer > div div a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: none;
+  align-items: center;
+  align-content: none;
+  margin-bottom: 1rem;
+}
+footer > div > p {
+  font-size: 12px;
+}
+
+/*TODO --- RESPONSIVE DESIGN --- */
+/*? Responsive -- Desktop -- */
+@media only screen and (min-width: 1024px) {
+  /*TODO --- HEADER --- */
+  /** Efecto neon al posicionarse sobre el menu */
+  .btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .btn-neon:hover {
+    background: #fcd201;
+    box-shadow: 0 0 1px #fcd201, 0 0 4px #fcd201, 0 0 8px #fcd201;
+    transition-delay: 0.5s;
+    color: #000;
+  }
+  .btn-neon span {
+    position: absolute;
+    display: block;
+  }
+  .btn-neon #span1 {
+    top: 0px;
+    left: -100%;
+    right: none;
+    bottom: none;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fcd201);
+  }
+  .btn-neon:hover #span1 {
+    left: 100%;
+    transition: 0.5s;
+  }
+  .btn-neon #span3 {
+    top: none;
+    left: none;
+    right: -100%;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fcd201);
+  }
+  .btn-neon:hover #span3 {
+    right: 100%;
+    transition: 0.5s;
+  }
+  .btn-neon #span2 {
+    top: -100%;
+    left: none;
+    right: 0px;
+    bottom: none;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fcd201);
+  }
+  .btn-neon:hover #span2 {
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  .btn-neon #span4 {
+    top: none;
+    left: 0px;
+    right: none;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fcd201);
+  }
+  .btn-neon:hover #span4 {
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  /** Efectos neo al posicionarse sobre el submenu de Actividades */
+  .dropdown-menu li:hover a {
+    background: #fcd201;
+    box-shadow: 0 0 0.1rem #fcd201, 0 0 0.4rem #fcd201, 0 0 0.8rem #fcd201;
+    color: #000;
+  }
+  /*TODO --- MAIN --- INICIO --- */
+  /** Estilos en los logos de las redes que tendra solo Desktop*/
+  .redesSociales div div:hover a {
+    filter: blur(0.2rem);
+  }
+  .redesSociales div div:hover a:hover {
+    transform: translateY(-0.3rem) scale(1.05);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+    filter: none;
+    color: #000;
+    background-color: #fcd201;
+  }
+  .redesSociales div div:hover a:hover i {
+    transition: all 0.7s;
+    transform: rotateY(360deg);
+  }
+}
+/*? Responsive -- Tablet -- */
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /*TODO --- MAIN --- GALERIA --- */
+  /** GRIDS "GALERIA" */
+  .gridGaleria { /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
+    display: grid;
+    grid-template-areas: "img1 img2 img7 img7" "img6 img6 img3 img3" "img5 img4 img3 img3" "img9 img9 img9 img8";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*? Responsive -- Smartphone -- */
+@media only screen and (max-width: 599px) {
+  /*TODO --- MAIN --- ACTIVIDADES --- */
+  /** Se le declara una altura a las imagenes del carrusel */
+  .actividades img {
+    width: none;
+    height: 20rem;
+  }
+  /*TODO --- MAIN --- GALERIA --- */
+  /** GRIDS "GALERIA" */
+  .gridGaleria { /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
+    display: grid;
+    grid-template-areas: "img1 img2 img5" "img6 img6 img3" "img8 img7 img3" "img4 img9 img9";
+    padding: 40px 10px;
+    grid-auto-rows: 100px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */

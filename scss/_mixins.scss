@@ -1,0 +1,41 @@
+/*! MIXINS */
+/** Mixin para declarar "widht" y "height" */
+@mixin anchura ($width, $height) {
+    width: $width;
+    height: $height;
+}
+/** Mixin para posicionar elementos */
+@mixin spanes ($top, $left, $right, $bottom) {
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+/** Mixin para estilos dentro del background */
+@mixin background ($size, $position, $attachment) {
+    background-size: $size;
+    background-position: $position;
+    background-attachment: $attachment;
+}
+/** Mixin para objetar imagenes */
+@mixin object ($fit, $position) {
+    object-fit: $fit;
+    object-position: $position;
+}
+/** Mixin para declarar una posicion mediante FLEX */
+@mixin flex ($display, $wrap) {
+    display: $display;
+    flex-wrap: $wrap;
+}
+/** Mixin para declarar una posicion */
+@mixin posicion ($position, $display) {
+    position: $position;
+    display: $display;
+}
+/** Mixin para declarar una alineacion */
+@mixin alineacion ($justifyC, $justifyI, $alignI, $alignC) {
+    justify-content: $justifyC;
+    justify-items: $justifyI;
+    align-items: $alignI;
+    align-content: $alignC;
+}

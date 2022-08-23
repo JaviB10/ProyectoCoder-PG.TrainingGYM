@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+/*! - ESTILOS GENERALES - */
+/** CSS Valores por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  font-family: "Graduate", "cursive";
+}
+
+h2 {
+  font-family: "Graduate", "cursive";
+}
+
+h3 {
+  font-family: "Graduate", "cursive";
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+header img {
+  width: 70px;
+  margin-left: 0.5rem;
+}
+header a {
+  color: #fff;
+  font-family: "Graduate", "cursive";
+}
+
+@media only screen and (min-width: 1024px) {
+  .btn-neon {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  .btn-neon :hover {
+    background: #fcd201;
+    box-shadow: 0 0 1px #fcd201, 0 0 4px #fcd201, 0 0 8px #fcd201;
+    transition-delay: 0.5s;
+    color: #000;
+  }
+  .btn-neon span {
+    position: absolute;
+    display: block;
+  }
+  #span1 {
+    top: 0px;
+    left: -100%;
+    right: none;
+    bottom: none;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fcd201);
+  }
+  .btn-neon:hover #span1 {
+    left: 100%;
+    transition: 0.5s;
+  }
+  #span3 {
+    top: none;
+    left: none;
+    right: -100%;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fcd201);
+  }
+  .btn-neon:hover #span3 {
+    right: 100%;
+    transition: 0.5s;
+  }
+  #span2 {
+    top: -100%;
+    left: none;
+    right: 0px;
+    bottom: none;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fcd201);
+  }
+  .btn-neon:hover #span2 {
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  #span4 {
+    top: none;
+    left: 0px;
+    right: none;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fcd201);
+  }
+  .btn-neon:hover #span4 {
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  /** Efectos neo al posicionarse sobre el submenu de Actividades */
+  .dropdown ul li:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  .dropdown ul li:hover .dropdown-menu li:hover a {
+    background: #fcd201;
+    box-shadow: 0 0 0.1rem #fcd201, 0 0 0.4rem #fcd201, 0 0 0.8rem #fcd201;
+    color: #000;
+  }
+}
+.bannerPrincipal, .bannerPrincipal2 {
+  width: 100%;
+  background-image: url(../img/banner5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bannerPrincipal2 {
+  margin-top: 9rem;
+}
+
+.logos {
+  width: 130px;
+  height: 130px;
+}
+
+.bannerPromoCarrusel, .bannerPromoCarrusel2 {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/promo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: none;
+}
+.bannerPromoCarrusel article h2, .bannerPromoCarrusel2 article h2 {
+  color: #fcd201;
+}
+.bannerPromoCarrusel article p, .bannerPromoCarrusel2 article p {
+  color: #fff;
+}
+
+.bannerPromoCarrusel2 {
+  background-image: url(../img/promo2.jpg);
+}
+
+.bannerLocalizacion {
+  width: 100%;
+  background-image: url(../img/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.bannerLocalizacion iframe {
+  height: 350px;
+}
+
+.redes2 a {
+  width: 130px;
+  height: 130px;
+  font-size: 85px;
+  color: #fff;
+  background-color: #000;
+  transition: 0.2s;
+}
+.redes2 a :hover {
+  transform: translateY(-0.3rem) scale(1.05);
+  box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  color: #000;
+  background-color: #fcd201;
+}
+.redes2 a :hover i {
+  transition: all 0.7s;
+  transform: rotateY(360deg);
+}/*# sourceMappingURL=origen.css.map */
