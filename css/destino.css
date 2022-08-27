@@ -79,7 +79,7 @@ header a {
 
 .logoCarrusel {
   width: none;
-  height: 12rem;
+  height: 20vh;
   position: relative;
   display: inline-block;
   top: 15rem;
@@ -89,7 +89,7 @@ header a {
   animation: zoomInDown 2s; /* Animacion para el logo en el carrusel */
 }
 
-.carousel-caption h1 {
+body h1, h2 {
   color: #fcd201;
 }
 
@@ -98,7 +98,7 @@ header a {
 .bannerPrincipal, .bannerPrincipal2 {
   width: 100%;
   height: none;
-  background-image: url(../img/banner5.jpg);
+  background-image: url(../img/banner/banner-main.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -118,11 +118,22 @@ header a {
   margin: 1rem;
 }
 
+.descripcion a p {
+  position: relative;
+  top: none;
+  left: none;
+  right: none;
+  bottom: 1rem;
+  font-size: 11px;
+  color: #000;
+  font-family: "Graduate", "cursive";
+}
+
 /** Se aplica un pequeño banner a la seccion de localizacion asi como tambien un tamaño fijo al mapa */
 .bannerLocalizacion {
   width: 100%;
   height: none;
-  background-image: url(../img/banner2.jpg);
+  background-image: url(../img/banner/banner-localizacion.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -138,8 +149,8 @@ header a {
 /** Banner que se aplicara para las promociones las cuales estaran dentro de un carrusel */
 .bannerPromoCarrusel, .bannerPromoCarrusel2 {
   width: 100%;
-  height: 50vh;
-  background-image: url(../img/promo.jpg);
+  height: 30rem;
+  background-image: url(../img/promociones/promo1.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: none;
@@ -147,7 +158,7 @@ header a {
 
 /** Mismas especificaciones que antes pero con la modificacion del banner para la segunda promocion */
 .bannerPromoCarrusel2 {
-  background-image: url(../img/promo2.jpg);
+  background-image: url(../img/promociones/promo2.jpg);
 }
 
 /** Se aplica un color a los titulos de las promociones */
@@ -191,17 +202,14 @@ header a {
 
 /*TODO --- MAIN --- ACTIVIDADES --- */
 /** Se aplica una alineacion a los elementos y se le declara un tamaño a las imagenes */
-.actividades div div {
-  justify-content: center;
-  justify-items: none;
-  align-items: center;
-  align-content: none;
-}
 .actividades img {
   width: 100%;
   height: 30rem;
   object-fit: cover;
   object-position: center;
+}
+.actividades h2 {
+  color: #000;
 }
 
 /** Se crea una clase para los backgrounds que contendran a cada actividad */
@@ -218,10 +226,6 @@ header a {
 }
 
 /*TODO --- MAIN --- GALERIA --- */
-.galeria h2 {
-  color: #fcd201;
-}
-
 /** GRIDS "GALERIA" - Tamaño de las imangenes con su transformacion y transicion mediante :HOVER */
 .gridGaleria {
   display: grid;
@@ -284,38 +288,23 @@ header a {
 
 /*TODO --- MAIN --- STAFF --- */
 /** Se declara una posicion wrap para los retratos de los disntintos profesores */
-.staff div div {
+.staff section section {
   display: flex;
   flex-wrap: wrap;
-}
-.staff div div article h2 {
-  color: #fcd201;
-}
-
-/** Especificaciones del retrato que contendra a cada profesor, incluyendo alineaciones y posiciones */
-.retrato {
-  background-image: url(../img/banner9.jpg);
-  border-radius: 1.5rem;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: none;
+  justify-content: space-around;
   justify-items: none;
   align-items: center;
   align-content: none;
 }
-.retrato h2 {
-  color: #fff;
+.staff .bgInterno {
+  border-radius: 1rem;
 }
-.retrato p {
-  color: #fff;
+.staff img {
+  border-radius: 1rem;
 }
 
 /*TODO --- MAIN --- CONTACTO --- */
 /** Se le aplica colores a las diferentes tipografias, se especifica una posicion y alineacion dentro de la seccion que contendra al FORM asi como tambien un background que lo contendra para darle estilo */
-.contacto h2 {
-  color: #fcd201;
-}
 .contacto p {
   color: #fff;
 }
@@ -341,14 +330,14 @@ header a {
 /*TODO --- FOOTER --- */
 /** Se aplica un banner - Se declaran posiciones mediante FLEX y alineaciones - Se modifica el tamaño del ultimo parrafo */
 footer {
-  background-image: url(../img/banner4.jpg);
+  background-image: url(../img/banner/banner-footer.jpg);
 }
-footer > div {
+footer > section {
   display: flex;
   flex-wrap: wrap;
   color: #fff;
 }
-footer > div div a {
+footer > section div a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -357,7 +346,7 @@ footer > div div a {
   align-content: none;
   margin-bottom: 1rem;
 }
-footer > div > p {
+footer > section > p {
   font-size: 12px;
 }
 
@@ -465,8 +454,48 @@ footer > div > p {
 }
 /*? Responsive -- Tablet -- */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /** Se implementa un media query donde se quita el logo en orientacion landscape */
+  /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a tablet */
+  /** Modificacion en el color de la descripcion de los logos */
   /*TODO --- MAIN --- GALERIA --- */
   /** GRIDS "GALERIA" */
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) and (orientation: landscape) {
+  .logoCarrusel {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .bannerPrincipal, .bannerPrincipal2 {
+    background-image: url(../img/banner/banner-main-tablet.jpg);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .bannerLocalizacion {
+    background-image: url(../img/banner/banner-localizacion-tablet.jpg);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .bannerPromoCarrusel, .bannerPromoCarrusel2 {
+    background-image: url(../img/promociones/promo1-tablet.jpg);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .bannerPromoCarrusel2 {
+    background-image: url(../img/promociones/promo2-tablet.jpg);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  footer {
+    background-image: url(../img/banner/banner-footer-tablet.jpg);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .descripcion a p {
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
   .gridGaleria { /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
     display: grid;
     grid-template-areas: "img1 img2 img7 img7" "img6 img6 img3 img3" "img5 img4 img3 img3" "img9 img9 img9 img8";
@@ -475,14 +504,73 @@ footer > div > p {
 }
 /*? Responsive -- Smartphone -- */
 @media only screen and (max-width: 599px) {
+  /** Se reduce el tamaño de las letras para una mejor visualizacion en smartphones */
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  /** Se modifica el TOP del logo */
+  .logoCarrusel {
+    top: 11rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  /** Se implementa un media query donde se quita el logo en orientacion landscape */
+  /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a smartphone */
+  /** Modificacion en el color de la descripcion de los logos */
   /*TODO --- MAIN --- ACTIVIDADES --- */
   /** Se le declara una altura a las imagenes del carrusel */
+  /*TODO --- MAIN --- GALERIA --- */
+  /** GRIDS "GALERIA" */
+}
+@media only screen and (max-width: 599px) and (orientation: landscape) {
+  .logoCarrusel {
+    display: none;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .bannerPrincipal, .bannerPrincipal2 {
+    background-image: url(../img/banner/banner-main-smartphone.jpg);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .bannerLocalizacion {
+    background-image: url(../img/banner/banner-localizacion-smartphone.jpg);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .bannerPromoCarrusel, .bannerPromoCarrusel2 {
+    background-image: url(../img/promociones/promo1-smartphone.jpg);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .bannerPromoCarrusel2 {
+    background-image: url(../img/promociones/promo2-smartphone.jpg);
+  }
+}
+@media only screen and (max-width: 599px) {
+  footer {
+    background-image: url(../img/banner/banner-footer-smartphone.jpg);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .descripcion a p {
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 599px) {
   .actividades img {
     width: none;
     height: 20rem;
   }
-  /*TODO --- MAIN --- GALERIA --- */
-  /** GRIDS "GALERIA" */
+}
+@media only screen and (max-width: 599px) {
   .gridGaleria { /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
     display: grid;
     grid-template-areas: "img1 img2 img5" "img6 img6 img3" "img8 img7 img3" "img4 img9 img9";

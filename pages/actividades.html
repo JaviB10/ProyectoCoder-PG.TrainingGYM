@@ -6,8 +6,8 @@
 
         <title> PG Training | Actividades </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../img/logo-redondo.png" type="image/x-icon">
-        <link rel="icon" href="../img/logo-redondo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/logos/logo-redondo.png" type="image/x-icon">
+        <link rel="icon" href="../img/logos/logo-redondo.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/destino.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -16,13 +16,13 @@
 
     <body>
 
-        <header>
+        <header> <!-- Inicio del HEADER. -->
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top"> <!-- Navegacion que tendra el sitio. -->
 
                 <div class="container-fluid">
                     
-                    <a class="navbar-brand" href="../index.html"><img class="logoPrincipal" src="../img/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
+                    <a class="navbar-brand" href="../index.html"><img class="logoPrincipal" src="../img/logos/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         
                         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
 
                             <li class="nav-item active">
 
-                                <a class="nav-link btn-neon fw-bolder" href="../index.html">
+                                <a class="nav-link btn-neon fw-bolder" href="../index.html"> <!-- Se agrega una clase asi como cuatro span, los mismos conforman estilo al interactuar con los mismos. -->
 
                                     <span id="span1"></span>
                                     <span id="span2"></span>
@@ -56,7 +56,7 @@
                                     ACTIVIDADES
 
                                 </a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu"> <!-- Solo esta pagina contiene un submenu para navegar entre actividades. -->
 
                                     <li><a class="dropdown-item fw-bolder" href="#act1">FUNCIONAL MUJERES</a></li>
                                     <li><a class="dropdown-item fw-bolder" href="#act2">FUNCIONAL MIXTO</a></li>
@@ -114,28 +114,38 @@
 
                 </div>
 
-            </nav>
+            </nav> <!-- Finaliza la navegacion del sitio. -->
 
-        </header>
+        </header> <!-- Finalizacion del HEADER. -->
 
-        <main class="bannerPrincipal2 actividades">
+        <main class="bannerPrincipal2 actividades"> <!-- Inicio del MAIN. El mismo contiene un banner. -->
 
-            <div class="container-fluid">
+            <section class="container-fluid"> <!-- Dentro de esta seccion estaran contenidos todas las actividades. -->
 
                 <div class="row">
 
-                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act1">
+                    <article class="col-12 my-5 text-center">
+
+                        <h1 class="fw-bolder"> NUESTRO ESTABLECIMIENTO PROPORCIONA LAS SIGUIENTES ACTIVIDADES </h1>
+
+                    </article>
+
+                    <section class="col-9 bgExterno p-0 px-lg-3" id="act1"> <!-- Inicio de la primera actividad. -->
 
                         <div class="container-fluid">
 
                             <div class="row">
 
-                                <article class="col-12 bgInterno mt-3 py-3">
+                                <section class="col-12 bgInterno mt-3 py-3"> <!-- Esta primera sub seccion contendra el titulo de la actividad. -->
 
-                                    <h2 class="text-center text-lg-start fw-bold"> FUNCIONAL MUJERES </h2>
-
-                                </article>
-                                <section class="col-12 col-lg-7 my-3">
+                                    <article>
+                                    
+                                        <h2 class="text-center text-lg-start fw-bold"> FUNCIONAL MUJERES </h2>
+                                    
+                                    </article>
+                                    
+                                </section>
+                                <section class="col-12 col-lg-7 my-3"> <!-- Esta segunda sub seccion contendra un carrusel de imagenes sobre la actividad. -->
 
                                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 
@@ -151,22 +161,38 @@
 
                                             <div class="carousel-item active">
 
-                                                <img src="../img/funcional-mujeres.png" class="d-block" alt="Mujeres entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/funcional-mujeres-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/funcional-mujeres-tablet.jpg">
+                                                    <img src="../img/funcional-mujeres.jpg" class="d-block" alt="Mujeres entrenando">
+                                                </picture>
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/funcional-mujeres2-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/funcional-mujeres2-tablet.jpg">
+                                                    <img src="../img/funcional-mujeres2.jpg" class="d-block" alt="Mujeres entrenando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/funcional-mujeres2.jpg" class="d-block" alt="Mujeres entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/funcional-mujeres3-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/funcional-mujeres3-tablet.jpg">
+                                                    <img src="../img/funcional-mujeres3.jpg" class="d-block" alt="Mujeres entrenando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/funcional-mujeres3.jpg" class="d-block" alt="Mujeres entrenando">
-
-                                            </div>
-                                            <div class="carousel-item">
-
-                                                <img src="../img/funcional-mujeres4.jpeg" class="d-block" alt="Mujeres entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/funcional-mujeres4-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/funcional-mujeres4-tablet.jpg">
+                                                    <img src="../img/funcional-mujeres4.jpg" class="d-block" alt="Mujeres entrenando">
+                                                </picture>
 
                                             </div>
 
@@ -187,41 +213,29 @@
                                     </div>
 
                                 </section>
-                                <section class="col-12 col-lg-5 m-0 p-0">
+                                <section class="col-12 col-lg-5 m-0 p-0"> <!-- Esta tercera sub seccion contendra informacion sobre la actividad. -->
 
                                     <div class="container-fluid">
 
-                                        <div class="row bgInterno mb-3">
-
-                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                        <article class="row bgInterno mb-3">
                                                 
-                                                <p> Optimiza el rendimiento muscular a través de la creación y reproducción de ejercicios basados en gestos de la vida cotidiana y la práctica deportiva. </p>
-                                            
-                                            </article>
-                                            <article class="col-12 py-lg-5 text-left">
+                                            <p class="pt-3"> Optimiza el rendimiento muscular a través de la creación y reproducción de ejercicios basados en gestos de la vida cotidiana y la práctica deportiva. </p>
+                                            <ul class="ps-5 py-lg-5">
 
-                                                <ul>
-
-                                                    <li> Fortalecimiento de la musculatura de forma global. </li>
-                                                    <li> Aumenta la flexibilidad y la agilidad. </li>
-                                                    <li> Mejora la postura corporal. </li>
-                                                    <li> Mitigan el dolor de espalda. </li>
-                                                    <li> Elimina grasa corporal. </li>
-                                                    <li> Aumenta la autoestima. </li>
-                                                    <li> Optimiza el rendimiento deportivo. </li>
-                                                    <li> Más salud y bienestar general. </li>
+                                                <li> Fortalecimiento de la musculatura de forma global. </li>
+                                                <li> Aumenta la flexibilidad y la agilidad. </li>
+                                                <li> Mejora la postura corporal. </li>
+                                                <li> Mitigan el dolor de espalda. </li>
+                                                <li> Elimina grasa corporal. </li>
+                                                <li> Aumenta la autoestima. </li>
+                                                <li> Optimiza el rendimiento deportivo. </li>
+                                                <li> Más salud y bienestar general. </li>
                         
-                                                </ul>
+                                            </ul>
+                                            <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
+                                            <p class="text-center text-lg-start"> Lunes a Viernes: <br> 09:00hs | 15:30hs | 16:30hs </p>
 
-                                            </article>
-                                            <article class="col-12">
-
-                                                <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
-                                                <p class="text-center text-lg-start"> Lunes a Viernes: <br> 09:00hs | 15:30hs | 16:30hs </p>
-                                            
-                                            </article>
-
-                                        </div>
+                                        </article>
 
                                     </div>
 
@@ -231,19 +245,23 @@
 
                         </div>
 
-                    </section>
-                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act2">
+                    </section> <!-- Finalizacion de la primera actividad. -->
+                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act2"> <!-- Inicio de la segunda actividad. -->
 
                         <div class="container-fluid">
 
                             <div class="row">
 
-                                <article class="col-12 bgInterno mt-3 py-3">
+                                <section class="col-12 bgInterno mt-3 py-3"> <!-- Esta primera sub seccion contendra el titulo de la actividad. -->
 
-                                    <h2 class="text-center text-lg-start fw-bold"> FUNCIONAL MIXTO </h2>
+                                    <article>
+                                    
+                                        <h2 class="text-center text-lg-start fw-bold"> FUNCIONAL MIXTO </h2>
+                                    
+                                    </article>
 
-                                </article>
-                                <section class="col-12 col-lg-7 my-3">
+                                </section>
+                                <section class="col-12 col-lg-7 my-3"> <!-- Esta segunda sub seccion contendra un carrusel de imagenes sobre la actividad. -->
 
                                     <div id="carouselExampleIndicators-2" class="carousel slide" data-bs-ride="true">
 
@@ -258,23 +276,39 @@
                                         <div class="carousel-inner">
 
                                             <div class="carousel-item active">
-
-                                                <img src="../img/funcional-mixto.png" class="d-block" alt="Grupo de personas entrenando">
+                                                
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/funcional-mixto-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/funcional-mixto-tablet.jpg">
+                                                    <img src="../img/funcional-mixto.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                </picture>
+                                                
+                                            </div>
+                                            <div class="carousel-item">
+                                                
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/funcional-mixto2-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/funcional-mixto2-tablet.jpg">
+                                                    <img src="../img/funcional-mixto2.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/funcional-mixto2.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/funcional-mixto3-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/funcional-mixto3-tablet.jpg">
+                                                    <img src="../img/funcional-mixto3.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/funcional-mixto3.jpg" class="d-block" alt="Grupo de personas entrenando">
-
-                                            </div>
-                                            <div class="carousel-item">
-
-                                                <img src="../img/funcional-mixto4.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/funcional-mixto4-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/funcional-mixto4-tablet.jpg">
+                                                    <img src="../img/funcional-mixto4.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                </picture>
 
                                             </div>
 
@@ -295,41 +329,29 @@
                                     </div>
 
                                 </section>
-                                <section class="col-12 col-lg-5 m-0 p-0">
+                                <section class="col-12 col-lg-5 m-0 p-0"> <!-- Esta tercera sub seccion contendra informacion sobre la actividad. -->
 
                                     <div class="container-fluid">
 
-                                        <div class="row bgInterno mb-3">
+                                        <article class="row bgInterno mb-3">
 
-                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                            <p class="pt-3"> Optimiza el rendimiento muscular a través de la creación y reproducción de ejercicios basados en gestos de la vida cotidiana y la práctica deportiva. </p>
+                                            <ul class="ps-5 py-lg-5">
 
-                                                <p> Optimiza el rendimiento muscular a través de la creación y reproducción de ejercicios basados en gestos de la vida cotidiana y la práctica deportiva. </p>
-                                                
-                                            </article>
-                                            <article class="col-12 py-lg-5 text-left">
+                                                <li> Fortalecimiento de la musculatura de forma global. </li>
+                                                <li> Aumenta la flexibilidad y la agilidad. </li>
+                                                <li> Mejora la postura corporal. </li>
+                                                <li> Mitigan el dolor de espalda. </li>
+                                                <li> Elimina grasa corporal. </li>
+                                                <li> Aumenta la autoestima. </li>
+                                                <li> Optimiza el rendimiento deportivo. </li>
+                                                <li> Más salud y bienestar general. </li>
 
-                                                <ul>
+                                            </ul>
+                                            <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
+                                            <p class="text-center text-lg-start"> Lunes a Viernes: <br> 08:00hs | 09:00hs | 10:00hs | 18:30hs | 19:30hs </p>
 
-                                                    <li> Fortalecimiento de la musculatura de forma global. </li>
-                                                    <li> Aumenta la flexibilidad y la agilidad. </li>
-                                                    <li> Mejora la postura corporal. </li>
-                                                    <li> Mitigan el dolor de espalda. </li>
-                                                    <li> Elimina grasa corporal. </li>
-                                                    <li> Aumenta la autoestima. </li>
-                                                    <li> Optimiza el rendimiento deportivo. </li>
-                                                    <li> Más salud y bienestar general. </li>
-                        
-                                                </ul>
-
-                                            </article>
-                                            <article class="col-12">
-
-                                                <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
-                                                <p class="text-center text-lg-start"> Lunes a Viernes: <br> 08:00hs | 09:00hs | 10:00hs | 18:30hs | 19:30hs </p>
-
-                                            </article>
-
-                                        </div>
+                                        </article>
 
                                     </div>
 
@@ -339,19 +361,23 @@
 
                         </div>
 
-                    </section>
-                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act3">
+                    </section> <!-- Finalizacion de la segunda actividad. -->
+                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act3"> <!-- Inicio de la tercera actividad. -->
 
                         <div class="container-fluid">
 
                             <div class="row">
 
-                                <article class="col-12 bgInterno mt-3 py-3">
+                                <section class="col-12 bgInterno mt-3 py-3"> <!-- Esta primera sub seccion contendra el titulo de la actividad. -->
 
-                                    <h2 class="text-center text-lg-start fw-bold"> CROSSFIT </h2>
+                                    <article>
+                                    
+                                        <h2 class="text-center text-lg-start fw-bold"> CROSSFIT </h2>
+                                    
+                                    </article>
 
-                                </article>
-                                <section class="col-12 col-lg-7 my-3">
+                                </section>
+                                <section class="col-12 col-lg-7 my-3"> <!-- Esta segunda sub seccion contendra un carrusel de imagenes sobre la actividad. -->
 
                                     <div id="carouselExampleIndicators-3" class="carousel slide" data-bs-ride="true">
 
@@ -367,22 +393,39 @@
 
                                             <div class="carousel-item active">
 
-                                                <img src="../img/crossfit.png" class="d-block w-100" alt="Grupo de personas entrenando crossfit">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/crossfit-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/crossfit-tablet.jpg">
+                                                    <img src="../img/crossfit.jpg" class="d-block w-100" alt="Grupo de personas entrenando crossfit">
+                                                </picture>
+                                                
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/crossfit2.jpg" class="d-block w-100" alt="Grupo de personas entrenando crossfit">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/crossfit2-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/crossfit2-tablet.jpg">
+                                                    <img src="../img/crossfit2.jpg" class="d-block w-100" alt="Grupo de personas entrenando crossfit">
+                                                </picture>
+                                            
+                                            </div>
+                                            <div class="carousel-item">
+
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/crossfit3-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/crossfit3-tablet.jpg">
+                                                    <img src="../img/crossfit3.jpg" class="d-block w-100" alt="Grupo de personas entrenando crossfit">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/crossfit3.jpg" class="d-block w-100" alt="Grupo de personas entrenando crossfit">
-
-                                            </div>
-                                            <div class="carousel-item">
-
-                                                <img src="../img/crossfit4.jpg" class="d-block w-100" alt="Grupo de personas entrenando crossfit">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/crossfit4-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/crossfit4-tablet.jpg">
+                                                    <img src="../img/crossfit4.jpg" class="d-block w-100" alt="Grupo de personas entrenando crossfit">
+                                                </picture>
 
                                             </div>
 
@@ -403,49 +446,37 @@
                                     </div>
 
                                 </section>
-                                <section class="col-12 col-lg-5 m-0 p-0">
+                                <section class="col-12 col-lg-5 m-0 p-0"> <!-- Esta tercera sub seccion contendra informacion sobre la actividad. -->
 
                                     <div class="container-fluid">
 
-                                        <div class="row bgInterno mb-3">
+                                        <article class="row bgInterno mb-3">
 
-                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                            <p class="pt-3"> Consigue una mayor fuerza y resistencia mediante un entrenamiento intenso el cual  haga que mejores varios aspectos de tu cuerpo. </p>
+                                            <h3 class="fw-bolder"> LA SALUD FÍSICA </h3>
+                                            <ul class="ps-5">
 
-                                                <p> Consigue una mayor fuerza y resistencia mediante un entrenamiento intenso el cual  haga que mejores varios aspectos de tu cuerpo. </p>
+                                                <li> Ayuda a bajar peso. </li>
+                                                <li> Aumenta tu resistencia. </li>
+                                                <li> Mejora la Psicomotricidad. </li>
+                                                <li> Fortalece la musculatura. </li>
+                                                <li> Un cuerpo más estilizado. </li>
 
-                                            </article>
-                                            <article class="col-12 text-left">
+                                            </ul>
+                                            <h3 class="fw-bolder"> LA MENTE </h3>
+                                            <ul class="ps-5">
 
-                                                <h3 class="text-center text-lg-start fw-bolder"> LA SALUD FÍSICA </h3>
-                                                <ul>
+                                                <li> Aporta concentración y motivación extra. </li>
+                                                <li> Reduce el nivel de estrés. </li>
+                                                <li> Aumenta las relaciones sociales. </li>
+                                                <li> Trabajo en equipo. </li>
+                                                <li> Mayor Autoconfianza. </li>
 
-                                                    <li> Ayuda a bajar peso. </li>
-                                                    <li> Aumenta tu resistencia. </li>
-                                                    <li> Mejora la Psicomotricidad. </li>
-                                                    <li> Fortalece la musculatura. </li>
-                                                    <li> Un cuerpo más estilizado. </li>
+                                            </ul>
+                                            <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
+                                            <p class="text-center text-lg-start"> Lunes a Viernes: <br> 17:30hs | 20:30hs </p>
 
-                                                </ul>
-                                                <h3 class="text-center text-lg-start fw-bolder"> LA MENTE </h3>
-                                                <ul>
-
-                                                    <li> Aporta concentración y motivación extra. </li>
-                                                    <li> Reduce el nivel de estrés. </li>
-                                                    <li> Aumenta las relaciones sociales. </li>
-                                                    <li> Trabajo en equipo. </li>
-                                                    <li> Mayor Autoconfianza. </li>
-
-                                                </ul>
-
-                                            </article>
-                                            <article class="col-12">
-
-                                                <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
-                                                <p class="text-center text-lg-start"> Lunes a Viernes: <br> 17:30hs | 20:30hs </p>
-
-                                            </article>
-
-                                        </div>
+                                        </article>
 
                                     </div>
 
@@ -455,19 +486,23 @@
 
                         </div>
 
-                    </section>
-                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act4">
+                    </section> <!-- Finalizacion de la tercera actividad. -->
+                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act4"> <!-- Inicio de la cuarta actividad. -->
 
                         <div class="container-fluid">
 
                             <div class="row">
 
-                                <article class="col-12 bgInterno mt-3 py-3">
+                                <section class="col-12 bgInterno mt-3 py-3"> <!-- Esta primera sub seccion contendra el titulo de la actividad. -->
+
+                                    <article>
+                                        
+                                        <h2 class="text-center text-lg-start fw-bold"> MUSCULACIÓN </h2>
                                     
-                                    <h2 class="text-center text-lg-start fw-bold"> MUSCULACIÓN </h2>
-                                
-                                </article>
-                                <section class="col-12 col-lg-7 my-3">
+                                    </article>
+
+                                </section>
+                                <section class="col-12 col-lg-7 my-3"> <!-- Esta segunda sub seccion contendra un carrusel de imagenes sobre la actividad. -->
 
                                     <div id="carouselExampleIndicators-4" class="carousel slide" data-bs-ride="true">
 
@@ -483,22 +518,38 @@
 
                                             <div class="carousel-item active">
 
-                                                <img src="../img/musculacion.png" class="d-block" alt="Grupo de personas musculando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/musculacion-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/musculacion-tablet.jpg">
+                                                    <img src="../img/musculacion.jpg" class="d-block" alt="Grupo de personas musculando">
+                                                </picture>
+                                                
+                                            </div>
+                                            <div class="carousel-item">
+
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/musculacion2-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/musculacion2-tablet.jpg">
+                                                    <img src="../img/musculacion2.jpg" class="d-block" alt="Grupo de personas musculando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/musculacion2.jpg" class="d-block" alt="Grupo de personas musculando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/musculacion3-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/musculacion3-tablet.jpg">
+                                                    <img src="../img/musculacion3.jpg" class="d-block" alt="Grupo de personas musculando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/musculacion3.jpg" class="d-block" alt="Grupo de personas musculando">
-
-                                            </div>
-                                            <div class="carousel-item">
-
-                                                <img src="../img/musculacion4.jpg" class="d-block" alt="Grupo de personas musculando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/musculacion4-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/musculacion4-tablet.jpg">
+                                                    <img src="../img/musculacion4.jpg" class="d-block" alt="Grupo de personas musculando">
+                                                </picture>
 
                                             </div>
 
@@ -519,38 +570,26 @@
                                     </div>
 
                                 </section>
-                                <section class="col-12 col-lg-5 m-0 p-0">
+                                <section class="col-12 col-lg-5 m-0 p-0"> <!-- Esta tercera sub seccion contendra informacion sobre la actividad. -->
 
                                     <div class="container-fluid">
 
-                                        <div class="row bgInterno mb-3">
+                                        <article class="row bgInterno mb-3">
 
-                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                            <p class="pt-3"> Entrena y pone en forma todos los grupos musculares. Sentite mejor con tu aspecto físico. Gana mucha fuerza y condición. </p>
+                                            <ul class="ps-5 py-lg-5 my-lg-5">
 
-                                                <p> Entrena y pone en forma todos los grupos musculares. Sentite mejor con tu aspecto físico. Gana mucha fuerza y condición. </p>
-
-                                            </article>
-                                            <article class="col-12 py-lg-5 my-lg-5 text-left">
-
-                                                <ul>
-
-                                                    <li> Mayor masa muscular. </li>
-                                                    <li> Huesos más fuertes. </li>
-                                                    <li> Flexibilidad de las articulaciones. </li>
-                                                    <li> Control del peso corporal. </li>
-                                                    <li> Mejora el equilibrio. </li>
+                                                <li> Mayor masa muscular. </li>
+                                                <li> Huesos más fuertes. </li>
+                                                <li> Flexibilidad de las articulaciones. </li>
+                                                <li> Control del peso corporal. </li>
+                                                <li> Mejora el equilibrio. </li>
                         
-                                                </ul>
+                                            </ul>
+                                            <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
+                                            <p class="text-center text-lg-start"> Lunes a Viernes: <br> 08:00hs | 09:00hs | 10:00hs | 18:30hs | 19:30hs | 20:30hs </p>
 
-                                            </article>
-                                            <article class="col-12">
-
-                                                <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
-                                                <p class="text-center text-lg-start"> Lunes a Viernes: <br> 08:00hs | 09:00hs | 10:00hs | 18:30hs | 19:30hs | 20:30hs </p>
-                                            
-                                            </article>
-
-                                        </div>
+                                        </article>
 
                                     </div>
 
@@ -560,19 +599,23 @@
 
                         </div>
 
-                    </section>
-                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act5">
+                    </section> <!-- Finalizacion de la cuarta actividad. -->
+                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act5"> <!-- Inicio de la quinta actividad. -->
 
                         <div class="container-fluid">
 
                             <div class="row">
 
-                                <article class="col-12 bgInterno mt-3 py-3">
+                                <section class="col-12 bgInterno mt-3 py-3"> <!-- Esta primera sub seccion contendra el titulo de la actividad. -->
 
-                                    <h2 class="text-center text-lg-start fw-bold"> PREP. FÍSICA DEPORTIVA </h2>
-                                
-                                </article>
-                                <section class="col-12 col-lg-7 my-3">
+                                    <article>
+                                    
+                                        <h2 class="text-center text-lg-start fw-bold"> PREP. FÍSICA DEPORTIVA </h2>
+                                    
+                                    </article>
+
+                                </section>
+                                <section class="col-12 col-lg-7 my-3"> <!-- Esta segunda sub seccion contendra un carrusel de imagenes sobre la actividad. -->
 
                                     <div id="carouselExampleIndicators-5" class="carousel slide" data-bs-ride="true">
 
@@ -588,22 +631,38 @@
 
                                             <div class="carousel-item active">
 
-                                                <img src="../img/futbol.png" class="d-block" alt="Grupo de personas entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/futbol-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/futbol-tablet.jpg">
+                                                    <img src="../img/futbol.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                </picture>
+                                                
+                                            </div>
+                                            <div class="carousel-item">
+
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/futbol2-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/futbol2-tablet.jpg">
+                                                    <img src="../img/futbol2.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/futbol2.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/futbol3-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/futbol3-tablet.jpg">
+                                                    <img src="../img/futbol3.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/futbol3.jpg" class="d-block" alt="Grupo de personas entrenando">
-
-                                            </div>
-                                            <div class="carousel-item">
-
-                                                <img src="../img/futbol4.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/futbol4-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/futbol4-tablet.jpg">
+                                                    <img src="../img/futbol4.jpg" class="d-block" alt="Grupo de personas entrenando">
+                                                </picture>
 
                                             </div>
 
@@ -624,42 +683,30 @@
                                     </div>
 
                                 </section>
-                                <section class="col-12 col-lg-5 m-0 p-0">
+                                <section class="col-12 col-lg-5 m-0 p-0"> <!-- Esta tercera sub seccion contendra informacion sobre la actividad. -->
 
                                     <div class="container-fluid">
 
-                                        <div class="row bgInterno mb-3">
-
-                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                        <article class="row bgInterno mb-3">
                                                 
-                                                <p> Mejora tu coordinación mediante entrenamientos basados en el futbol, gana una mayor resistencia y fuerza muscular. </p>
-                                            
-                                            </article>
-                                            <article class="col-12 py-lg-5 text-left">
+                                            <p class="pt-3"> Mejora tu coordinación mediante entrenamientos basados en el futbol, gana una mayor resistencia y fuerza muscular. </p>
+                                            <ul class="ps-5 py-lg-5">
 
-                                                <ul>
-
-                                                    <li> Mejora la capacidad aeróbica. </li>
-                                                    <li> Mejora la salud cardiovascular. </li>
-                                                    <li> Reduce la grasa corporal y mejora el tono muscular. </li>
-                                                    <li> Construye la fuerza muscular. </li>
-                                                    <li> Aumenta la fuerza de los huesos. </li>
-                                                    <li> Enseña coordinación. </li>
-                                                    <li> Promueve el trabajo en equipo y el compartir. </li>
-                                                    <li> Aumenta la función cognitiva del cerebro. </li>
-                                                    <li> Aumenta la confianza y la autoestima, y ayuda a reducir la ansiedad. </li>
+                                                <li> Mejora la capacidad aeróbica. </li>
+                                                <li> Mejora la salud cardiovascular. </li>
+                                                <li> Reduce la grasa corporal y mejora el tono muscular. </li>
+                                                <li> Construye la fuerza muscular. </li>
+                                                <li> Aumenta la fuerza de los huesos. </li>
+                                                <li> Enseña coordinación. </li>
+                                                <li> Promueve el trabajo en equipo y el compartir. </li>
+                                                <li> Aumenta la función cognitiva del cerebro. </li>
+                                                <li> Aumenta la confianza y la autoestima, y ayuda a reducir la ansiedad. </li>
                         
-                                                </ul>
-
-                                            </article>
-                                            <article class="col-12">
-
-                                                <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
-                                                <p class="text-center text-lg-start"> Lunes, Miércoles y Viernes: <br> 15:15hs | 19:30hs </p>
+                                            </ul>
+                                            <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
+                                            <p class="text-center text-lg-start"> Lunes, Miércoles y Viernes: <br> 15:15hs | 19:30hs </p>
                                             
-                                            </article>
-
-                                        </div>
+                                        </article>
 
                                     </div>
 
@@ -669,19 +716,23 @@
 
                         </div>
 
-                    </section>
-                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act6">
+                    </section> <!-- Finalizacion de la quinta actividad. -->
+                    <section class="col-9 bgExterno my-5 p-0 px-lg-3" id="act6"> <!-- Inicio de la sexta actividad. -->
 
                         <div class="container-fluid">
 
                             <div class="row">
 
-                                <article class="col-12 bgInterno mt-3 py-3">
+                                <section class="col-12 bgInterno mt-3 py-3"> <!-- Esta primera sub seccion contendra el titulo de la actividad. -->
 
-                                    <h2 class="text-center text-lg-start fw-bold"> SPINNING </h2>
+                                    <article>
+                                    
+                                        <h2 class="text-center text-lg-start fw-bold"> SPINNING </h2>
+                                    
+                                    </article>
 
-                                </article>
-                                <section class="col-12 col-lg-7 my-3">
+                                </section>
+                                <section class="col-12 col-lg-7 my-3"> <!-- Esta segunda sub seccion contendra un carrusel de imagenes sobre la actividad. -->
 
                                     <div id="carouselExampleIndicators-6" class="carousel slide" data-bs-ride="true">
 
@@ -697,22 +748,38 @@
 
                                             <div class="carousel-item active">
 
-                                                <img src="../img/spinning.png" class="d-block" alt="Grupo de mujeres entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/spinning-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/spinning-tablet.jpg">
+                                                    <img src="../img/spinning.jpg" class="d-block" alt="Grupo de mujeres entrenando">
+                                                </picture>
+                                                
+                                            </div>
+                                            <div class="carousel-item">
+
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/spinning2-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/spinning2-tablet.jpg">
+                                                    <img src="../img/spinning2.jpg" class="d-block" alt="Grupo de mujeres entrenando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/spinning2.jpg" class="d-block" alt="Grupo de mujeres entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/spinning3-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/spinning3-tablet.jpg">
+                                                    <img src="../img/spinning3.jpg" class="d-block" alt="Grupo de mujeres entrenando">
+                                                </picture>
 
                                             </div>
                                             <div class="carousel-item">
 
-                                                <img src="../img/spinning3.jpg" class="d-block" alt="Grupo de mujeres entrenando">
-
-                                            </div>
-                                            <div class="carousel-item">
-
-                                                <img src="../img/spinning4.jpg" class="d-block" alt="Grupo de mujeres entrenando">
+                                                <picture>
+                                                    <source media="(max-width: 599px)" srcset="../img/spinning4-smartphone.jpg">
+                                                    <source media="(max-width: 1023px)" srcset="../img/spinning4-tablet.jpg">
+                                                    <img src="../img/spinning4.jpg" class="d-block" alt="Grupo de mujeres entrenando">
+                                                </picture>
 
                                             </div>
 
@@ -733,41 +800,29 @@
                                     </div>
 
                                 </section>
-                                <section class="col-12 col-lg-5 m-0 p-0">
+                                <section class="col-12 col-lg-5 m-0 p-0"> <!-- Esta tercera sub seccion contendra informacion sobre la actividad. -->
 
                                     <div class="container-fluid">
 
-                                        <div class="row bgInterno mb-3">
+                                        <article class="row bgInterno mb-3">
 
-                                            <article class="col-12 pt-3 pt-lg-5 text-left">
+                                            <p class="pt-3"> Produce una mejora en el sistema cardiovascular y pulmonar, disminuye la grasa corporal, quemando muchas calorías.  </p>
+                                            <ul class="ps-5 py-lg-5 my-lg-3">
 
-                                                <p> Produce una mejora en el sistema cardiovascular y pulmonar, disminuye la grasa corporal, quemando muchas calorías.  </p>
-                                            
-                                            </article>
-                                            <article class="col-12 py-lg-5 text-left">
-
-                                                <ul>
-
-                                                    <li> Favorecer la pérdida de peso o el mantenimiento del mismo. </li>
-                                                    <li> Mejorar el metabolismo. </li>
-                                                    <li> Fomentar la tonificación muscular en general.</li>
-                                                    <li> Ayudar a mantener sanas las articulaciones. </li>
-                                                    <li> Mejorar la salud cardiovascular. </li>
-                                                    <li> Impulsar la resistencia cardiorrespiratoria. </li>
-                                                    <li> Fortalecer el sistema inmunitario. </li>
-                                                    <li> Ayudar a cuidar el suelo pélvico, al no haber impacto. </li>
+                                                <li> Favorecer la pérdida de peso o el mantenimiento del mismo. </li>
+                                                <li> Mejorar el metabolismo. </li>
+                                                <li> Fomentar la tonificación muscular en general.</li>
+                                                <li> Ayudar a mantener sanas las articulaciones. </li>
+                                                <li> Mejorar la salud cardiovascular. </li>
+                                                <li> Impulsar la resistencia cardiorrespiratoria. </li>
+                                                <li> Fortalecer el sistema inmunitario. </li>
+                                                <li> Ayudar a cuidar el suelo pélvico, al no haber impacto. </li>
                         
-                                                </ul>
+                                            </ul>
+                                            <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
+                                            <p class="text-center text-lg-start"> Martes y Jueves: <br> 16:30hs </p>
 
-                                            </article>
-                                            <article class="col-12">
-
-                                                <h3 class="text-center text-lg-start fw-bolder"> HORARIOS </h3>
-                                                <p class="text-center text-lg-start"> Martes y Jueves: <br> 16:30hs </p>
-
-                                            </article>
-
-                                        </div>
+                                        </article>
 
                                     </div>
 
@@ -777,23 +832,23 @@
 
                         </div>
 
-                    </section>
+                    </section> <!-- Finalizacion de la quinta actividad. -->
 
                 </div>
 
-            </div> 
+            </section> 
 
-        </main>
+        </main> <!-- Finalizacion del MAIN. -->
 
-        <footer class="container-fluid">
+        <footer class="container-fluid"> <!-- Inicio del FOOTER. -->
 
-            <div class="row">
+            <section class="row"> <!-- Esta seccion contendra tanto el logo como la informacion que se refleja en el FOOTER. -->
 
                 <div class="col-12 col-md-3">
 
                     <a href="../index.html" class="link-dark text-decoration-none">
 
-                        <img src="../img/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
+                        <img src="../img/logos/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
 
                     </a>
                     
@@ -818,9 +873,9 @@
                 </article>
                 <p class="text-center">&copy; 2022 PG Training - Todos los derechos reservados <br> Desarrollado por Ballón Javier</p>
 
-            </div>
+            </section> <!-- Finaliza la seccion. -->
 
-        </footer>
+        </footer> <!-- Finalizacion del FOOTER. -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>

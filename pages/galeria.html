@@ -6,8 +6,8 @@
 
         <title> PG Training | Galeria </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../img/logo-redondo.png" type="image/x-icon">
-        <link rel="icon" href="../img/logo-redondo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/logos/logo-redondo.png" type="image/x-icon">
+        <link rel="icon" href="../img/logos/logo-redondo.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/destino.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -16,13 +16,13 @@
 
     <body>
 
-        <header>
+        <header> <!-- Inicio del HEADER. -->
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top"> <!-- Navegacion que tendra el sitio. -->
 
                 <div class="container-fluid">
 
-                    <a class="navbar-brand" href="../index.html"><img class="logoPrincipal" src="../img/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
+                    <a class="navbar-brand" href="../index.html"><img class="logoPrincipal" src="../img/logos/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         
                         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
 
                             <li class="nav-item active">
 
-                                <a class="nav-link btn-neon fw-bolder" href="../index.html">
+                                <a class="nav-link btn-neon fw-bolder" href="../index.html"> <!-- Se agrega una clase asi como cuatro span, los mismos conforman estilo al interactuar con los mismos. -->
 
                                     <span id="span1"></span>
                                     <span id="span2"></span>
@@ -101,39 +101,93 @@
 
                 </div>
 
-            </nav>
+            </nav> <!-- Finaliza la navegacion del sitio. -->
 
-        </header>
+        </header> <!-- Finalizacion del HEADER. -->
 
-        <main class="bannerPrincipal2 galeria">
+        <main class="bannerPrincipal2 galeria"> <!-- Inicio del MAIN. El mismo contiene un banner.-->
 
-            <h2 class="text-center pt-5 fw-bolder"> ¡GALERIA DE FOTOS <br> CONOCENOS UN POCO MÁS! </h2>
+            <h1 class="text-center pt-5 fw-bolder"> ¡GALERIA DE FOTOS <br> CONOCENOS UN POCO MÁS! </h1>
 
-                <section class="gridGaleria">
+                <section class="gridGaleria"> <!-- Esta unica seccion contiene un GRID el cual acopla a todas las img. -->
 
-                    <img class="img1" src="../img/foto-galeria1.png" alt="Foto galeria PG Training 1">
-                    <img class="img2" src="../img/foto-galeria2.png" alt="Foto galeria PG Training 2">
-                    <img class="img3" src="../img/foto-galeria3.png" alt="Foto galeria PG Training 3">
-                    <img class="img4" src="../img/foto-galeria4.png" alt="Foto galeria PG Training 4">
-                    <img class="img5" src="../img/foto-galeria5.png" alt="Foto galeria PG Training 5">
-                    <img class="img6" src="../img/foto-galeria6.png" alt="Foto galeria PG Training 6">
-                    <img class="img7" src="../img/foto-galeria7.png" alt="Foto galeria PG Training 7">
-                    <img class="img8" src="../img/foto-galeria8.png" alt="Foto galeria PG Training 8">
-                    <img class="img9" src="../img/foto-galeria9.jpg" alt="Foto galeria PG Training 9">
-                
-                </section>
+                    <picture class="img1"> <!-- Picture que contiene 3 formatos de img para una correcta visualizacion. -->
 
-        </main>
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria1-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria1-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria1.jpg" alt="Foto galeria PG Training 1">
 
-        <footer class="container-fluid">
+                    </picture>
+                    <picture class="img2">
 
-            <div class="row">
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria2-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria2-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria2.jpg" alt="Foto galeria PG Training 2">
+
+                    </picture>
+                    <picture class="img3">
+
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria3-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria3-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria3.jpg" alt="Foto galeria PG Training 3">
+
+                    </picture>
+                    <picture class="img4">
+
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria4-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria4-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria4.jpg" alt="Foto galeria PG Training 4">
+
+                    </picture>
+                    <picture  class="img5">
+
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria5-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria5-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria5.jpg" alt="Foto galeria PG Training 5">
+
+                    </picture>
+                    <picture class="img6">
+
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria6-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria6-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria6.jpg" alt="Foto galeria PG Training 6">
+
+                    </picture>
+                    <picture class="img7">
+
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria7-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria7-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria7.jpg" alt="Foto galeria PG Training 7">
+
+                    </picture>
+                    <picture class="img8">
+
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria8-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria8-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria8.jpg" alt="Foto galeria PG Training 8">
+
+                    </picture>
+                    <picture class="img9">
+
+                        <source media="(max-width: 599px)" srcset="../img/galeria/foto-galeria9-smartphone.jpg">
+                        <source media="(max-width: 1023px)" srcset="../img/galeria/foto-galeria9-tablet.jpg">
+                        <img src="../img/galeria/foto-galeria9.jpg" alt="Foto galeria PG Training 9">
+
+                    </picture>
+                    
+                </section> <!-- Finaliza la seccion que contiene al GRID. -->
+
+        </main> <!-- Finalizacion del MAIN. -->
+
+        <footer class="container-fluid"> <!-- Inicio del FOOTER. -->
+
+            <section class="row"> <!-- Esta seccion contendra tanto el logo como la informacion que se refleja en el FOOTER. -->
 
                 <div class="col-12 col-md-3">
 
                     <a href="../index.html" class="link-dark text-decoration-none">
 
-                        <img src="../img/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
+                        <img src="../img/logos/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
 
                     </a>
                     
@@ -158,9 +212,9 @@
                 </article>
                 <p class="text-center">&copy; 2022 PG Training - Todos los derechos reservados <br> Desarrollado por Ballón Javier</p>
 
-            </div>
+            </section> <!-- Finaliza la seccion. -->
 
-        </footer>
+        </footer> <!-- Finalizacion del FOOTER. -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     
     </body>

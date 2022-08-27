@@ -25,7 +25,7 @@ p {
 /*TODO --- HEADER --- */
 /** Se aplica una posicion estatica al header, se le declara un tamaño fijo al logo y se le define tanto colo como fuente a las letras dentro del nav */
 header {
-    @include posicion (sticky, inline-block);
+    @include posicion(sticky, inline-block);
     top: 0px;
     z-index: 3;
     img {
@@ -52,19 +52,19 @@ header {
     @include object(cover, center);
 }
 .logoCarrusel {
-    @include anchura(none, 12rem);
+    @include anchura(none, 20vh);
     @include posicion(relative, inline-block);
     @include spanes(15rem, 0, 0, 0); 
     animation: zoomInDown 2s; /* Animacion para el logo en el carrusel */
 }
-.carousel-caption h1 {
+body h1, h2 {
     color: $amarillo;
 } 
 /*? Seccion 2 /
 /** Banner que se le aplicara a todas las paginas, se incluye un color blanco para todas las letras (color estandar) */
 .bannerPrincipal {
     @include anchura(100%, none);
-    background-image: url(../img/banner5.jpg);
+    background-image: url(../img/banner/banner-main.jpg);
     @include background(cover, center, fixed);
     color: $blanco;
 }
@@ -79,10 +79,17 @@ header {
     border-radius: calc($spacer * 1.5);
     margin: calc($spacer * 1);
 }
+.descripcion a p {
+    position: relative;
+    @include spanes(none, none, none, 1rem);
+    font-size: 11px;
+    color: $negro;
+    font-family: $titulos;
+}
 /** Se aplica un pequeño banner a la seccion de localizacion asi como tambien un tamaño fijo al mapa */
 .bannerLocalizacion {
     @include anchura(100%, none);
-    background-image: url(../img/banner2.jpg);
+    background-image: url(../img/banner/banner-localizacion.jpg);
     @include background(cover, center, fixed);
     h2 {
         padding-top: calc($spacer * 1.5);
@@ -93,14 +100,14 @@ header {
 }
 /** Banner que se aplicara para las promociones las cuales estaran dentro de un carrusel */
 .bannerPromoCarrusel {
-    @include anchura(100%, 50vh);
-    background-image: url(../img/promo.jpg);
+    @include anchura(100%, 30rem);
+    background-image: url(../img/promociones/promo1.jpg);
     @include background(cover, center, none);
 }
 /** Mismas especificaciones que antes pero con la modificacion del banner para la segunda promocion */
 .bannerPromoCarrusel2 {
     @extend .bannerPromoCarrusel;
-    background-image: url(../img/promo2.jpg);
+    background-image: url(../img/promociones/promo2.jpg);
 }
 /** Se aplica un color a los titulos de las promociones */
 .promo{
@@ -115,7 +122,7 @@ header {
     }
     div {
         @include flex(flex, nowrap);
-        @include alineacion (center, none, center, none);
+        @include alineacion(center, none, center, none);
         padding-top: $spacer;
         padding-bottom: calc($spacer * 3);
         div {
@@ -137,12 +144,12 @@ header {
 /*TODO --- MAIN --- ACTIVIDADES --- */
 /** Se aplica una alineacion a los elementos y se le declara un tamaño a las imagenes */
 .actividades {
-    div div {
-        @include alineacion (center, none, center, none);
-    }
     img {
         @include anchura(100%, 30rem);
         @include object(cover, center);
+    }
+    h2 {
+        color: $negro;
     }
 }
 /** Se crea una clase para los backgrounds que contendran a cada actividad */
@@ -158,11 +165,6 @@ header {
     }
 }
 /*TODO --- MAIN --- GALERIA --- */
-.galeria {
-    h2 {
-        color: $amarillo;
-    }
-}
 /** GRIDS "GALERIA" - Tamaño de las imangenes con su transformacion y transicion mediante :HOVER */
 .gridGaleria {
     display: grid;
@@ -198,33 +200,20 @@ header {
 /*TODO --- MAIN --- STAFF --- */
 /** Se declara una posicion wrap para los retratos de los disntintos profesores */
 .staff {
-    div div {
+    section section {
         @include flex (flex, wrap);
-        article h2 {
-            color: $amarillo;
-        }
+        @include alineacion (space-around, none, center, none);
+    }
+    .bgInterno{
+        border-radius: calc($spacer * 1);
+    }
+    img {
+        border-radius: calc($spacer * 1);
     }
 } 
-/** Especificaciones del retrato que contendra a cada profesor, incluyendo alineaciones y posiciones */
-.retrato {
-    background-image: url(../img/banner9.jpg);
-    border-radius: calc($spacer * 1.5);
-    @include flex (flex, nowrap);
-    flex-direction: column;
-    @include alineacion (none, none, center, none);
-    h2 {
-        color: $blanco;
-    }
-    p {
-        color: $blanco;
-    }
-}
 /*TODO --- MAIN --- CONTACTO --- */
 /** Se le aplica colores a las diferentes tipografias, se especifica una posicion y alineacion dentro de la seccion que contendra al FORM asi como tambien un background que lo contendra para darle estilo */
 .contacto {
-    h2{
-        color: $amarillo;
-    }
     p {
         color: $blanco;
     }
@@ -245,8 +234,8 @@ header {
 /*TODO --- FOOTER --- */
 /** Se aplica un banner - Se declaran posiciones mediante FLEX y alineaciones - Se modifica el tamaño del ultimo parrafo */
 footer {
-    background-image: url(../img/banner4.jpg);
-    > div {
+    background-image: url(../img/banner/banner-footer.jpg);
+    > section {
         @include flex (flex, wrap);
         color: $blanco;
         div a {
@@ -260,3 +249,4 @@ footer {
     }
 }
 @import "responsive";
+

@@ -6,25 +6,24 @@
 
         <title> PG Training | Inicio </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./img/logo-redondo.png" type="image/x-icon">
-        <link rel="icon" href="./img/logo-redondo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./img/logos/logo-redondo.png" type="image/x-icon">
+        <link rel="icon" href="./img/logos/logo-redondo.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/destino.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/1cd6669d7e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         
     </head>
 
     <body>    
 
-        <header>
+        <header> <!-- Inicio del HEADER. -->
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top"> <!-- Navegacion que tendra el sitio. -->
 
                 <div class="container-fluid">
 
-                    <a class="navbar-brand" href="./index.html"><img class="logoPrincipal mx-2" src="./img/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
+                    <a class="navbar-brand" href="./index.html"><img class="logoPrincipal mx-2" src="./img/logos/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
                         <span class="navbar-toggler-icon"></span>
@@ -37,7 +36,7 @@
 
                             <li class="nav-item active">
 
-                                <a class="nav-link btn-neon fw-bolder" href="./index.html">
+                                <a class="nav-link btn-neon fw-bolder" href="./index.html"> <!-- Se agrega una clase asi como cuatro span, los mismos conforman estilo al interactuar con los mismos. -->
 
                                     <span id="span1"></span>
                                     <span id="span2"></span>
@@ -107,13 +106,13 @@
 
                 </div>  
 
-            </nav>
+            </nav> <!-- Finaliza la navegacion del sitio. -->
 
-        </header>
+        </header> <!-- Finalizacion del HEADER. -->
 
-        <main>
+        <main> <!-- Inicio del MAIN. -->
 
-            <section id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <section id="myCarousel" class="carousel slide" data-bs-ride="carousel"> <!-- Esta seccion esta conformada por el carrusel de imagenes que tendra el INICIO como primera seccion. -->
 
                 <div class="carousel-indicators">
 
@@ -122,20 +121,26 @@
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
 
                 </div>
-                <div class="carousel-inner">
+                <div class="carousel-inner"> 
 
-                    <div class="carousel-item active">
+                    <section class="carousel-item active"> <!-- Esta seccion esta conformada por la imagens que llevara el primer slide con su respectiva informacion -->
                         
                         <div class="position-relative">
 
                             <div class="position-absolute top-0 start-50 translate-middle">
 
-                                <img src="./img/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
+                                <img src="./img/logos/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
 
                             </div>
 
                         </div>
-                        <img src="./img/banner1.jpg" class="imgCarrusel" alt="Banner 1">
+                        <picture>
+
+                            <source media="(max-width: 599px)" srcset="./img/banner/banner-carrusel1-smartphone.jpg">
+                            <source media="(max-width: 1023px)" srcset="./img/banner/banner-carrusel1-tablet.jpg">
+                            <img src="./img/banner/banner-carrusel1.jpg" class="imgCarrusel" alt="Banner 1">
+
+                        </picture>
                         <div class="container-fluid">
 
                             <article class="carousel-caption text-start">
@@ -148,24 +153,30 @@
 
                         </div>
 
-                    </div>
-                    <div class="carousel-item ">
+                    </section>
+                    <section class="carousel-item "> <!-- Esta seccion esta conformada por la imagens que llevara el segundo slide con su respectiva informacion -->
 
                         <div class="position-relative">
 
                             <div class="position-absolute top-0 start-50 translate-middle">
 
-                                <img src="./img/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
+                                <img src="./img/logos/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
 
                             </div>
 
                         </div>
-                        <img src="./img/foto-galeria5.png" class="imgCarrusel" alt="Banner 2">
+                        <picture>
+
+                            <source media="(max-width: 599px)" srcset="./img/banner/banner-carrusel2-smartphone.jpg">
+                            <source media="(max-width: 1023px)" srcset="./img/banner/banner-carrusel2-tablet.jpg">
+                            <img src="./img/banner/banner-carrusel2.jpg" class="imgCarrusel" alt="Banner 2">
+
+                        </picture>
                         <div class="container-fluid">
 
                             <article class="carousel-caption">
 
-                                <h1 class="fw-bold"> PG TRAINING </h1>
+                                <h2 class="h1 fw-bold"> PG TRAINING </h2>
                                 <h2 class="fw-bolder"> LLEVA UNA VIDA SALUDABLE </h2>
                                 <p class="fw-normal"> Contamos con profesionales que estarán en todo momento. </p>
 
@@ -173,24 +184,30 @@
 
                         </div>
 
-                    </div>
-                    <div class="carousel-item">
+                    </section>
+                    <section class="carousel-item"> <!-- Esta seccion esta conformada por la imagens que llevara el tercer slide con su respectiva informacion -->
 
                         <div class="position-relative">
 
                             <div class="position-absolute top-0 start-50 translate-middle">
 
-                                <img src="./img/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
+                                <img src="./img/logos/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
 
                             </div>
 
                         </div>
-                        <img src="./img/foto-galeria1.png" class="imgCarrusel" alt="Banner 3">
+                        <picture>
+
+                            <source media="(max-width: 599px)" srcset="./img/banner/banner-carrusel3-smartphone.jpg">
+                            <source media="(max-width: 1023px)" srcset="./img/banner/banner-carrusel3-tablet.jpg">
+                            <img src="./img/banner/banner-carrusel3.jpg" class="imgCarrusel" alt="Banner 3">
+
+                        </picture>
                         <div class="container-fluid">
 
                             <article class="carousel-caption text-end">
 
-                                <h1 class="fw-bold"> PG TRAINING </h1>
+                                <h2 class="h1 fw-bold"> PG TRAINING </h2>
                                 <h2 class="fw-bolder"> MEJORA TU VIDA </h2>
                                 <p class="fw-normal"> No pierdas el tiempo, mejora tu salud y tu estado físico. </p>
 
@@ -198,7 +215,7 @@
 
                         </div>
 
-                    </div>
+                    </section>
 
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -214,16 +231,16 @@
 
                 </button>
 
-            </section>
-            <section class="bannerPrincipal">
+            </section> <!-- Finaliza la primera seccion de la pagina INICIO. -->
+            <section class="bannerPrincipal"> <!-- Inicia la segunda seccion de la pagina INICIO. -->
 
                 <div class="container-fluid text-center">
 
                     <div class="row">
 
-                        <section class="col-12">
+                        <section class="col-12"> <!-- Esta primera sub seccion contendra informacion sobre el abono. -->
 
-                            <div class="mx-5">
+                            <div class="mx-5 redesSociales">
 
                                 <article>
 
@@ -234,29 +251,33 @@
                                     ¡Tenemos diferentes medios de pago! </p>
 
                                 </article>
-                                <div class="container">
+                                <div>
 
-                                    <img src="./img/logo-bank.png" alt="Logo Banco" class="logos">
-                                    <img src="./img/logo-efectivo.png" alt="Logo Efectivo en Mano" class="logos">
-                                    <img src="./img/logo-mercadopago.png" alt="Logo Mercado Pago" class="logos">
-
-                                </div> 
+                                    <div class="descripcion"> <!-- Esta clase realiza cambios en las P. -->
+                                        
+                                        <a><i class="fa-solid fa-money-bill-transfer"></i><p class="fw-bolder">TRANSFERENCIA</p></a>
+                                        <a><i class="fa fa-money-bill-alt"></i><p class="fw-bolder">EFECTIVO</p></a>
+                                        <a><i class="fa fa-credit-card"></i><p class="fw-bolder">TARJETA DE CRÉDITO</p></a>
+                                    
+                                    </div> 
+                                    
+                                </div>
 
                             </div>
 
                         </section>
-                        <section class="col-12 bannerLocalizacion">
+                        <section class="col-12 bannerLocalizacion"> <!-- Esta segunda sub seccion contendra informacion sobre la localizacion. -->
 
                             <article>
 
-                                <h2 class="fw-bolder"> ¿DÓNDE NOS <br> ENCONTRAMOS? </h2>
+                                <h2 class="fw-bolder"> ¿DÓNDE NOS ENCONTRAMOS? </h2>
                                 <p> Av. Provincias Unidas 2379, Rosario, Santa Fe, Argentina </p>
 
                             </article>
                             <iframe class="px-5 pt-2 pb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4250.1228089553415!2d-60.7162398683642!3d-32.9565786186774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7adc62991fb5f%3A0xb77c704345fe113e!2sPG%20training!5e1!3m2!1ses!2sar!4v1659197033526!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         
                         </section>
-                        <section class="col-12 m-0 p-0 promo">
+                        <section class="col-12 m-0 p-0 promo"> <!-- Esta tercera sub seccion contendra un carrusel de imagenes con promociones. -->
 
                             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                                 
@@ -268,7 +289,7 @@
                                 </div>
                                 <div class="carousel-inner">
 
-                                    <div class="carousel-item active">
+                                    <section class="carousel-item active"> <!-- Esta seccion contiene la primera promocion que estara contenida en el carrusel. -->
 
                                         <div class="bannerPromoCarrusel"></div>
                                         <article class="carousel-caption d-block">
@@ -278,20 +299,20 @@
 
                                         </article>
 
-                                    </div>
-                                    <div class="carousel-item">
+                                    </section>
+                                    <section class="carousel-item"> <!-- Esta seccion contiene la segunda promocion que estara contenida en el carrusel. -->
 
                                         <div class="bannerPromoCarrusel2"></div>
-                                        <article class="carousel-caption d-block">
+                                        <article class="carousel-caption">
 
-                                            <h2 class="fw-bolder"> ¡GRAN RIFA! <br> PREMIOS FABULOSOS </h2>
+                                            <h2 class="h1 fw-bolder"> ¡GRAN RIFA! <br> PREMIOS FABULOSOS </h2>
                                             <h2 class="py-1 fw-bolder"> COSTO POR N° $1000</h2>
-                                            <p class="py-2"> MES GRATIS DE TRAINING. <br> ÓRDENES DE COMPRA. <br> VÁUCHERES PARA TATUAJES, PELUQUERÍA, MASAJES. </p>
-                                            <h2 class="fw-bolder"> SORTEA <br> MIÉRCOLES 31/8 <br> 20:30HS </h2>
+                                            <p class="py-2"> MES GRATIS DE TRAINING. ÓRDENES DE COMPRA. VÁUCHERES PARA TATUAJES, PELUQUERÍA, MASAJES. </p>
+                                            <h2 class="fw-bolder"> SORTEA MIÉRCOLES 31/8 20:30HS </h2>
 
                                         </article>
 
-                                    </div>
+                                    </section>
 
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -310,7 +331,7 @@
                             </div>
 
                         </section>
-                        <section class="col-10 redesSociales">
+                        <section class="col-10 redesSociales"> <!-- Esta cuarta sub seccion contendra los enlaces a las distintas redes sociales. -->
 
                             <h2 class="fw-bolder"> VISITANOS EN NUESTRAS REDES SOCIALES </h2> 
                             <div>
@@ -320,7 +341,7 @@
                                     <a href="https://www.instagram.com/pg.training/?hl=es" target="_blank"><i class="fab fa-instagram" ></i> </a>
                                     <a href="https://www.facebook.com/PG-training-100650208793813/?ref=py_c&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                     <a href="https://api.whatsapp.com/send?phone=543415319116&app=facebook&entry_point=page_cta&fbclid=IwAR3eNcDfa0ZwRZnUkdUvm-yLo2_o_L9Q40bakhukY8_D2JMdQTxLzYb4GkI" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                
+                                    
                                 </div>
 
                             </div>
@@ -331,19 +352,19 @@
 
                 </div>
 
-            </section>
+            </section>  <!-- Finaliza la segunda seccion de la pagina INICIO. -->
 
-        </main>
+        </main> <!-- Finalizacion del MAIN. -->
 
-        <footer class="container-fluid">
+        <footer class="container-fluid"> <!-- Incio del FOOTER. -->
 
-            <div class="row">
+            <section class="row">  <!-- Esta seccion contendra tanto el logo como la informacion que se refleja en el FOOTER. -->
 
                 <div class="col-12 col-md-3">
 
                     <a href="./index.html" class="link-dark text-decoration-none">
 
-                        <img src="./img/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
+                        <img src="./img/logos/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
 
                     </a>
                     
@@ -368,9 +389,9 @@
                 </article>
                 <p class="text-center">&copy; 2022 PG Training - Todos los derechos reservados <br> Desarrollado por Ballón Javier</p>
 
-            </div>
+            </section> <!-- Finaliza la seccion. -->
 
-        </footer>
+        </footer> <!-- Finalizacion del FOOTER. -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>

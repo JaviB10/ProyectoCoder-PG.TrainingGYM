@@ -6,8 +6,8 @@
 
         <title> PG Training | Staff </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../img/logo-redondo.png" type="image/x-icon">
-        <link rel="icon" href="../img/logo-redondo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="../img/logos/logo-redondo.png" type="image/x-icon">
+        <link rel="icon" href="../img/logos/logo-redondo.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/destino.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -16,13 +16,13 @@
 
     <body>
 
-        <header>
+        <header> <!-- Inicio del HEADER. -->
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top"> <!-- Navegacion que tendra el sitio. -->
 
                 <div class="container-fluid">
                     
-                    <a class="navbar-brand" href="../index.html"><img class="logoPrincipal" src="../img/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
+                    <a class="navbar-brand" href="../index.html"><img class="logoPrincipal" src="../img/logos/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         
                         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
 
                             <li class="nav-item active">
 
-                                <a class="nav-link btn-neon fw-bolder" href="../index.html">
+                                <a class="nav-link btn-neon fw-bolder" href="../index.html"> <!-- Se agrega una clase asi como cuatro span, los mismos conforman estilo al interactuar con los mismos. -->
 
                                     <span id="span1"></span>
                                     <span id="span2"></span>
@@ -100,13 +100,13 @@
 
                 </div>  
 
-            </nav>
+            </nav> <!-- Finaliza la navegacion del sitio. -->
 
-        </header>
+        </header> <!-- Finalizacion del HEADER. -->
 
-        <main class="bannerPrincipal2 staff">
+        <main class="bannerPrincipal2 staff"> <!-- Inicio del MAIN. El mismo contiene un banner.-->
 
-            <div class="container-fluid text-center">
+            <section class="container"> <!-- Dentro de esta seccion estaran contenidos los integrantes del STAFF. -->
 
                 <div class="row">
 
@@ -115,146 +115,138 @@
                         <h2 class="fw-bolder"> NUESTRO ESTABLECIMIENTO CUENTA CON ESTOS PROFESIONALES </h2>
 
                     </article>
-                    <section class="col-9 col-sm-6 col-xl-3 mb-5">
+                    <section class="col-11 bgExterno my-5 d-flex flex-row-reverse"> <!-- Inicio del primer integrante. -->
 
-                        <div class="container-fluid text-center">
+                        <section class="col-12 my-3 py-3 bgInterno"> <!-- Esta primera sub seccion contendra el nombre del integrante. -->
 
-                            <div class="row">
+                            <h2 class="text-center text-lg-start text-black fw-bold"> PROFE PAULO </h2>
 
-                                <div class="retrato">
+                        </section>
+                        <section class="col-12 col-lg-6 my-3"> <!-- Esta segunda sub seccion contendra una foto del integrante. -->
+                            
+                            <picture>
 
-                                    <article class="col-10 pt-3">
+                                <source media="(max-width: 599px)" srcset="../img/staff/profe-paulo-smartphone.jpg">
+                                <source media="(max-width: 1023px)" srcset="../img/staff/profe-paulo-tablet.jpg">
+                                <img src="../img/staff/profe-paulo.jpg" class="img-fluid" alt="Foto profesor Paulo">
 
-                                        <h3 class="h2 fw-bold"> PAULO </h3>
+                            </picture>
 
-                                    </article>
-                                    <div class="col-12 py-4">
+                        </section>
+                        <section class="col-12 col-lg-5 m-0 p-0 d-flex align-items-center"> <!-- Esta tercera sub seccion contendra informacion sobre el integrante. -->
 
-                                        <img src="../img/profe-paulo.png" class="img-fluid" alt="Foto profesor Paulo">
+                            <article class="bgInterno my-3">
+                        
+                                <p class="p-5"> Paulo es instructor de técnicas de gimnasia especializado en entrenamiento de alto rendimiento. En sus clases te vas a llenar de energía y vas a encontrar diferentes sistemas de entrenamiento para que logres tus objetivos y cuides tu cuerpo. </p>
+                            
+                            </article>
 
-                                    </div>
-                                    <article class="col-10 p-1">
+                        </section>
 
-                                        <p class="fw-lighter"> Paulo es instructor de técnicas de gimnasia especializado en entrenamiento de Alto rendimiento. En sus clases te vas a llenar de energía y vas a encontrar diferentes sistemas de entrenamiento para que logres tus objetivos y cuides tu cuerpo. </p>
-                                    
-                                    </article>
+                    </section> <!-- Finalizacion del primer integrante. -->
+                    <section class="col-11 bgExterno my-5"> <!-- Inicio del segundo integrante. -->
 
-                                </div>
+                        <section class="col-12 my-3 py-3 bgInterno"> <!-- Esta primera sub seccion contendra el nombre del integrante. -->
 
-                            </div>
+                            <h2 class="text-center text-lg-start text-black fw-bold"> PROFE LUCAS </h2>
 
-                        </div>
+                        </section>
+                        <section class="col-12 col-lg-6 my-3"> <!-- Esta segunda sub seccion contendra una foto del integrante. -->
 
-                    </section>
-                    <section class="col-9 col-sm-6 col-xl-3 mb-5">
+                            <picture>
 
-                        <div class="container-fluid text-center">
+                                <source media="(max-width: 599px)" srcset="../img/staff/profe-lucas-smartphone.jpg">
+                                <source media="(max-width: 1023px)" srcset="../img/staff/profe-lucas-tablet.jpg">
+                                <img src="../img/staff/profe-lucas.jpg" class="img-fluid" alt="Foto profesor Lucas">
 
-                            <div class="row">
+                            </picture>
 
-                                <div class="retrato">
+                        </section>
+                        <section class="col-12 col-lg-5 m-0 p-0 d-flex align-items-center"> <!-- Esta tercera sub seccion contendra informacion sobre el integrante. -->
 
-                                    <article class="col-10 pt-3">
+                            <article class="bgInterno my-3">
+                        
+                                <p class="p-5"> Lucas es profe de técnicas de gimnasia apasionado por el deporte y el movimiento constante. En sus clases verás resultados superrápidos, con entrenamientos divertidos ejecutados al ritmo de una música motivadora, con altos niveles de energía. </p>
+                            
+                            </article>
 
-                                        <h3 class="h2 fw-bold"> LUCAS </h3>
+                        </section>
 
-                                    </article>
-                                    <div class="col-12 py-4">
+                    </section> <!-- Finalizacion del segundo integrante. -->
+                    <section class="col-11 bgExterno my-5 d-flex flex-row-reverse"> <!-- Inicio del tercer integrante. -->
 
-                                        <img src="../img/profe-lucas.png" class="img-fluid" alt="Foto profesor Lucas">
+                        <section class="col-12 my-3 py-3 bgInterno"> <!-- Esta primera sub seccion contendra el nombre del integrante. -->
 
-                                    </div>
-                                    <article class="col-10 p-1">
+                            <h2 class="text-center text-lg-start text-black fw-bold"> PROFE NAZA </h2>
 
-                                        <p class="fw-lighter"> Lucas es profe de técnicas de gimnasia apasionado por el deporte y el movimiento constante. En sus clases verás resultados superrápidos, con entrenamientos divertidos ejecutados al ritmo de una música motivadora, con altos niveles de energía. </p>
-                                    
-                                    </article>
+                        </section>
+                        <section class="col-12 col-lg-6 my-3"> <!-- Esta segunda sub seccion contendra una foto del integrante. -->
 
-                                </div>
+                            <picture>
 
-                            </div>
+                                <source media="(max-width: 599px)" srcset="../img/staff/profe-naza-smartphone.jpg">
+                                <source media="(max-width: 1023px)" srcset="../img/staff/profe-naza-tablet.jpg">
+                                <img src="../img/staff/profe-naza.jpg" class="img-fluid" alt="Foto profesor Naza">
 
-                        </div>
+                            </picture>
 
-                    </section>
-                    <section class="col-9 col-sm-6 col-xl-3 mb-5">
+                        </section>
+                        <section class="col-12 col-lg-5 m-0 p-0 d-flex align-items-center"> <!-- Esta tercera sub seccion contendra informacion sobre el integrante. -->
 
-                        <div class="container-fluid text-center">
+                            <article class="bgInterno my-3">
+                        
+                                <p class="p-5"> Naza es profesor especializado en el alto rendimiento deportivo y en el entrenamiento de fuerza. En sus clases encontrarás un mix de ejercicios funcionales con ejercicios de fuerza, trabajarás movilidad, equilibrio, potencia y coordinación. </p>
+                            
+                            </article>
 
-                            <div class="row">
+                        </section>
 
-                                <div class="retrato">
+                    </section> <!-- Finalizacion del tercer integrante. -->
+                    <section class="col-11 bgExterno my-5"> <!-- Inicio del cuarto integrante. -->
+                        
+                        <section class="col-12 my-3 py-3 bgInterno"> <!-- Esta primera sub seccion contendra el nombre del integrante. -->
 
-                                    <article class="col-10 pt-3">
+                            <h2 class="text-center text-lg-start text-black fw-bold"> PROFE DANY </h2>
 
-                                        <h3 class="h2 fw-bold"> NAZA </h3>
+                        </section>
+                        <section class="col-12 col-lg-6 my-3"> <!-- Esta segunda sub seccion contendra una foto del integrante. -->
 
-                                    </article>
-                                    <div class="col-12 py-4">
+                            <picture>
 
-                                        <img src="../img/profe-naza.png" class="img-fluid" alt="Foto profesor Naza">
+                                <source media="(max-width: 599px)" srcset="../img/staff/profe-dany-smartphone.jpg">
+                                <source media="(max-width: 1023px)" srcset="../img/staff/profe-dany-tablet.jpg">
+                                <img src="../img/staff/profe-dany.jpg" class="img-fluid" alt="Foto profesora Dani">
+                                
+                            </picture>
 
-                                    </div>
-                                    <article class="col-10 p-1">
+                        </section>
+                        <section class="col-12 col-lg-5 m-0 p-0 d-flex align-items-center"> <!-- Esta tercera sub seccion contendra informacion sobre el integrante. -->
 
-                                        <p class="fw-lighter"> Naza es profesor especializado en el alto rendimiento deportivo y en el entrenamiento de fuerza. En sus clases encontrarás un mix de ejercicios funcionales con ejercicios de fuerza, trabajarás movilidad, equilibrio, potencia y coordinación.  </p>
-                                    
-                                    </article>
+                            <article class="bgInterno my-3">
+                        
+                                <p class="p-5"> Dany es instructora de fitness especializada en clases funcionales y entrenamiento localizado. Si estás buscando ejercicios desafiantes que te carguen de energía, estás con la persona correcta. ¡Preparate para disfrutar y entrenar fuerte! </p>
+                            
+                            </article>
 
-                                </div>
+                        </section>
 
-                            </div>
-
-                        </div>
-
-                    </section>
-                    <section class="col-9 col-sm-6 col-xl-3 mb-5">
-
-                        <div class="container-fluid text-center">
-
-                            <div class="row">
-
-                                <div class="retrato">
-
-                                    <article class="col-10 pt-3">
-
-                                        <h3 class="h2 fw-bold"> DANY </h3>
-
-                                    </article>
-                                    <div class="col-12 py-4">
-
-                                        <img src="../img/profe-dani.png" class="img-fluid" alt="Foto profesora Dani">
-
-                                    </div>
-                                    <article class="col-10 p-1">
-                                        
-                                        <p class="fw-lighter"> Dany es instructora de fitness especializada en clases funcionales y entrenamiento localizado. Si estás buscando ejercicios desafiantes que te carguen de energía, estás con la persona correcta. ¡Preparate para disfrutar, divertirte y entrenar fuerte! </p>
-                                    
-                                    </article>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </section>
+                    </section> <!-- Finalizacion del cuarto integrante. -->
 
                 </div>
 
-            </div>
+            </section>
 
-        </main>
+        </main> <!-- Finalizacion del MAIN. -->
 
-        <footer class="container-fluid">
+        <footer class="container-fluid"> <!-- Inicio del FOOTER. -->
 
-            <div class="row">
+            <section class="row"> <!-- Esta seccion contendra tanto el logo como la informacion que se refleja en el FOOTER. -->
 
                 <div class="col-12 col-md-3">
 
                     <a href="../index.html" class="link-dark text-decoration-none">
 
-                        <img src="../img/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
+                        <img src="../img/logos/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
 
                     </a>
                     
@@ -279,9 +271,9 @@
                 </article>
                 <p class="text-center">&copy; 2022 PG Training - Todos los derechos reservados <br> Desarrollado por Ballón Javier</p>
 
-            </div>
+            </section> <!-- Finaliza la seccion. -->
 
-        </footer>
+        </footer> <!-- Finalizacion del FOOTER. -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
