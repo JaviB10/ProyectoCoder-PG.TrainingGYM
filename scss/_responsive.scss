@@ -67,22 +67,25 @@
     }
     /*TODO --- MAIN --- INICIO --- */
     /** Estilos en los logos de las redes que tendra solo Desktop*/
-    .redesSociales div div {
-        &:hover a {
-            filter: blur(0.2rem);
-            &:hover {
+    @each $redes,$color in $iconos {
+        .redesSociales div div {
+            &:hover a {
+                filter: blur(0.2rem);
+                &:hover i {
+                    transition: all 0.65s;
+                    transform: rotateY(360deg);
+                }
+            }
+            .#{$redes}:hover{
+                background-color: $color;
                 transform:  translateY(-0.3rem) scale(1.05);
                 box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
                 filter: none;
                 color: $negro;
-                background-color: $amarillo;
-            }
-            &:hover i {
-                transition: all 0.7s;
-                transform: rotateY(360deg);
+                text-decoration: none;
             }
         }
-    }
+    }    
 }
 /*? Responsive -- Tablet -- */
 @media only screen and (min-width: 600px) and (max-width: 1023px) {

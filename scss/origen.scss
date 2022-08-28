@@ -3,6 +3,15 @@
 @import "colores";
 /*? Varible que contiene 1rem, se podra utilizar para darle tamaño a lo que sea */
 $spacer: 1rem;
+/*? Mapa creado para darle estilo a los iconos */
+$iconos: (
+    instagram: #ff0bb667,
+    facebook: #2455f76c,
+    whatsapp: #22770062,
+    transferencia: #fcd2017a,
+    efectivo: #fcd2017a,
+    credito: #fcd2017a,
+);
 /*! - ESTILOS GENERALES - */
 /** CSS Valores por defecto */
 * {
@@ -79,12 +88,15 @@ body h1, h2 {
     border-radius: calc($spacer * 1.5);
     margin: calc($spacer * 1);
 }
-.descripcion a p {
-    position: relative;
-    @include spanes(none, none, none, 1rem);
-    font-size: 11px;
-    color: $negro;
-    font-family: $titulos;
+.descripcion a {
+    text-decoration: none;
+    p{
+        position: relative;
+        @include spanes(none, none, none, 1rem);
+        font-size: 10px;
+        color: $negro;
+        font-family: $titulos;
+    }
 }
 /** Se aplica un pequeño banner a la seccion de localizacion asi como tambien un tamaño fijo al mapa */
 .bannerLocalizacion {
@@ -133,7 +145,7 @@ body h1, h2 {
     } 
     a {
         @include anchura(130px, 130px);
-        font-size: 80px;
+        font-size: 85px;
         color: $blanco;
         background-color: $negro;
         border-radius: calc($spacer * 2);
@@ -147,6 +159,7 @@ body h1, h2 {
     img {
         @include anchura(100%, 30rem);
         @include object(cover, center);
+        border-radius: calc($spacer * 1);
     }
     h2 {
         color: $negro;
@@ -159,6 +172,8 @@ body h1, h2 {
     .bgInterno {
         background-color: $amarillo;
         color: $negro;
+        border-radius: calc($spacer * 1);
+        box-shadow: 0 0 5px $amarillo, 0 0 7px $amarillo, 0 0 13px $amarillo;
         ul {
             font-family: $parrafos;
         }
@@ -185,9 +200,10 @@ body h1, h2 {
         @include anchura(100%, 100%);
         border-radius: calc($spacer * 2);
         &:hover {
-            transform: translateY(-0.3rem) scale(1.05);
-            transition: 0.2s;
+            transform: translateY(-0.3rem) scale(1.15);
+            transition: 0.65s;
             z-index: 2;
+            box-shadow: 0 0 5px $blanco, 0 0 7px $blanco, 0 0 15px $blanco;
         }
     }
 }
@@ -206,9 +222,12 @@ body h1, h2 {
     }
     .bgInterno{
         border-radius: calc($spacer * 1);
+        box-shadow: 0 0 5px $amarillo, 0 0 7px $amarillo, 0 0 13px $amarillo;
     }
     img {
         border-radius: calc($spacer * 1);
+        padding: 5px;
+        box-shadow: 0 0 5px $amarillo, 0 0 7px $amarillo, 0 0 13px $amarillo;
     }
 } 
 /*TODO --- MAIN --- CONTACTO --- */
@@ -226,7 +245,7 @@ body h1, h2 {
     }
     .backgroundForm {
         background: rgb(0, 0, 0, 0.5);
-        box-shadow: 0 0 50px 0 rgba(255, 255, 255, .6);
+        box-shadow: 0 0 30px 0 rgba(255, 255, 255, .6);
         border-radius: calc($spacer * 1);
         @include anchura(75%, none);
     }
@@ -249,4 +268,3 @@ footer {
     }
 }
 @import "responsive";
-
