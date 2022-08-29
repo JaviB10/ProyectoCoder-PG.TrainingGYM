@@ -10,9 +10,8 @@
 /** Mixin para declarar una posicion mediante FLEX */
 /** Mixin para declarar una posicion */
 /** Mixin para declarar una alineacion */
-/*? Variables con los colores principales dentro del sitio */
+/*? Variables con los colores principales dentro del sitio */ /*? Mapa creado para darle estilo a los iconos */
 /*? Varible que contiene 1rem, se podra utilizar para darle tamaño a lo que sea */
-/*? Mapa creado para darle estilo a los iconos */
 /*! - ESTILOS GENERALES - */
 /** CSS Valores por defecto */
 * {
@@ -109,6 +108,7 @@ body h1, h2 {
 /** Mismo banner anterior pero con un margen superior */
 .bannerPrincipal2 {
   margin-top: 4rem;
+  background-repeat: no-repeat;
 }
 
 /** Declaracion de tamaño para los logos, bordes y margenes */
@@ -241,6 +241,9 @@ body h1, h2 {
   grid-auto-rows: 150px;
   padding: 40px 100px;
   justify-content: center;
+  justify-items: none;
+  align-items: none;
+  align-content: none;
   grid-gap: 10px;
 }
 .gridGaleria img {
@@ -543,7 +546,6 @@ footer > section > p {
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
   /** Se implementa un media query donde se quita el logo en orientacion landscape */
   /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a tablet */
-  /** Modificacion en el color de la descripcion de los logos */
   /*TODO --- MAIN --- GALERIA --- */
   /** GRIDS "GALERIA" */
 }
@@ -578,8 +580,45 @@ footer > section > p {
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
-  .descripcion a p {
-    color: #fff;
+  .redesSociales .instagram {
+    color: #000;
+    background-color: rgba(255, 11, 182, 0.4039215686);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .redesSociales .facebook {
+    color: #000;
+    background-color: rgba(36, 85, 247, 0.4235294118);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .redesSociales .whatsapp {
+    color: #000;
+    background-color: rgba(34, 119, 0, 0.3843137255);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .redesSociales .transferencia {
+    color: #000;
+    background-color: rgba(252, 210, 1, 0.4784313725);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .redesSociales .efectivo {
+    color: #000;
+    background-color: rgba(252, 210, 1, 0.4784313725);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  .redesSociales .credito {
+    color: #000;
+    background-color: rgba(252, 210, 1, 0.4784313725);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
@@ -610,7 +649,6 @@ footer > section > p {
   }
   /** Se implementa un media query donde se quita el logo en orientacion landscape */
   /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a smartphone */
-  /** Modificacion en el color de la descripcion de los logos */
   /*TODO --- MAIN --- ACTIVIDADES --- */
   /** Se le declara una altura a las imagenes del carrusel */
   /*TODO --- MAIN --- GALERIA --- */
@@ -647,8 +685,45 @@ footer > section > p {
   }
 }
 @media only screen and (max-width: 599px) {
-  .descripcion a p {
-    color: #fff;
+  .redesSociales .instagram {
+    color: #000;
+    background-color: rgba(255, 11, 182, 0.4039215686);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .redesSociales .facebook {
+    color: #000;
+    background-color: rgba(36, 85, 247, 0.4235294118);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .redesSociales .whatsapp {
+    color: #000;
+    background-color: rgba(34, 119, 0, 0.3843137255);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .redesSociales .transferencia {
+    color: #000;
+    background-color: rgba(252, 210, 1, 0.4784313725);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .redesSociales .efectivo {
+    color: #000;
+    background-color: rgba(252, 210, 1, 0.4784313725);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@media only screen and (max-width: 599px) {
+  .redesSociales .credito {
+    color: #000;
+    background-color: rgba(252, 210, 1, 0.4784313725);
+    box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
 @media only screen and (max-width: 599px) {

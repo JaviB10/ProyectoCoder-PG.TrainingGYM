@@ -111,10 +111,15 @@
     footer {
         background-image: url(../img/banner/banner-footer-tablet.jpg);
     }
-    /** Modificacion en el color de la descripcion de los logos */
-    .descripcion a p {
-        color: $blanco;
-    }
+    @each $redes,$color in $iconos {
+        .redesSociales {
+            .#{$redes}{
+                color: $negro;
+                background-color: $color;
+                box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+            }
+        }
+    } 
     /*TODO --- MAIN --- GALERIA --- */
     /** GRIDS "GALERIA" */ 
     .gridGaleria{ /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
@@ -166,10 +171,15 @@
     footer {
         background-image: url(../img/banner/banner-footer-smartphone.jpg);
     }
-    /** Modificacion en el color de la descripcion de los logos */
-    .descripcion a p {
-        color: $blanco;
-    }
+    @each $redes,$color in $iconos {
+        .redesSociales {
+            .#{$redes}{
+                color: $negro;
+                background-color: $color;
+                box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
+            }
+        }
+    } 
     /*TODO --- MAIN --- ACTIVIDADES --- */
     /** Se le declara una altura a las imagenes del carrusel */
     .actividades img {

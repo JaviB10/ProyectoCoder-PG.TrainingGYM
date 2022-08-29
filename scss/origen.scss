@@ -1,17 +1,9 @@
 @import "fuentes";
 @import "mixins";
 @import "colores";
+@import "mapas";
 /*? Varible que contiene 1rem, se podra utilizar para darle tamaño a lo que sea */
 $spacer: 1rem;
-/*? Mapa creado para darle estilo a los iconos */
-$iconos: (
-    instagram: #ff0bb667,
-    facebook: #2455f76c,
-    whatsapp: #22770062,
-    transferencia: #fcd2017a,
-    efectivo: #fcd2017a,
-    credito: #fcd2017a,
-);
 /*! - ESTILOS GENERALES - */
 /** CSS Valores por defecto */
 * {
@@ -81,6 +73,7 @@ body h1, h2 {
 .bannerPrincipal2 {
     @extend .bannerPrincipal;
     margin-top: calc($spacer * 4);
+    background-repeat: no-repeat;
 }
 /** Declaracion de tamaño para los logos, bordes y margenes */
 .logos {
@@ -193,7 +186,7 @@ body h1, h2 {
     grid-template-columns: repeat(5,1fr);
     grid-auto-rows: 150px;
     padding: 40px 100px;
-    justify-content: center;
+    @include alineacion (center, none, none, none);
     grid-gap: 10px;
     img {
         @include object(cover, center);
