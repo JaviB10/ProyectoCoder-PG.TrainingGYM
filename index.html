@@ -28,7 +28,7 @@
                 <div class="container-fluid">
 
                     <a class="navbar-brand" href="./index.html"><img class="logoPrincipal mx-2" src="./img/logos/logo-pgtraining.png" alt="Logo PG TRAINING"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
                         <span class="navbar-toggler-icon"></span>
 
@@ -116,13 +116,13 @@
 
         <main> <!-- Inicio del MAIN. -->
 
-            <section id="myCarousel" class="carousel slide" data-bs-ride="carousel"> <!-- Esta seccion esta conformada por el carrusel de imagenes que tendra el INICIO como primera seccion. -->
+            <section class="carousel slide" id="myCarousel" data-bs-ride="carousel"> <!-- Esta seccion esta conformada por el carrusel de imagenes que tendra el INICIO como primera seccion. -->
 
                 <div class="carousel-indicators">
 
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button class="active" data-bs-target="#myCarousel" data-bs-slide-to="0" type="button" aria-current="true" aria-label="Slide 1"></button>
+                    <button data-bs-target="#myCarousel" data-bs-slide-to="1" type="button" aria-label="Slide 2"></button>
+                    <button data-bs-target="#myCarousel" data-bs-slide-to="2" type="button" aria-label="Slide 3"></button>
 
                 </div>
                 <div class="carousel-inner"> 
@@ -133,7 +133,7 @@
 
                             <div class="position-absolute top-0 start-50 translate-middle">
 
-                                <img src="./img/logos/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
+                                <img class="logoCarrusel" src="./img/logos/logo3-pgtraining.png" alt="Logo PG TRAINING">
 
                             </div>
 
@@ -142,7 +142,7 @@
 
                             <source media="(max-width: 599px)" srcset="./img/banner/banner-carrusel1-smartphone.jpg">
                             <source media="(max-width: 1023px)" srcset="./img/banner/banner-carrusel1-tablet.jpg">
-                            <img src="./img/banner/banner-carrusel1.jpg" class="imgCarrusel" alt="Banner Carrusel 1">
+                            <img class="imgCarrusel" src="./img/banner/banner-carrusel1.jpg" alt="Banner Carrusel 1">
 
                         </picture>
                         <div class="container-fluid">
@@ -164,7 +164,7 @@
 
                             <div class="position-absolute top-0 start-50 translate-middle">
 
-                                <img src="./img/logos/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
+                                <img class="logoCarrusel" src="./img/logos/logo3-pgtraining.png" alt="Logo PG TRAINING">
 
                             </div>
 
@@ -173,7 +173,7 @@
 
                             <source media="(max-width: 599px)" srcset="./img/banner/banner-carrusel2-smartphone.jpg">
                             <source media="(max-width: 1023px)" srcset="./img/banner/banner-carrusel2-tablet.jpg">
-                            <img src="./img/banner/banner-carrusel2.jpg" class="imgCarrusel" alt="Banner Carrusel 2">
+                            <img class="imgCarrusel" src="./img/banner/banner-carrusel2.jpg" alt="Banner Carrusel 2">
 
                         </picture>
                         <div class="container-fluid">
@@ -195,7 +195,7 @@
 
                             <div class="position-absolute top-0 start-50 translate-middle">
 
-                                <img src="./img/logos/logo3-pgtraining.png" class="logoCarrusel" alt="Logo PG TRAINING">
+                                <img class="logoCarrusel" src="./img/logos/logo3-pgtraining.png" alt="Logo PG TRAINING">
 
                             </div>
 
@@ -204,7 +204,7 @@
 
                             <source media="(max-width: 599px)" srcset="./img/banner/banner-carrusel3-smartphone.jpg">
                             <source media="(max-width: 1023px)" srcset="./img/banner/banner-carrusel3-tablet.jpg">
-                            <img src="./img/banner/banner-carrusel3.jpg" class="imgCarrusel" alt="Banner Carrusel 3">
+                            <img class="imgCarrusel" src="./img/banner/banner-carrusel3.jpg" alt="Banner Carrusel 3">
 
                         </picture>
                         <div class="container-fluid">
@@ -222,13 +222,13 @@
                     </section>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev" type="button">
 
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
 
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next" type="button">
 
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -283,12 +283,12 @@
                         </section>
                         <section class="col-12 m-0 p-0 promo"> <!-- Esta tercera sub seccion contendra un carrusel de imagenes con promociones. -->
 
-                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel slide" id="carouselExampleCaptions" data-bs-ride="false">
                                 
                                 <div class="carousel-indicators">
 
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button class="active" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" type="button" aria-current="true" aria-label="Slide 1"></button>
+                                    <button data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" type="button" aria-label="Slide 2"></button>
 
                                 </div>
                                 <div class="carousel-inner">
@@ -319,13 +319,13 @@
                                     </section>
 
                                 </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <button class="carousel-control-prev" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" type="button">
 
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
 
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <button class="carousel-control-next" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" type="button">
 
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
@@ -342,9 +342,9 @@
 
                                 <div>
 
-                                    <a href="https://www.instagram.com/pg.training/?hl=es" target="_blank" class="instagram"><i class="fab fa-instagram" ></i> </a>
-                                    <a href="https://www.facebook.com/PG-training-100650208793813/?ref=py_c&_rdr" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://api.whatsapp.com/send?phone=543415319116&app=facebook&entry_point=page_cta&fbclid=IwAR3eNcDfa0ZwRZnUkdUvm-yLo2_o_L9Q40bakhukY8_D2JMdQTxLzYb4GkI" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                    <a class="instagram" href="https://www.instagram.com/pg.training/?hl=es" target="_blank"><i class="fab fa-instagram" ></i> </a>
+                                    <a class="facebook" href="https://www.facebook.com/PG-training-100650208793813/?ref=py_c&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="whatsapp" href="https://api.whatsapp.com/send?phone=543415319116&app=facebook&entry_point=page_cta&fbclid=IwAR3eNcDfa0ZwRZnUkdUvm-yLo2_o_L9Q40bakhukY8_D2JMdQTxLzYb4GkI" target="_blank"><i class="fab fa-whatsapp"></i></a>
                                     
                                 </div>
 
@@ -366,9 +366,9 @@
 
                 <div class="col-12 col-md-3">
 
-                    <a href="./index.html" class="link-dark text-decoration-none">
+                    <a class="link-dark text-decoration-none" href="./index.html">
 
-                        <img src="./img/logos/logo2-pgtraining.png" class="img-fluid mt-5" alt="Logo PG TRAINING">
+                        <img class="img-fluid mt-5" src="./img/logos/logo2-pgtraining.png" alt="Logo PG TRAINING">
 
                     </a>
                     

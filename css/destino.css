@@ -504,7 +504,7 @@ footer > section > p {
     transform: rotateY(360deg);
   }
   .redesSociales div div .transferencia:hover {
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     transform: translateY(-0.3rem) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
@@ -519,7 +519,7 @@ footer > section > p {
     transform: rotateY(360deg);
   }
   .redesSociales div div .efectivo:hover {
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     transform: translateY(-0.3rem) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
@@ -534,7 +534,7 @@ footer > section > p {
     transform: rotateY(360deg);
   }
   .redesSociales div div .credito:hover {
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     transform: translateY(-0.3rem) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
@@ -603,21 +603,21 @@ footer > section > p {
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
   .redesSociales .transferencia {
     color: #000;
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
   .redesSociales .efectivo {
     color: #000;
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
   .redesSociales .credito {
     color: #000;
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
@@ -708,21 +708,21 @@ footer > section > p {
 @media only screen and (max-width: 599px) {
   .redesSociales .transferencia {
     color: #000;
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
 @media only screen and (max-width: 599px) {
   .redesSociales .efectivo {
     color: #000;
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
 @media only screen and (max-width: 599px) {
   .redesSociales .credito {
     color: #000;
-    background-color: rgba(252, 210, 1, 0.4784313725);
+    background-color: #fcd201;
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }
