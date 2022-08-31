@@ -97,19 +97,19 @@
     }
     /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a tablet */
     .bannerPrincipal {
-        background-image: url(../img/banner/banner-main-tablet.jpg);
+        background-image: url(../img/banner/banner-main-800px.jpg);
     }
     .bannerLocalizacion {
-        background-image: url(../img/banner/banner-localizacion-tablet.jpg);
+        background-image: url(../img/banner/banner-localizacion-800px.jpg);
     }
     .bannerPromoCarrusel {
-        background-image: url(../img/promociones/promo1-tablet.jpg);
+        background-image: url(../img/promociones/promo1-800px.jpg);
     }
     .bannerPromoCarrusel2 {
-        background-image: url(../img/promociones/promo2-tablet.jpg);
+        background-image: url(../img/promociones/promo2-800px.jpg);
     }
     footer {
-        background-image: url(../img/banner/banner-footer-tablet.jpg);
+        background-image: url(../img/banner/banner-footer-800px.jpg);
     }
     @each $redes,$color in $iconos {
         .redesSociales {
@@ -127,8 +127,8 @@
         grid-template-areas: 
         "img1 img2 img7 img7"
         "img6 img6 img3 img3"
-        "img5 img4 img3 img3"
-        "img9 img9 img9 img8";
+        "img9 img4 img3 img3"
+        "img5 img5 img5 img8";
         grid-template-columns: repeat(4,1fr);
     }
     
@@ -157,19 +157,19 @@
     }
     /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a smartphone */
     .bannerPrincipal {
-        background-image: url(../img/banner/banner-main-smartphone.jpg);
+        background-image: url(../img/banner/banner-main-400px.jpg);
     }
     .bannerLocalizacion {
-        background-image: url(../img/banner/banner-localizacion-smartphone.jpg);
+        background-image: url(../img/banner/banner-localizacion-400px.jpg);
     }
     .bannerPromoCarrusel {
-        background-image: url(../img/promociones/promo1-smartphone.jpg);
+        background-image: url(../img/promociones/promo1-400px.jpg);
     }
     .bannerPromoCarrusel2 {
-        background-image: url(../img/promociones/promo2-smartphone.jpg);
+        background-image: url(../img/promociones/promo2-400px.jpg);
     }
     footer {
-        background-image: url(../img/banner/banner-footer-smartphone.jpg);
+        background-image: url(../img/banner/banner-footer-400px.jpg);
     }
     @each $redes,$color in $iconos {
         .redesSociales {
@@ -182,9 +182,7 @@
     } 
     /*TODO --- MAIN --- ACTIVIDADES --- */
     /** Se le declara una altura a las imagenes del carrusel */
-    .actividades img {
-        @include anchura(none, 20rem);
-    }
+    
     /*TODO --- MAIN --- GALERIA --- */
     /** GRIDS "GALERIA" */ 
     .gridGaleria{ /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */

@@ -150,7 +150,7 @@ body h1, h2 {
 /** Se aplica una alineacion a los elementos y se le declara un tamaño a las imagenes */
 .actividades {
     img {
-        @include anchura(100%, 30rem);
+        @include anchura(100%, 100%);
         @include object(cover, center);
         border-radius: calc($spacer * 1);
     }
@@ -177,12 +177,12 @@ body h1, h2 {
 .gridGaleria {
     display: grid;
     grid-template-areas: 
-    "img9 img9 img8 img2 img2"
+    "img9 img9 img8 img7 img7"
     "img9 img9 img6 img6 img6"
     "img3 img4 img6 img6 img6"
     "img3 img4 img6 img6 img6"
-    "img3 img5 img1 img1 img1"
-    "img7 img7 img1 img1 img1";
+    "img3 img2 img1 img1 img1"
+    "img5 img5 img1 img1 img1";
     grid-template-columns: repeat(5,1fr);
     grid-auto-rows: 150px;
     padding: 40px 100px;
