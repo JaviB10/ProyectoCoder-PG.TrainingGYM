@@ -73,7 +73,6 @@ body h1, h2 {
 .bannerPrincipal2 {
     @extend .bannerPrincipal;
     margin-top: calc($spacer * 4);
-    background-repeat: no-repeat;
 }
 /** Declaracion de tamaño para los logos, bordes y margenes */
 .logos {
