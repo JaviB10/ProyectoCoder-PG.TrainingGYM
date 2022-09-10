@@ -4,7 +4,8 @@
     /*TODO --- HEADER --- */
     /** Efecto neon al posicionarse sobre el menu */
     .btn-neon{
-        @include posicion (relative, inline-block);
+        @include disposicion(relative);
+        @include display(inline-block);
         padding: 10px;
         color: $blanco;
         letter-spacing: 2px;
@@ -18,10 +19,11 @@
             color: $negro;
         }
         span{
-            @include posicion (absolute, block);
+            @include disposicion (absolute);
+            @include display (block);
         }
         #span1{
-            @include spanes(0px, -100%, none, none);
+            @include desplazamiento(0px, -100%, none, none);
             @include anchura(100%, 2px);
             background: linear-gradient(90deg, transparent, $amarillo);
         }
@@ -30,7 +32,7 @@
             transition: 0.5s;
         }
         #span3{
-            @include spanes(none, none, -100%, 0px);
+            @include desplazamiento(none, none, -100%, 0px);
             @include anchura(100%, 2px);
             background: linear-gradient(270deg, transparent, $amarillo);
         }
@@ -39,7 +41,7 @@
             transition: 0.5s;
         } 
         #span2{
-            @include spanes(-100%, none, 0px, none);
+            @include desplazamiento(-100%, none, 0px, none);
             @include anchura(2px, 100%);
             background: linear-gradient(180deg, transparent, $amarillo);
         }  
@@ -49,7 +51,7 @@
             transition-delay: 0.25s;
         } 
         #span4{
-            @include spanes(none, 0px, none, -100%);
+            @include desplazamiento(none, 0px, none, -100%);
             @include anchura(2px, 100%);
             background: linear-gradient(360deg, transparent, $amarillo);
         } 
@@ -62,7 +64,7 @@
     /** Efectos neo al posicionarse sobre el submenu de Actividades */
     .dropdown-menu li:hover a{
         background: $amarillo;
-        box-shadow: 0 0 0.1rem $amarillo, 0 0 0.4rem $amarillo, 0 0 0.8rem $amarillo;
+        box-shadow: 0 0 1px $amarillo, 0 0 6px $amarillo, 0 0 12px $amarillo;
         color: $negro;
     }
     /*TODO --- MAIN --- INICIO --- */
@@ -70,7 +72,7 @@
     @each $redes,$color in $iconos {
         .redesSociales div div {
             &:hover a {
-                filter: blur(0.2rem);
+                filter: blur(3px);
                 &:hover i {
                     transition: all 0.65s;
                     transform: rotateY(360deg);
@@ -78,7 +80,7 @@
             }
             .#{$redes}:hover{
                 background-color: $color;
-                transform:  translateY(-0.3rem) scale(1.05);
+                transform:  translateY(-4.8px) scale(1.05);
                 box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
                 filter: none;
                 color: $negro;
@@ -92,7 +94,7 @@
     /** Se implementa un media query donde se quita el logo en orientacion landscape */
     @media only screen and (orientation:landscape) {
         .logoCarrusel {
-            display: none;
+            @include display(none);
         }
     }
     /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a tablet */
@@ -123,7 +125,7 @@
     /*TODO --- MAIN --- GALERIA --- */
     /** GRIDS "GALERIA" */ 
     .gridGaleria{ /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
-        display: grid;
+        @include display(grid);
         grid-template-areas: 
         "img1 img2 img7 img7"
         "img6 img6 img3 img3"
@@ -131,7 +133,6 @@
         "img5 img5 img5 img8";
         grid-template-columns: repeat(4,1fr);
     }
-    
 }
 /*? Responsive -- Smartphone -- */
 @media only screen and (max-width: 599px) {
@@ -147,12 +148,12 @@
     }
     /** Se modifica el TOP del logo */
     .logoCarrusel {
-        @include spanes(11rem, 0, 0, 0); 
+        @include desplazamiento(190px, 0, 0, 0); 
     }
     /** Se implementa un media query donde se quita el logo en orientacion landscape */
     @media only screen and (orientation:landscape) {
         .logoCarrusel {
-            display: none;
+            @include display(none);
         }
     }
     /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a smartphone */
@@ -180,13 +181,10 @@
             }
         }
     } 
-    /*TODO --- MAIN --- ACTIVIDADES --- */
-    /** Se le declara una altura a las imagenes del carrusel */
-    
     /*TODO --- MAIN --- GALERIA --- */
     /** GRIDS "GALERIA" */ 
     .gridGaleria{ /* Se modifia el Grid principal, en este caso se reducen las columnas y se cambian de lugar las imangenes para tener una mejor visualizacion. */
-        display: grid;
+        @include display(grid);
         grid-template-areas: 
         "img1 img2 img5"
         "img6 img6 img3"

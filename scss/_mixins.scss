@@ -4,8 +4,8 @@
     width: $width;
     height: $height;
 }
-/** Mixin para posicionar elementos */
-@mixin spanes ($top, $left, $right, $bottom) {
+/** Mixin para desplazar elementos */
+@mixin desplazamiento ($top, $left, $right, $bottom) {
     top: $top;
     left: $left;
     right: $right;
@@ -22,14 +22,12 @@
     object-fit: $fit;
     object-position: $position;
 }
-/** Mixin para declarar una posicion mediante FLEX */
-@mixin flex ($display, $wrap) {
-    display: $display;
-    flex-wrap: $wrap;
-}
-/** Mixin para declarar una posicion */
-@mixin posicion ($position, $display) {
+/** Mixin para declarar una perspectiva */
+@mixin disposicion ($position) {
     position: $position;
+}
+/** Mixin para declarar display */
+@mixin display ($display) {
     display: $display;
 }
 /** Mixin para declarar una alineacion */

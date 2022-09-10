@@ -4,11 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 /*! MIXINS */
 /** Mixin para declarar "widht" y "height" */
-/** Mixin para posicionar elementos */
+/** Mixin para desplazar elementos */
 /** Mixin para estilos dentro del background */
 /** Mixin para objetar imagenes */
-/** Mixin para declarar una posicion mediante FLEX */
-/** Mixin para declarar una posicion */
+/** Mixin para declarar una perspectiva */
+/** Mixin para declarar display */
 /** Mixin para declarar una alineacion */
 /*? Variables con los colores principales dentro del sitio */ /*? Mapa creado para darle estilo a los iconos */
 /*? Varible que contiene 1rem, se podra utilizar para darle tamaño a lo que sea */
@@ -45,7 +45,6 @@ p {
 /** Se aplica una posicion estatica al header, se le declara un tamaño fijo al logo y se le define tanto colo como fuente a las letras dentro del nav */
 header {
   position: sticky;
-  display: inline-block;
   top: 0px;
   z-index: 3;
 }
@@ -81,8 +80,7 @@ header a {
   width: none;
   height: 20vh;
   position: relative;
-  display: inline-block;
-  top: 15rem;
+  top: 240px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -108,7 +106,6 @@ body h1, h2 {
 /** Mismo banner anterior pero con un margen superior */
 .bannerPrincipal2 {
   margin-top: 4rem;
-  background-repeat: no-repeat;
 }
 
 /** Declaracion de tamaño para los logos, bordes y margenes */
@@ -127,7 +124,7 @@ body h1, h2 {
   top: none;
   left: none;
   right: none;
-  bottom: 1rem;
+  bottom: 16px;
   font-size: 10px;
   color: #000;
   font-family: "Graduate", "cursive";
@@ -153,7 +150,7 @@ body h1, h2 {
 /** Banner que se aplicara para las promociones las cuales estaran dentro de un carrusel */
 .bannerPromoCarrusel, .bannerPromoCarrusel2 {
   width: 100%;
-  height: 30rem;
+  height: 480px;
   background-image: url(../img/promociones/promo1.jpg);
   background-size: cover;
   background-position: center;
@@ -176,7 +173,7 @@ body h1, h2 {
 }
 .redesSociales div {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   justify-items: none;
   align-items: center;
@@ -327,7 +324,7 @@ body h1, h2 {
 }
 .contacto section {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   justify-items: none;
   align-items: none;
@@ -353,7 +350,7 @@ footer > section {
 }
 footer > section div a {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: wrap;
   justify-content: center;
   justify-items: none;
   align-items: center;
@@ -446,13 +443,13 @@ footer > section > p {
   /** Efectos neo al posicionarse sobre el submenu de Actividades */
   .dropdown-menu li:hover a {
     background: #fcd201;
-    box-shadow: 0 0 0.1rem #fcd201, 0 0 0.4rem #fcd201, 0 0 0.8rem #fcd201;
+    box-shadow: 0 0 1px #fcd201, 0 0 6px #fcd201, 0 0 12px #fcd201;
     color: #000;
   }
   /*TODO --- MAIN --- INICIO --- */
   /** Estilos en los logos de las redes que tendra solo Desktop*/
   .redesSociales div div:hover a {
-    filter: blur(0.2rem);
+    filter: blur(3px);
   }
   .redesSociales div div:hover a:hover i {
     transition: all 0.65s;
@@ -460,14 +457,14 @@ footer > section > p {
   }
   .redesSociales div div .instagram:hover {
     background-color: rgba(255, 11, 182, 0.4039215686);
-    transform: translateY(-0.3rem) scale(1.05);
+    transform: translateY(-4.8px) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
     color: #000;
     text-decoration: none;
   }
   .redesSociales div div:hover a {
-    filter: blur(0.2rem);
+    filter: blur(3px);
   }
   .redesSociales div div:hover a:hover i {
     transition: all 0.65s;
@@ -475,14 +472,14 @@ footer > section > p {
   }
   .redesSociales div div .facebook:hover {
     background-color: rgba(36, 85, 247, 0.4235294118);
-    transform: translateY(-0.3rem) scale(1.05);
+    transform: translateY(-4.8px) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
     color: #000;
     text-decoration: none;
   }
   .redesSociales div div:hover a {
-    filter: blur(0.2rem);
+    filter: blur(3px);
   }
   .redesSociales div div:hover a:hover i {
     transition: all 0.65s;
@@ -490,14 +487,14 @@ footer > section > p {
   }
   .redesSociales div div .whatsapp:hover {
     background-color: rgba(34, 119, 0, 0.3843137255);
-    transform: translateY(-0.3rem) scale(1.05);
+    transform: translateY(-4.8px) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
     color: #000;
     text-decoration: none;
   }
   .redesSociales div div:hover a {
-    filter: blur(0.2rem);
+    filter: blur(3px);
   }
   .redesSociales div div:hover a:hover i {
     transition: all 0.65s;
@@ -505,14 +502,14 @@ footer > section > p {
   }
   .redesSociales div div .transferencia:hover {
     background-color: #fcd201;
-    transform: translateY(-0.3rem) scale(1.05);
+    transform: translateY(-4.8px) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
     color: #000;
     text-decoration: none;
   }
   .redesSociales div div:hover a {
-    filter: blur(0.2rem);
+    filter: blur(3px);
   }
   .redesSociales div div:hover a:hover i {
     transition: all 0.65s;
@@ -520,14 +517,14 @@ footer > section > p {
   }
   .redesSociales div div .efectivo:hover {
     background-color: #fcd201;
-    transform: translateY(-0.3rem) scale(1.05);
+    transform: translateY(-4.8px) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
     color: #000;
     text-decoration: none;
   }
   .redesSociales div div:hover a {
-    filter: blur(0.2rem);
+    filter: blur(3px);
   }
   .redesSociales div div:hover a:hover i {
     transition: all 0.65s;
@@ -535,7 +532,7 @@ footer > section > p {
   }
   .redesSociales div div .credito:hover {
     background-color: #fcd201;
-    transform: translateY(-0.3rem) scale(1.05);
+    transform: translateY(-4.8px) scale(1.05);
     box-shadow: 10px 13px 5px 0px rgba(0, 0, 0, 0.5);
     filter: none;
     color: #000;
@@ -642,15 +639,13 @@ footer > section > p {
   }
   /** Se modifica el TOP del logo */
   .logoCarrusel {
-    top: 11rem;
+    top: 190px;
     left: 0;
     right: 0;
     bottom: 0;
   }
   /** Se implementa un media query donde se quita el logo en orientacion landscape */
   /** Se efectua un cambio de imagen la cual tiene un tamaño mas acorde a smartphone */
-  /*TODO --- MAIN --- ACTIVIDADES --- */
-  /** Se le declara una altura a las imagenes del carrusel */
   /*TODO --- MAIN --- GALERIA --- */
   /** GRIDS "GALERIA" */
 }

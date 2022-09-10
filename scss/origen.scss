@@ -26,7 +26,7 @@ p {
 /*TODO --- HEADER --- */
 /** Se aplica una posicion estatica al header, se le declara un tamaño fijo al logo y se le define tanto colo como fuente a las letras dentro del nav */
 header {
-    @include posicion(sticky, inline-block);
+    @include disposicion(sticky);
     top: 0px;
     z-index: 3;
     img {
@@ -54,8 +54,8 @@ header {
 }
 .logoCarrusel {
     @include anchura(none, 20vh);
-    @include posicion(relative, inline-block);
-    @include spanes(15rem, 0, 0, 0); 
+    @include disposicion(relative);
+    @include desplazamiento(240px, 0, 0, 0); 
     animation: zoomInDown 2s; /* Animacion para el logo en el carrusel */
 }
 body h1, h2 {
@@ -83,8 +83,8 @@ body h1, h2 {
 .descripcion a {
     text-decoration: none;
     p{
-        position: relative;
-        @include spanes(none, none, none, 1rem);
+        @include disposicion(relative);
+        @include desplazamiento(none, none, none, 16px);
         font-size: 10px;
         color: $negro;
         font-family: $titulos;
@@ -104,7 +104,7 @@ body h1, h2 {
 }
 /** Banner que se aplicara para las promociones las cuales estaran dentro de un carrusel */
 .bannerPromoCarrusel {
-    @include anchura(100%, 30rem);
+    @include anchura(100%, 480px);
     background-image: url(../img/promociones/promo1.jpg);
     @include background(cover, center, none);
 }
@@ -125,13 +125,15 @@ body h1, h2 {
         padding-top: calc($spacer * 3);
     }
     div {
-        @include flex(flex, nowrap);
+        @include display(flex);
+        flex-wrap: wrap;
         @include alineacion(center, none, center, none);
-        padding-top: $spacer;
+        padding-top: calc($spacer * 1);
         padding-bottom: calc($spacer * 3);
         div {
-            @include flex(flex, wrap);
-            @include alineacion (center, none, center, none);
+            @include display(flex);
+            flex-wrap: wrap;
+            @include alineacion(center, none, center, none);
             padding-bottom: calc($spacer * 3);
         }
     } 
@@ -174,7 +176,7 @@ body h1, h2 {
 /*TODO --- MAIN --- GALERIA --- */
 /** GRIDS "GALERIA" - Tamaño de las imangenes con su transformacion y transicion mediante :HOVER */
 .gridGaleria {
-    display: grid;
+    @include display(grid);
     grid-template-areas: 
     "img9 img9 img8 img7 img7"
     "img9 img9 img6 img6 img6"
@@ -185,7 +187,7 @@ body h1, h2 {
     grid-template-columns: repeat(5,1fr);
     grid-auto-rows: 150px;
     padding: 40px 100px;
-    @include alineacion (center, none, none, none);
+    @include alineacion(center, none, none, none);
     grid-gap: 10px;
     img {
         @include object(cover, center);
@@ -209,8 +211,9 @@ body h1, h2 {
 /** Se declara una posicion wrap para los retratos de los disntintos profesores */
 .staff {
     section section {
-        @include flex (flex, wrap);
-        @include alineacion (space-around, none, center, none);
+        @include display(flex);
+        flex-wrap: wrap;
+        @include alineacion(space-around, none, center, none);
     }
     .bgInterno{
         border-radius: calc($spacer * 1);
@@ -232,8 +235,9 @@ body h1, h2 {
         color: $negro
     }
     section {
-        @include flex (flex, nowrap);
-        @include alineacion (center, none, none ,none);
+        @include display(flex);
+        flex-wrap: wrap;
+        @include alineacion(center, none, none ,none);
     }
     .backgroundForm {
         background: rgb(0, 0, 0, 0.5);
@@ -247,11 +251,13 @@ body h1, h2 {
 footer {
     background-image: url(../img/banner/banner-footer.jpg);
     > section {
-        @include flex (flex, wrap);
+        @include display(flex);
+        flex-wrap: wrap;
         color: $blanco;
         div a {
-            @include flex (flex, wrap);
-            @include alineacion (center, none, center, none);
+            @include display(flex);
+            flex-direction: wrap;
+            @include alineacion(center, none, center, none);
             margin-bottom: $spacer;
         }
         > p {
